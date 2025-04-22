@@ -1,5 +1,5 @@
 <template>
-     <div class="relative h-screen">
+     <div class="relative h-screen pt-3">
         <!-- Background Carousel -->
         <div class="absolute inset-0 w-full h-full">
             <transition-group name="fade">
@@ -19,21 +19,39 @@
         <!-- Content Layer -->
         <div class="relative z-10 h-full">
             <MainHeader />
-            <!-- Add your hero content here -->
+            
+            <div class="mt-32">
+                <div class="flex flex-col items-center justify-center h-full text-center text-white ">
+                    
+                <p class="font-bold text-6xl font-syne w-1/2 mx-auto">Sparkling Clean Homes, Every Time</p>
+
+                <p class="font-urbanist text-lg tracking-wide w-[40%] mx-auto">Experience the ultimate in home cleaning services. Our team delivers exceptional results, ensuring your home is spotless and inviting. </p>
+                </div>
+                <div class="flex items-center justify-center mt-3">
+                    <ButtonComponent 
+                        buttonText="Get a Free Quote" 
+                        width="auto" 
+                        height="auto" 
+                        fontSize="1.2em" 
+                        showIcon
+                        customClass="flex items-center justify-center rounded-3xl px-1 py-1 font-urbanist font-semibold text-brand-white gap-2 bg-brand-main cursor-pointer hover:bg-transparent"
+                    />
+                </div>  
+            </div>
         </div>
-        <img src="../assets/imgs/her" alt="">
     </div>
 </template>
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 import MainHeader from '@/components/MainHeader.vue';
+import ButtonComponent from '@/components/ButtonComponent.vue';
 
 const backgroundImages = [
-    '../assets/imgs/hero 1.png',
-    '../assets/imgs/hero 2.png',
-    '../assets/imgs/hero 3.png',
-    '../assets/imgs/hero 4.png',
+    'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329764/Sparkleklin/hero_3_cahozr.jpg',
+    'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329773/Sparkleklin/hero_2_c3g96t.jpg',
+    'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329763/Sparkleklin/hero_1_xzsa01.png',
+    'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329777/Sparkleklin/hero_4_nui3vo.jpg',
 ]
 
 const currentIndex = ref(0);

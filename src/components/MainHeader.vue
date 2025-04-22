@@ -1,9 +1,9 @@
 <template>
   <header>
     <div
-      class="flex justify-between items-center px-8 py-8 w-[90%] h-16 bg-[#191919] rounded-3xl mx-auto mt-5 mb-5"
+      class="flex justify-between items-center px-8 py-8 w-[90%] h-16 bg-[#191919] rounded-3xl mx-auto mb-5"
     >
-      <div class="logo">
+      <div class="logo cursor-pointer">
         <img src="../assets/imgs/logo-white (1).png" alt="sparkleklin logo" class="w-32" />
       </div>
       <!-- <div class="flex items-center font-urbanist font-semibold text-[16px] gap-8 text-brand-ash ">
@@ -18,7 +18,7 @@
       <nav class="flex items-center font-urbanist font-semibold text-[16px] gap-8 text-brand-ash">
         <div v-for="item in menuItems" 
              :key="item.name" 
-             class="relative group">
+             class="relative group cursor-pointer">
           <router-link 
             v-if="!item.dropdown"
             :to="item.path"
@@ -28,7 +28,7 @@
             {{ item.name }}
           </router-link>
 
-          <div v-else class="group cursor-default">
+          <div v-else class="group cursor-pointer">
             <div class="hover:text-brand-main flex items-center gap-1">
               {{ item.name }}
               <ChevronDown class="w-4 h-4" />
@@ -49,7 +49,7 @@
         </div>
       </nav>
       <div>
-        <button class=" flex items-center justify-center rounded-3xl border border-brand-ash px-1 py-1 font-urbanist font-semibold text-[1.2em] text-brand-white gap-2">
+        <button class=" flex items-center justify-center rounded-3xl border border-brand-ash px-1 py-1 font-urbanist font-semibold text-[1.2em] text-brand-white gap-2 hover:bg-brand-main cursor-pointer">
           <span><ArrowUpRight
             class="text-brand-main bg-white w-9 h-9 rounded-full p-1.5"
           /> </span>

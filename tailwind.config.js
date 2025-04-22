@@ -14,6 +14,10 @@ const config = {
           white: '#FFFFFF',
         },
       },
+      fontFamily: {
+        syne: ['Syne', 'sans-serif'],
+        urbanist: ['Urbanist', 'sans-serif'],
+      },
     },
   },
   plugins: [],
