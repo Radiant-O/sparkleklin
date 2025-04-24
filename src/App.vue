@@ -9,9 +9,5 @@ import { RouterView } from 'vue-router'
 </template>
 
 <style scoped>
-body {
-  font-family: 'Inter', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+
 </style>

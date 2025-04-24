@@ -118,6 +118,182 @@
         </div>
       </div>
     </section>
+    <AboutComponent />
+    <section class="whychoose">
+      <!-- <div class="mx-25 pt-20 pb-20">
+        <div class="flex justify-center gap-10">
+          <div class="relative">
+            <img
+              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745512033/Sparkleklin/clearnerchoose_ibnkwe.png"
+              alt="Why Choose Us"
+              class="w-[28em] h-[41em] rounded-3xl"
+            />
+           
+            <div
+              class="absolute w-[28em] bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent rounded-b-3xl"
+            >
+              <p class="text-white font-urbanist text-sm p-8">
+                Discover the standout features and exceptional benefits of choosing our home
+                cleaning services, designed to meet all your needs and exceed your expectations.
+              </p>
+            </div>
+          </div>
+
+          
+          <div class="bg-brand-ash/5 rounded-3xl p-10 w-[55%]">
+            <div class="">
+              <p class="font-syne text-5xl font-bold pb-0 mb-0">Why Choose Sparkleklin?</p>
+              <div class="font-urbanist text-brand-ash text-lg -mt-8 w-[70%]">
+                Sparkleklin is based in London and provides a variety of cleaning services at
+                affordable prices.
+              </div>
+            </div>
+
+           
+            <div class="mt-10">
+              <div class="flex items-start gap-4">
+                <img src="../assets/imgs/vector.png" alt="" class="w-9 h-9 bg-white p-1 rounded-xl" />
+
+                <div>
+                  <p class="font-syne font-semibold text-xl">Experienced Cleaners</p>
+                  <p class="font-urbanist text-brand-ash">
+                    We keep your home sparkling clean and germ free. Our disinfecting process kills
+                    99% of common bacteria and viruses.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <img src="../assets/imgs/vector.png" alt="" class="w-8 h-8" />
+                <div>
+                  <p class="font-syne font-semibold text-xl ">Satisfaction Guaranteed</p>
+                  <p class="font-urbanist text-brand-ash">
+                    We keep your home sparkling clean and germ free. Our disinfecting process kills
+                    99% of common bacteria and viruses.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <img src="../assets/imgs/vector.png" alt="" class="w-8 h-8" />
+                <div>
+                  <p class="font-syne font-bold text-xl ">Flexible Scheduling</p>
+                  <p class="font-urbanist text-brand-ash">
+                    We keep your home sparkling clean and germ free. Our disinfecting process kills
+                    99% of common bacteria and viruses.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <img src="../assets/imgs/vector.png" alt="" class="w-8 h-8" />
+                <div>
+                  <p class="font-syne font-semibold text-xl">Affordable Rates</p>
+                  <p class="font-urbanist text-brand-ash">
+                    We keep your home sparkling clean and germ free. Our disinfecting process kills
+                    99% of common bacteria and viruses.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <WhyUsComponent
+        imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745512033/Sparkleklin/clearnerchoose_ibnkwe.png"
+        overlayText="Discover the standout features and exceptional benefits of choosing our home cleaning services, designed to meet all your needs and exceed your expectations."
+        title="Why Choose Sparkleklin?"
+        description="Sparkleklin is based in London and provides a variety of cleaning services at affordable prices."
+        :features="whyChooseFeatures"
+      />
+    </section>
+    <section>
+      <div class="mx-25 pt-20 pb-20">
+        <div>
+          <p>What You Can Expect From Us?</p>
+          <p>
+            Here are few of the things to expect from us which makes us standout and best in the
+            game in the UK
+          </p>
+        </div>
+        <div>
+          <div class="flex gap-10">
+            <div class="relative w-[67%] h-[25em]">
+              <img
+                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329766/Sparkleklin/car%20showroom.jpg"
+                alt="Why Choose Us"
+                class="h-[25em] w-full rounded-3xl object-cover"
+              />
+
+              <div
+                class="absolute h-full pt-[25%] bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent rounded-b-3xl"
+              >
+                <p class="text-white font-syne font-semibold text-3xl px-10">
+                  Trusted & Experienced
+                </p>
+                <div class="text-white font-urbanist text-lg px-10 font-light -mt-[1.6em] w-[95%]">
+                  We are trusted and Experienced company working for many years both in domestic and
+                  commercial sector. Our quality control programmes ensures top quality cleaning
+                  service every time.
+                </div>
+              </div>
+            </div>
+            <div class="relative w-1/4 h-[25em]">
+              <img
+                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329734/Sparkleklin/445-NEW_fsjpvn.png"
+                alt="Why Choose Us"
+                class="h-[25em] w-[100%] rounded-3xl object-cover"
+              />
+
+              <div
+                class="absolute h-full pt-[70%] bottom-0 left-0 right-0 bg-gradient- from-black/80 to-transparent rounded-b-3xl"
+              >
+                <p class="text-white font-syne font-semibold text-[1.3em] px-10">
+                  Available on Short Notice
+                </p>
+                <div class="text-white font-urbanist leading-5 text-md px-10 font-light -mt-[0.9em] ">
+                  We are available 24/7 and can work on short notices. We have good number of staffs, through which we can carry any size job.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-10 mt-10">
+            <div class="relative w-1/4 h-[25em]">
+              <img
+                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329734/Sparkleklin/445-NEW_fsjpvn.png"
+                alt="Why Choose Us"
+                class="h-[25em] w-[100%] rounded-3xl object-cover"
+              />
+
+              <div
+                class="absolute h-full pt-[25%] bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent rounded-b-3xl"
+              >
+                <p class="text-white font-urbanist text-sm p-8">
+                  Discover the standout features and exceptional benefits of choosing our home
+                  cleaning services, designed to meet all your needs and exceed your expectations.
+                </p>
+              </div>
+            </div>
+            <div class="relative w-[67%] h-[25em]">
+              <img
+                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329745/Sparkleklin/supermarket.png"
+                alt="Why Choose Us"
+                class="h-[25em] w-[100%] rounded-3xl object-cover"
+              />
+
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent rounded-b-3xl"
+              >
+                <p class="text-white font-urbanist text-sm p-8">
+                  Discover the standout features and exceptional benefits of choosing our home
+                  cleaning services, designed to meet all your needs and exceed your expectations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -126,6 +302,8 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import MainHeader from '@/components/MainHeader.vue'
 import ButtonComponent from '@/components/ButtonComponent.vue'
 import CardComponent from '@/components/CardComponent.vue'
+import AboutComponent from '@/components/AboutComponent.vue'
+import WhyUsComponent from '@/components/WhyUsComponent.vue'
 
 const backgroundImages = [
   'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329764/Sparkleklin/hero_3_cahozr.jpg',
@@ -189,6 +367,33 @@ onMounted(() => {
 onUnmounted(() => {
   clearInterval(intervalId)
 })
+
+const whyChooseFeatures = [
+  {
+    title: 'Experienced Cleaners',
+    description:
+      'We keep your home sparkling clean and germ free. Our disinfecting process kills 99% of common bacteria and viruses.',
+    icon: 'https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png',
+  },
+  {
+    title: 'Satisfaction Guaranteed',
+    description:
+      'We stand by the quality of our work with a satisfaction guarantee, ensuring you are delight with the results every time.',
+    icon: 'https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png',
+  },
+  {
+    title: 'Flexible Scheduling',
+    description:
+      'We offer flexible scheduling options to fit your busy lifestyle, making it easy to book a cleaning service at your convenience.',
+    icon: 'https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png',
+  },
+  {
+    title: 'Affordable Rates',
+    description:
+      'Our competitive pricing ensures that you receive top-quality cleaning services at a price that fits your budget.',
+    icon: 'https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png',
+  },
+]
 </script>
 
 <style scoped>
