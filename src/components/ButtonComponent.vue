@@ -2,7 +2,7 @@
   <div>
     <button
     :class="[
-            'flex items-center justify-center rounded-3xl border border-brand-ash font-urbanist font-semibold text-brand-white gap-2',
+            'flex items-center justify-center py-2 px-2 rounded-4xl border border-brand-ash font-urbanist font-semibold gap-2',
             `text-[${fontSize}]`,
             `w-${width}`,
             `h-${height}`,
@@ -12,7 +12,7 @@
       <span v-if="showIcon">
             <ArrowUpRight class="text-brand-main bg-white w-9 h-9 rounded-full p-1.5"/>
         </span>
-      <span class="text-brand-white pr-2">{{ buttonText }}</span>
+      <span :class="['pr-2', textCustomClass]">{{ buttonText }}</span>
     </button>
   </div>
 </template>
@@ -41,6 +41,10 @@ defineProps({
         default: true
     },
     customClass: {
+        type: String,
+        default: ''
+    },
+    textCustomClass: {
         type: String,
         default: ''
     }

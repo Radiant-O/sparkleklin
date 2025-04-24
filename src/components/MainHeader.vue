@@ -1,7 +1,7 @@
 <template>
   <header>
     <div
-      class="flex justify-between items-center px-8 py-8 w-[90%] h-16 bg-[#191919] rounded-3xl mx-auto mb-5"
+      class="flex justify-between items-center px-28 py-8 w-full h-16 bg-[#191919]"
     >
       <div class="logo cursor-pointer">
         <img src="../assets/imgs/logo-white (1).png" alt="sparkleklin logo" class="w-32" />
@@ -22,14 +22,14 @@
           <router-link 
             v-if="!item.dropdown"
             :to="item.path"
-            class="hover:text-brand-main transition-colors"
+            class="hover:text-brand-white transition-colors"
             :class="{ 'text-brand-main': isActive(item.path) }"
           >
             {{ item.name }}
           </router-link>
 
           <div v-else class="group cursor-pointer">
-            <div class="hover:text-brand-main flex items-center gap-1">
+            <div class="hover:text-brand-white flex items-center gap-1">
               {{ item.name }}
               <ChevronDown class="w-4 h-4" />
             </div>
@@ -39,7 +39,7 @@
                 v-for="subItem in item.dropdown"
                 :key="subItem.name"
                 :to="subItem.path"
-                class="block px-4 py-2 text-brand-ash hover:text-brand-main hover:bg-[#252525]"
+                class="block px-4 py-2 text-brand-ash hover:text-brand-white hover:bg-[#252525]"
                 :class="{ 'text-brand-main': isActive(subItem.path) }"
               >
                 {{ subItem.name }}
