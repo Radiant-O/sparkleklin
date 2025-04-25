@@ -1,0 +1,170 @@
+<template>
+  <div class="mx-25 pt-20 pb-20 bg-white">
+    <!-- CTA Section -->
+    <div class="bg-brand-main w-[90%] mx-auto rounded-3xl py-25 text-center">
+      <p class="text-white font-syne font-bold text-5xl w-[60%] mx-auto">
+        {{ ctaTitle }}
+      </p>
+      <div class="text-white font-urbanist text-lg font-light -mt-8">
+        {{ ctaDescription }}
+      </div>
+      <p class="text-white font-urbanist text-lg pt-2 font-light">
+        {{ ctaSubtext }}
+      </p>
+      <div class="flex items-center justify-center mt-10">
+        <ButtonComponentBlack
+          buttonText="Get a Free Quote"
+          width="auto"
+          height="auto"
+          fontSize="1.2em"
+          showIcon
+          customClass="flex items-center justify-center rounded-3xl px-1 py-1 font-urbanist font-semibold gap-2 bg-white cursor-pointer text-brand-white"
+          textCustomClass="text-black"
+        />
+      </div>
+    </div>
+
+    <!-- Footer Content -->
+    <div class="bg-black w-[100%] mx-auto rounded-3xl mt-25 px-20 pt-20 pb-20 text-white">
+      <div class="flex justify-between items-start">
+        <!-- Logo and Description -->
+        <div class="w-[35%]">
+          <img :src="logo" alt="Sparkleklin Logo" class="w-38 pb-5" />
+          <p class="font-urbanist text-md text-justify font-normal text-brand-ash leading-5">
+            {{ description }}
+          </p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="w-[60%]">
+          <div class="flex justify-center gap-20">
+            <!-- Services -->
+            <div class="flex flex-col gap-3 text-brand-ash font-urbanist">
+              <p class="text-white text-lg font-semibold font-syne">Services</p>
+              <router-link
+                v-for="service in services"
+                :key="service.path"
+                :to="service.path"
+                class="hover:text-brand-main transition-colors duration-300"
+              >
+                {{ service.name }}
+              </router-link>
+            </div>
+
+            <!-- Useful Links -->
+            <div class="flex flex-col gap-3 text-brand-ash font-urbanist">
+              <p class="text-white text-lg font-semibold font-syne">Useful Links</p>
+              <router-link
+                v-for="link in usefulLinks"
+                :key="link.path"
+                :to="link.path"
+                class="hover:text-brand-main transition-colors duration-300"
+              >
+                {{ link.name }}
+              </router-link>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="flex flex-col gap-3 text-brand-ash font-urbanist">
+              <p class="text-white text-lg font-semibold font-syne">Contact</p>
+              <a
+                v-for="contact in contactInfo"
+                :key="contact.value"
+                :href="contact.link"
+                class="hover:text-brand-main transition-colors duration-300"
+              >
+                {{ contact.value }}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Media and Copyright -->
+      <div class="-mt-5">
+        <div class="flex gap-5">
+          <a
+            v-for="social in socialMedia"
+            :key="social.name"
+            :href="social.link"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="border rounded-full p-2 text-brand-ash border-brand-ash hover:text-brand-main hover:border-brand-main transition-colors duration-300"
+          >
+            <Icon :icon="social.icon" width="24" height="24" />
+          </a>
+        </div>
+        <div class="text-brand-ash font-urbanist mt-15">
+          © {{ new Date().getFullYear() }} Copyright by Sparkleklin Inc.
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { Icon } from '@iconify/vue'
+import ButtonComponentBlack from './ButtonComponentBlack.vue'
+
+// Define props for component customization
+defineProps({
+  logo: {
+    type: String,
+    default:
+      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745614935/Sparkleklin/logo_white_mix_ftx0rf.png',
+  },
+  description: {
+    type: String,
+    default:
+      "Experience the difference with Sparkleklin's professional home cleaning services. From top to bottom, we ensure every corner of your home/office sparkles with cleanliness and care.",
+  },
+  ctaTitle: {
+    type: String,
+    default: 'Book Our Professional Home Cleaning Services Today',
+  },
+  ctaDescription: {
+    type: String,
+    default: 'Experience the Sparkleklin difference with our top-notch home cleaning services',
+  },
+  ctaSubtext: {
+    type: String,
+    default: 'Schedule your first cleaning appointment now and enjoy a spotless home.',
+  },
+})
+
+// Navigation and contact data
+const services = [
+  { name: 'Commercial Cleaning', path: '/services/commercial' },
+  { name: 'Domestic Cleaning', path: '/services/domestic' },
+  { name: 'Clearance Cleaning', path: '/services/clearance' },
+  { name: 'Spring Cleaning', path: '/services/spring' },
+  { name: 'Pre & Post Tenancy Cleaning', path: '/services/tenancy' },
+]
+
+const usefulLinks = [
+  { name: 'About Us', path: '/about' },
+  { name: 'Career', path: '/career' },
+  { name: 'Why Choose Us?', path: '/why-choose-us' },
+  { name: 'Terms & Conditions', path: '/terms' },
+  { name: 'Privacy Policy', path: '/privacy' },
+]
+
+const contactInfo = [
+  { value: '+447351357925', link: 'tel:+447351357925' },
+  { value: 'info@sparklelin.co.uk', link: 'mailto:info@sparklelin.co.uk' },
+  { value: 'contact@sparkleklin.co.uk', link: 'mailto:contact@sparkleklin.co.uk' },
+]
+
+const socialMedia = [
+  { name: 'Facebook', icon: 'ic:baseline-facebook', link: 'https://facebook.com' },
+  { name: 'Twitter', icon: 'proicons:x-twitter', link: 'https://twitter.com' },
+  { name: 'Instagram', icon: 'mdi:instagram', link: 'https://instagram.com' },
+  { name: 'YouTube', icon: 'mdi:youtube', link: 'https://youtube.com' },
+]
+</script>
+
+<style scoped>
+.footer a {
+  @apply transition-all duration-300;
+}
+</style>

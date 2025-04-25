@@ -1,10 +1,10 @@
 <template>
   <header>
     <div
-      class="flex justify-between items-center px-28 py-8 w-full h-16 bg-[#191919]"
+      class="flex justify-between items-center px-28 py-10 w-full h-16 bg-[#191919]"
     >
       <div class="logo cursor-pointer">
-        <img src="../assets/imgs/logo-white (1).png" alt="sparkleklin logo" class="w-32" />
+        <img src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745614935/Sparkleklin/logo_white_mix_ftx0rf.png" alt="sparkleklin logo" class="w-36" />
       </div>
       <!-- <div class="flex items-center font-urbanist font-semibold text-[16px] gap-8 text-brand-ash ">
         <div class="hover:text-brand-main">Home</div>

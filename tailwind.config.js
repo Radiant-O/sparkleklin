@@ -15,6 +15,7 @@ const config = {
           lightBg: '#ff6e261a',
         },
       },
+    
       fontFamily: {
         syne: ['Syne', 'sans-serif'],
         urbanist: ['Urbanist', 'sans-serif'],
