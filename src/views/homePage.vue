@@ -120,85 +120,6 @@
     </section>
     <AboutComponent />
     <section class="whychoose">
-      <!-- <div class="mx-25 pt-20 pb-20">
-        <div class="flex justify-center gap-10">
-          <div class="relative">
-            <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745512033/Sparkleklin/clearnerchoose_ibnkwe.png"
-              alt="Why Choose Us"
-              class="w-[28em] h-[41em] rounded-3xl"
-            />
-           
-            <div
-              class="absolute w-[28em] bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent rounded-b-3xl"
-            >
-              <p class="text-white font-urbanist text-sm p-8">
-                Discover the standout features and exceptional benefits of choosing our home
-                cleaning services, designed to meet all your needs and exceed your expectations.
-              </p>
-            </div>
-          </div>
-
-          
-          <div class="bg-brand-ash/5 rounded-3xl p-10 w-[55%]">
-            <div class="">
-              <p class="font-syne text-5xl font-bold pb-0 mb-0">Why Choose Sparkleklin?</p>
-              <div class="font-urbanist text-brand-ash text-lg -mt-8 w-[70%]">
-                Sparkleklin is based in London and provides a variety of cleaning services at
-                affordable prices.
-              </div>
-            </div>
-
-           
-            <div class="mt-10">
-              <div class="flex items-start gap-4">
-                <img src="../assets/imgs/vector.png" alt="" class="w-9 h-9 bg-white p-1 rounded-xl" />
-
-                <div>
-                  <p class="font-syne font-semibold text-xl">Experienced Cleaners</p>
-                  <p class="font-urbanist text-brand-ash">
-                    We keep your home sparkling clean and germ free. Our disinfecting process kills
-                    99% of common bacteria and viruses.
-                  </p>
-                </div>
-              </div>
-
-              <div class="flex items-start gap-4">
-                <img src="../assets/imgs/vector.png" alt="" class="w-8 h-8" />
-                <div>
-                  <p class="font-syne font-semibold text-xl ">Satisfaction Guaranteed</p>
-                  <p class="font-urbanist text-brand-ash">
-                    We keep your home sparkling clean and germ free. Our disinfecting process kills
-                    99% of common bacteria and viruses.
-                  </p>
-                </div>
-              </div>
-
-              <div class="flex items-start gap-4">
-                <img src="../assets/imgs/vector.png" alt="" class="w-8 h-8" />
-                <div>
-                  <p class="font-syne font-bold text-xl ">Flexible Scheduling</p>
-                  <p class="font-urbanist text-brand-ash">
-                    We keep your home sparkling clean and germ free. Our disinfecting process kills
-                    99% of common bacteria and viruses.
-                  </p>
-                </div>
-              </div>
-
-              <div class="flex items-start gap-4">
-                <img src="../assets/imgs/vector.png" alt="" class="w-8 h-8" />
-                <div>
-                  <p class="font-syne font-semibold text-xl">Affordable Rates</p>
-                  <p class="font-urbanist text-brand-ash">
-                    We keep your home sparkling clean and germ free. Our disinfecting process kills
-                    99% of common bacteria and viruses.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
       <WhyUsComponent
         imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745512033/Sparkleklin/clearnerchoose_ibnkwe.png"
         overlayText="Discover the standout features and exceptional benefits of choosing our home cleaning services, designed to meet all your needs and exceed your expectations."
@@ -207,137 +128,11 @@
         :features="whyChooseFeatures"
       />
     </section>
-    <section>
-      <div class="mx-25 pt-20 pb-20">
-        <div class="mx-auto w-full text-center">
-          <p class="font-syne text-4xl w-[35%] mx-auto font-bold">What You Can Expect From Us?</p>
-          <div
-            class="font-urbanist text-lg font-normal -mt-[1em] mb-10 text-brand-ash w-[35%] mx-auto"
-          >
-            Here are few of the things to expect from us which makes us standout and best in the
-            game in the UK
-          </div>
-        </div>
-        <div>
-          <div class="flex gap-10">
-            <div class="relative w-[67%] h-[25em]">
-              <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329766/Sparkleklin/car%20showroom.jpg"
-                alt="Why Choose Us"
-                class="h-[25em] w-full rounded-3xl object-cover"
-              />
-
-              <div
-                class="absolute h-full pt-[25%] bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent rounded-b-3xl"
-              >
-                <p class="text-white font-syne font-semibold text-3xl px-10">
-                  Trusted & Experienced
-                </p>
-                <div class="text-white font-urbanist text-lg px-10 font-light -mt-[1.6em] w-[95%]">
-                  We are trusted and Experienced company working for many years both in domestic and
-                  commercial sector. Our quality control programmes ensures top quality cleaning
-                  service every time.
-                </div>
-              </div>
-            </div>
-            <div class="relative w-1/4 h-[25em]">
-              <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329734/Sparkleklin/445-NEW_fsjpvn.png"
-                alt="Why Choose Us"
-                class="h-[25em] w-[100%] rounded-3xl object-cover"
-              />
-
-              <div
-                class="absolute h-full pt-[70%] bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent rounded-b-3xl"
-              >
-                <p class="text-white font-syne font-semibold text-[1.3em] px-10">
-                  Available on Short Notice
-                </p>
-                <div
-                  class="text-white font-urbanist leading-5 text-md px-10 font-light -mt-[0.9em]"
-                >
-                  We are available 24/7 and can work on short notices. We have good number of
-                  staffs, through which we can carry any size job.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex gap-10 mt-10">
-            <div class="relative w-1/4 h-[25em]">
-              <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329734/Sparkleklin/445-NEW_fsjpvn.png"
-                alt="Why Choose Us"
-                class="h-[25em] w-[100%] rounded-3xl object-cover"
-              />
-
-              <div
-                class="absolute h-full pt-[70%] bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent rounded-b-3xl"
-              >
-                <p class="text-white font-syne font-semibold text-[1.3em] px-10">
-                  Satisfaction Guaranteed
-                </p>
-                <div
-                  class="text-white font-urbanist leading-5 text-md px-10 font-light -mt-[0.9em]"
-                >
-                  We are competitively priced, 100% guaranteed services at guaranteed prices.
-                </div>
-              </div>
-            </div>
-            <div class="relative w-[67%] h-[25em]">
-              <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329745/Sparkleklin/supermarket.png"
-                alt="Why Choose Us"
-                class="h-[25em] w-[100%] rounded-3xl object-cover"
-              />
-
-              <div
-                class="absolute h-full pt-[25%] bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent rounded-b-3xl"
-              >
-                <p class="text-white font-syne font-semibold text-3xl px-10">
-                  Reliable & Fully Insured
-                </p>
-                <div class="text-white font-urbanist text-lg px-10 font-light -mt-[1.6em] w-[95%]">
-                  Our motivated Staffs are courteous, hardworking, efficient, and have keen eye for
-                  details. Staffs are carefully selected and vetted for your security at all times.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section class="whattoexpect">
+      <WhatToExpectComponent :features="expectFeatures" />
     </section>
     <section class="impacts">
-      <div class="w-full opacity-85 bg-gradient-to-t from-orange-600 to-black relative py-30">
-        <!-- Content -->
-        <div class="mx-25 text-center text-white">
-          <div class="max-w-3xl mx-auto">
-            <p class="font-syne text-4xl font-bold">Our Impact by the Numbers</p>
-            <p class="font-urbanist text-lg text-brand-ash w-[85%] mx-auto">
-              Our commitment to excellence is evident in the numbers. Discover the impressive stats
-              showcasing the quality and reliability of our home cleaning services.
-            </p>
-          </div>
-
-          <div class="flex justify-center gap-8 w-full mx-auto mt-10">
-            <div class="py-4 px-8 bg-white/5 rounded-2xl shadow">
-              <p class="font-syne text-5xl font-bold text-brand-main">100%</p>
-              <div class="font-urbanist text-lg -mt-12">Free Estimate</div>
-            </div>
-            <div class="py-4 px-8 bg-white/5 rounded-2xl shadow">
-              <p class="font-syne text-5xl font-bold text-brand-main">2000+</p>
-              <div class="font-urbanist text-lg -mt-12">Homes Cleaned</div>
-            </div>
-            <div class="py-4 px-8 bg-white/5 rounded-2xl shadow">
-              <p class="font-syne text-5xl font-bold text-brand-main">3000+</p>
-              <div class="font-urbanist text-lg -mt-12">Satisfied Clients</div>
-            </div>
-            <div class="py-4 px-8 bg-white/5 rounded-2xl shadow">
-              <p class="font-syne text-5xl font-bold text-brand-main">95%</p>
-              <div class="font-urbanist text-lg -mt-12">Customer Retention Rate</div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ImpactsComponent :stats="impactStats" />
     </section>
     <section class="testimonial">
       <TestimonialComponent :testimonials="testimonials" />
@@ -355,9 +150,10 @@ import ButtonComponent from '@/components/ButtonComponent.vue'
 import CardComponent from '@/components/CardComponent.vue'
 import AboutComponent from '@/components/AboutComponent.vue'
 import WhyUsComponent from '@/components/WhyUsComponent.vue'
-// import { Icon } from '@iconify/vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import TestimonialComponent from '@/components/TestimonialComponent.vue'
+import ImpactsComponent from '@/components/ImpactsComponent.vue'
+import WhatToExpectComponent from '@/components/WhatToExpectComponent.vue'
 
 const backgroundImages = [
   'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329764/Sparkleklin/hero_3_cahozr.jpg',
@@ -494,6 +290,59 @@ const testimonials = [
       'Sparkleklin has transformed our office cleaning routine. Their team is efficient and the results are always impressive.',
     image:
       'https://res.cloudinary.com/din5vdwsr/image/upload/v1745618885/Sparkleklin/img3_hyo11d.png',
+  },
+]
+
+const impactStats = [
+  {
+    value: 100,
+    suffix: '%',
+    label: 'Free Estimate',
+  },
+  {
+    value: 2000,
+    suffix: '+',
+    label: 'Homes Cleaned',
+  },
+  {
+    value: 3000,
+    suffix: '+',
+    label: 'Satisfied Clients',
+  },
+  {
+    value: 95,
+    suffix: '%',
+    label: 'Customer Retention Rate',
+  },
+]
+
+const expectFeatures = [
+  {
+    title: 'Trusted & Experienced',
+    description:
+      'We are trusted and Experienced company working for many years both in domestic and commercial sector. Our quality control programmes ensures top quality cleaning service every time.',
+    image:
+      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329766/Sparkleklin/car%20showroom.jpg',
+  },
+  {
+    title: 'Available on Short Notice',
+    description:
+      'We are available 24/7 and can work on short notices. We have good number of staffs, through which we can carry any size job.',
+    image:
+      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329734/Sparkleklin/445-NEW_fsjpvn.png',
+  },
+  {
+    title: 'Satisfaction Guaranteed',
+    description: 'We are competitively priced, 100% guaranteed services at guaranteed prices.',
+    image:
+      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329734/Sparkleklin/445-NEW_fsjpvn.png',
+  },
+  {
+    title: 'Reliable & Fully Insured',
+    description:
+      'Our motivated Staffs are courteous, hardworking, efficient, and have keen eye for details. Staffs are carefully selected and vetted for your security at all times.',
+    image:
+      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329745/Sparkleklin/supermarket.png',
   },
 ]
 </script>
