@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-25 pt-20 pb-20 bg-white">
+  <div class="mx-25 pt-20 bg-white">
     <!-- CTA Section -->
     <div class="bg-brand-main w-[90%] mx-auto rounded-3xl py-25 text-center">
       <p class="text-white font-syne font-bold text-5xl w-[60%] mx-auto">

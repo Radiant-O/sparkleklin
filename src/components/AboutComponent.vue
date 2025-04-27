@@ -87,18 +87,6 @@ const imageOpacity = (index) => {
   return { opacity: opacity.toFixed(2) }
 }
 
-// onMounted(() => {
-//   animate()
-//   window.addEventListener('scroll', handleScroll)
-// })
-
-// onUnmounted(() => {
-//   if (animationFrame) {
-//     cancelAnimationFrame(animationFrame)
-//   }
-//   window.removeEventListener('scroll', handleScroll)
-// })
-
 </script>
 
 <style scoped>
@@ -106,9 +94,4 @@ const imageOpacity = (index) => {
   perspective: 1000px;
 }
 
-/* @media (max-width: 768px) {
-  .about {
-    min-height: 80vh;
-  }
-} */
 </style>

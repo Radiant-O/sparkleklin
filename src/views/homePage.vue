@@ -1,5 +1,5 @@
 <template>
-  <div class="relative h-screen">
+  <div class="">
     <!-- Sticky Header -->
     <div class="sticky top-0 z-50 w-full">
       <MainHeader />
@@ -49,8 +49,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Rest of the content -->
     <section class="mx-25 mt-20">
       <div class="flex justify-center w-full">
         <div class="w-[100%]">
@@ -118,7 +116,9 @@
         </div>
       </div>
     </section>
-    <AboutComponent />
+    <!-- <AboutComponent /> -->
+     <TestingComponent />
+     
     <section class="whychoose">
       <WhyUsComponent
         imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745512033/Sparkleklin/clearnerchoose_ibnkwe.png"
@@ -148,12 +148,13 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import MainHeader from '@/components/MainHeader.vue'
 import ButtonComponent from '@/components/ButtonComponent.vue'
 import CardComponent from '@/components/CardComponent.vue'
-import AboutComponent from '@/components/AboutComponent.vue'
+// import AboutComponent from '@/components/AboutComponent.vue'
 import WhyUsComponent from '@/components/WhyUsComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import TestimonialComponent from '@/components/TestimonialComponent.vue'
 import ImpactsComponent from '@/components/ImpactsComponent.vue'
 import WhatToExpectComponent from '@/components/WhatToExpectComponent.vue'
+import TestingComponent from '@/components/TestingComponent.vue'
 
 const backgroundImages = [
   'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329764/Sparkleklin/hero_3_cahozr.jpg',

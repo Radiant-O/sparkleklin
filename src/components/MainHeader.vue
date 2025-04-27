@@ -77,18 +77,30 @@ const menuItems = ref([
     name: 'Service',
     path: '#',
     dropdown: [
-      { name: 'Regular Cleaning', path: '/services/regular' },
-      { name: 'Deep Cleaning', path: '/services/deep' },
-      // Add more services
+      { name: 'Office Cleaning', path: '/services/regular' },
+      { name: 'Commercial Cleaning', path: '/services/deep' },
+      { name: 'Domestic Cleaning', path: '/services/deep' },
+      { name: 'Supermarket & Shop Cleaning', path: '/services/deep' },
+      { name: 'Education Centre Cleaning', path: '/services/deep' },
+      { name: 'Car Showroom Cleaning', path: '/services/deep' },
+      { name: 'Pubs, Clubs & Resturant Cleaning', path: '/services/deep' },
+      { name: 'Sports / Leisure Centre Cleaning', path: '/services/deep' },
+      { name: 'Hospital Cleaning', path: '/services/deep' },
+      
     ]
   },
   {
     name: 'Specialist Cleaning',
     path: '#',
     dropdown: [
-      { name: 'Commercial', path: '/specialist/commercial' },
-      { name: 'Residential', path: '/specialist/residential' },
-      // Add more specialist services
+      { name: 'Contract Cleaning', path: '/specialist/commercial' },
+      { name: 'Deep Cleaning', path: '/specialist/residential' },
+      { name: 'After Builders Cleaning', path: '/specialist/residential' },
+      { name: 'Spring Cleaning', path: '/specialist/residential' },
+      { name: 'Event Cleaning', path: '/specialist/residential' },
+      { name: 'Post & Pre Tenancy Cleaning', path: '/specialist/residential' },
+      { name: 'Clearance & Decluttering Cleaning', path: '/specialist/residential' },
+      
     ]
   },
   { name: 'Gallery', path: '/gallery' },
