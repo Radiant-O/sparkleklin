@@ -20,6 +20,7 @@
     </section>
     <section class="c2">
       <ServiceOverview
+      title=""
         description="You will receive high quality, cost effective cleaning services tailored to your precise needs. This leaves you free to focus on your core business activities with peace of mind that your cleaning is in expert hands. We can provide you services in different ways."
         :features="[
           'One off cleaning',

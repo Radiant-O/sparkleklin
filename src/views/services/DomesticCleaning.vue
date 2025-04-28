@@ -1,0 +1,164 @@
+<template>
+  <div>
+    <div class="sticky top-0 z-50 w-full">
+      <MainHeader />
+    </div>
+    <section class="c1">
+      <ServiceHero
+        imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/office_cle_o2maz1.png"
+        badge="DOMESTIC CLEANING"
+        title="Domestic Cleaning Service"
+        :description="`At Sparkleklin, we are an established, professional cleaning service provider and have extensiveexperience in cleaning of domestic premises, keeping your homes hygienically clean and tidy. 
+        \n We Provide a range of cleaning services that will keep your house feeling organized & comfortable. All our staff are insured and have been fully trained. you can relax, put your feet up and let us do the dirty work for you.`"
+        :features="[
+          'Don\'t allow your home to suffer',
+          'We are reliable and we genuinely care',
+          'All our cleaners are professionally trained',
+          'Great value for money',
+          'A comprehensive, one-stop service',
+        ]"
+      />
+    </section>
+    <section class="c2">
+      <section class="service-overview bg-brand-ash/10 mt-10">
+        <div class="mx-25 pt-20 pb-20">
+          <p class="font-syne text-4xl font-semibold">
+            Here are some <span class="block">examples of cleaning:</span>
+          </p>
+          <div class="font-urbanist text-lg -mt-6 font-normal text-brand-ash">
+            No office are alike, we will give you a detailed quote based on the size of your office
+            and the specific needs of your business also help you save on costs wherever possible.
+            <br />
+            We will deliver according to your needs; your hours of business and your building type
+            or environment to ensure your premises are cleaned to standard with minimal disruption.
+            We will exceed your expectations; give us a call now for more information.
+          </div>
+
+          <div class="grid grid-cols-2 w-full gap-3 mt-10">
+            <div
+              v-for="(feature, index) in features"
+              :key="index"
+              class="flex gap-5 items-start w-[80%]"
+            >
+              <img
+                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                :alt="`feature_${index + 1}`"
+                class="w-7 h-7 bg-white p-1 rounded-xl"
+              />
+              <div>
+                <p class="font-urbanist font-semibold text-xl">{{ feature }}</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full mt-20">
+            <img
+              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329725/Sparkleklin/2577_ygmqnl.jpg"
+              alt="imageAlt"
+              class="rounded-4xl w-full object-cover object-top h-[35rem]"
+            />
+          </div>
+          
+        </div>
+      </section>
+    </section>
+    <section>
+      <PrideComponent />
+    </section>
+    <section>
+      <WhatToOfferComponent />
+    </section>
+    <section>
+      <ImpactsComponent :stats="impactStats" />
+    </section>
+    <section class="other-services">
+      <div class="mx-25 pt-20">
+        <div class="flex justify-between">
+          <p class="font-syne text-3xl font-bold">Other Services</p>
+          <p class="font-urbanist text-xl">See All</p>
+        </div>
+        <div class="grid grid-cols-3 justify-between gap-14">
+          <CardComponent
+            v-for="service in services"
+            :key="service.title"
+            :image-url="service.imageUrl"
+            :title="service.title"
+            :route-path="`/services/${service.slug}`"
+          />
+        </div>
+      </div>
+    </section>
+    <section>
+      <FooterComponent />
+    </section>
+  </div>
+</template>
+
+<script setup>
+import MainHeader from '@/components/MainHeader.vue'
+import ServiceHero from '@/components/ServiceHero.vue'
+import WhatToOfferComponent from '@/components/WhatToOfferComponent.vue'
+import ImpactsComponent from '@/components/ImpactsComponent.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
+import CardComponent from '@/components/CardComponent.vue'
+import PrideComponent from '@/components/PrideComponent.vue'
+
+// import ServiceOverview from '@/components/ServiceOverview.vue'
+
+const impactStats = [
+  {
+    value: 100,
+    suffix: '%',
+    label: 'Free Estimate',
+  },
+  {
+    value: 2000,
+    suffix: '+',
+    label: 'Homes Cleaned',
+  },
+  {
+    value: 3000,
+    suffix: '+',
+    label: 'Satisfied Clients',
+  },
+  {
+    value: 95,
+    suffix: '%',
+    label: 'Customer Retention Rate',
+  },
+]
+
+const features = [
+  'Full and deep dusting including all the corners of rooms for cobwebs',
+  'Washing all blinds',
+  'Windows cleaned fromInside',
+  'Inside of window frames and patio doors',
+  'Inside the oven including the oven',
+  'Under the sink',
+  'Behind kitchen appliances like the washing machine',
+  'Cutting through the grime that build up scale removal from all bathroom tiles, kitchen tiles, taps, shower heads etc',
+]
+
+const services = [
+  {
+    title: 'Car Showroom',
+    slug: 'car-showroom',
+    imageUrl:
+      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/showroom_mgns43.png',
+  },
+   {
+    title: 'Sports & Leisure Centers',
+    slug: 'sports-leisure-centers',
+    imageUrl:
+      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329745/Sparkleklin/2148766021_fatbem.jpg',
+  },
+  {
+    title: 'Shopping Mall',
+    slug: 'supermarket',
+    imageUrl:
+      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/supermarket_clea_hnjwfq.png',
+  },
+]
+</script>
+
+<style lang="scss" scoped></style>

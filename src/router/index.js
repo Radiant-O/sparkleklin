@@ -30,9 +30,19 @@ const router = createRouter({
       component: () => import('../views/services/CommercialCleaning.vue'),
     },
     {
-      path: '/services/office',
+      path: '/services/offices',
       name: 'office-cleaning',
       component: () => import('../views/services/OfficeCleaning.vue'),
+    },
+    {
+      path: '/services/domestic',
+      name: 'domestic-cleaning',
+      component: () => import('../views/services/DomesticCleaning.vue'),
+    },
+    {
+      path: '/gallery',
+      name: 'gallery',
+      component: () => import('../views/galleryPage.vue'),
     },
   ],
 })
