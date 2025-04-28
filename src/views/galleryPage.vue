@@ -1,4 +1,5 @@
 <script setup>
+import FooterComponent from '@/components/FooterComponent.vue';
 import MainHeader from '@/components/MainHeader.vue'
 </script>
 
@@ -111,6 +112,7 @@ import MainHeader from '@/components/MainHeader.vue'
         </div>
       </div>
     </section>
+    <FooterComponent />
   </div>
 </template>
 
