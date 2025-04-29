@@ -5,7 +5,7 @@
     </div>
     <section>
       <div class="mx-25 mt-25">
-        <div class="flex gap-15 justify-center w-full">
+        <div class="justify-center w-full">
           <div class="w-[100%] border border-brand-ash/20 px-10 py-8 rounded-xl">
             <p
               class="font-urbanist text-brand-main w-fit px-3 py-1.5 font-semibold text-xl bg-brand-main/20 rounded-2xl"
@@ -15,14 +15,7 @@
             <p class="font-syne font-semibold text-5xl w-[60%]">Need Support? Contact Us Now!</p>
             <div>
               <div>
-                <!-- <div
-                  v-if="Object.keys(errors).length > 0"
-                  class="mb-6 p-4 bg-red-50 border border-red-300 rounded-xl"
-                >
-                  <p class="text-red-600 font-urbanist font-medium">
-                    Please fill out all required fields to submit the form
-                  </p>
-                </div> -->
+              
                 <Form @submit="onSubmit" class="mt-10">
                   <div class="grid grid-cols-2 gap-8">
                     <!-- First Name -->
@@ -330,13 +323,7 @@
               </div>
             </div>
           </div>
-          <div class="w-[100%]">
-            <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329773/Sparkleklin/newwww_r43pyt.jpg"
-              alt=""
-              class="w-full h-[60rem] object-cover rounded-4xl"
-            />
-          </div>
+         
         </div>
 
         <div class="bg-black w-[100%] mx-auto rounded-3xl mt-25 px-20 pt-20 pb-20 text-white">
