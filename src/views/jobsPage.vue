@@ -5,19 +5,32 @@
     </div>
     <section>
       <div class="mx-25 mt-25">
+        <div>
+          <p
+            class="font-urbanist text-center text-brand-main w-fit mx-auto px-3 py-1.5 font-semibold text-xl bg-brand-main/20 rounded-2xl"
+          >
+            Jobs
+          </p>
+          <p class="font-syne font-semibold text-center text-5xl">Work With Us</p>
+          <p class="font-urbanist text-center text-normal">
+            As a fast growing company, we have a lot of vacancies available for cleaning operatives,
+            if you wish to apply please complete the form and we will get back to you as soon as
+            possible.
+          </p>
+        </div>
         <div class="justify-center w-full">
           <div class="w-[100%] border border-brand-ash/20 px-10 py-8 rounded-xl">
-            <p
-              class="font-urbanist text-brand-main w-fit px-3 py-1.5 font-semibold text-xl bg-brand-main/20 rounded-2xl"
-            >
-              Reach Out to Us
-            </p>
-            <p class="font-syne font-semibold text-5xl w-[60%]">Need Support? Contact Us Now!</p>
             <div>
               <div>
-              
                 <Form @submit="onSubmit" class="mt-10">
                   <div class="grid grid-cols-2 gap-8">
+                    <div class="form-group">
+                      <p>Location and Hours: Various</p>
+                    </div>
+                    <div class="form-group">
+                      <p>Salary: Competitive</p>
+                    </div>
+
                     <!-- First Name -->
                     <div class="form-group">
                       <label class="font-urbanist mb-2 block"
@@ -63,25 +76,10 @@
                       </Field>
                     </div>
 
-                    <!-- Email -->
+                    <!-- DOB -->
                     <div class="form-group">
                       <label class="font-urbanist mb-2 block"
-                        >Email address <span class="text-red-700">*</span></label
-                      >
-                      <Field name="email" type="email" v-slot="{ field, errors }">
-                        <input
-                          v-bind="field"
-                          class="w-full px-5 py-5 rounded-xl text-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                          :class="{ 'border-red-500 bg-red-50': errors.length }"
-                        />
-                        <span class="text-red-500 text-sm">{{ errors[0] }}</span>
-                      </Field>
-                    </div>
-
-                    <!-- Cleaning Date -->
-                    <div class="form-group">
-                      <label class="font-urbanist mb-2 block"
-                        >Cleaning require date <span class="text-red-700">*</span></label
+                        >Date of Birth <span class="text-red-700">*</span></label
                       >
                       <Field name="cleaningDate" v-slot="{ field, errors }">
                         <div class="relative">
@@ -99,106 +97,17 @@
                       </Field>
                     </div>
 
-                    <!-- Service Required -->
+                    <!-- Email -->
                     <div class="form-group">
                       <label class="font-urbanist mb-2 block"
-                        >Service you require <span class="text-red-700">*</span></label
+                        >Email address <span class="text-red-700">*</span></label
                       >
-                      <Field name="service" v-slot="{ field, errors }">
-                        <select
-                          v-bind="field"
-                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                          :class="{ 'border-red-500': errors.length }"
-                        >
-                          <option value="">Select a service</option>
-                          <option value="commercial">Commercial Cleaning</option>
-                          <option value="office">Office Cleaning</option>
-                          <option value="domestic">Domestic Cleaning</option>
-                          <option value="supermarket">Supermarket Cleaning</option>
-                        </select>
-                        <span class="text-red-500 text-sm">{{ errors[0] }}</span>
-                      </Field>
-                    </div>
-
-                    <!-- Hours per Visit -->
-                    <div class="form-group">
-                      <label class="font-urbanist mb-2 block"
-                        >Hours per visit <span class="text-red-700">*</span></label
-                      >
-                      <Field name="hoursPerVisit" type="number" v-slot="{ field, errors }">
+                      <Field name="email" type="email" v-slot="{ field, errors }">
                         <input
                           v-bind="field"
-                          min="1"
                           class="w-full px-5 py-5 rounded-xl text-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
                           :class="{ 'border-red-500 bg-red-50': errors.length }"
                         />
-                        <span class="text-red-500 text-sm">{{ errors[0] }}</span>
-                      </Field>
-                    </div>
-
-                    <!-- Frequency -->
-                    <div class="form-group">
-                      <label class="font-urbanist mb-2 block"
-                        >How often per visit <span class="text-red-700">*</span></label
-                      >
-                      <Field name="frequency" v-slot="{ field, errors }">
-                        <select
-                          v-bind="field"
-                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                          :class="{ 'border-red-500': errors.length }"
-                        >
-                          <option value="">Select frequency</option>
-                          <option value="daily">Daily</option>
-                          <option value="twice a weeks">Twice a week</option>
-                          <option value="Once a week">Once a week</option>
-                          <option value="Once a fortnight">Once a fortnight</option>
-                          <option value="Once a month">Once a month</option>
-                          <option value="Others">Other</option>
-                        </select>
-                        <span class="text-red-500 text-sm">{{ errors[0] }}</span>
-                      </Field>
-                    </div>
-                    <!-- Days Frequency -->
-                    <div class="form-group">
-                      <label class="font-urbanist mb-2 block"
-                        >Days of the week cleaning required
-                        <span class="text-red-700">*</span></label
-                      >
-                      <Field name="daysfrequency" v-slot="{ field, errors }">
-                        <select
-                          v-bind="field"
-                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                          :class="{ 'border-red-500': errors.length }"
-                        >
-                          <option value="">Select Days</option>
-                          <option value="monday">Monday</option>
-                          <option value="tuesday">Tuesday</option>
-                          <option value="wednesday">Wednesday</option>
-                          <option value="thursday">Thursday</option>
-                          <option value="friday">Friday</option>
-                          <option value="saturday">Saturday</option>
-                          <option value="sunday">Sunday</option>
-                        </select>
-                        <span class="text-red-500 text-sm">{{ errors[0] }}</span>
-                      </Field>
-                    </div>
-                    <!-- Frequency -->
-                    <div class="form-group">
-                      <label class="font-urbanist mb-2 block"
-                        >How often is cleaning required <span class="text-red-700">*</span></label
-                      >
-                      <Field name="oftenfrequency" v-slot="{ field, errors }">
-                        <select
-                          v-bind="field"
-                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                          :class="{ 'border-red-500': errors.length }"
-                        >
-                          <option value="">Select period of the day</option>
-                          <option value="Morning">Morning</option>
-                          <option value="Midday">Midday</option>
-                          <option value="Afternoon">Afternoon</option>
-                          <option value="Evening">Evening</option>
-                        </select>
                         <span class="text-red-500 text-sm">{{ errors[0] }}</span>
                       </Field>
                     </div>
@@ -247,6 +156,32 @@
                       </Field>
                     </div>
 
+                    <!-- Apartment, building, etc.(optional) -->
+                    <div class="form-group">
+                      <label class="font-urbanist mb-2 block">Apartment, building, etc. </label>
+                      <Field name="apartment" type="text" v-slot="{ field, errors }">
+                        <input
+                          v-bind="field"
+                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                          :class="{ 'border-red-500 bg-red-50': errors.length }"
+                        />
+                      </Field>
+                    </div>
+
+                    <!-- Zip Code -->
+                    <div class="form-group">
+                      <label class="font-urbanist mb-2 block"
+                        >Zip / Postal Code<span class="text-red-700">*</span></label
+                      >
+                      <Field name="zipcode" type="text" v-slot="{ field, errors }">
+                        <input
+                          v-bind="field"
+                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                          :class="{ 'border-red-500 bg-red-50': errors.length }"
+                        />
+                      </Field>
+                    </div>
+
                     <!-- City -->
                     <div class="form-group">
                       <label class="font-urbanist mb-2 block"
@@ -277,32 +212,159 @@
                       </Field>
                     </div>
 
-                    <!-- Country -->
+                    <!-- DBS Cert -->
                     <div class="form-group">
                       <label class="font-urbanist mb-2 block"
-                        >Country <span class="text-red-700">*</span></label
+                        >Do you hold a DBS (Disclosure and Barring Service) Certificate
+                        <span class="text-red-700">*</span></label
                       >
-                      <Field name="country" v-slot="{ field }">
-                        <input
+                      <Field name="dbscertificate" v-slot="{ field, errors }">
+                        <select
                           v-bind="field"
-                          value="United Kingdom"
-                          disabled
-                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 bg-gray-50"
-                        />
+                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                          :class="{ 'border-red-500': errors.length }"
+                        >
+                          <option value="">Select an option</option>
+                          <option value="yes">Yes</option>
+                          <option value="no">No</option>
+                        </select>
+                        <span class="text-red-500 text-sm">{{ errors[0] }}</span>
                       </Field>
+                    </div>
+
+                    <!-- Cleaning Experience -->
+                    <div class="form-group">
+                      <label class="font-urbanist mb-2 block"
+                        >Do you have any commercial cleaning experience?<span class="text-red-700"
+                          >*</span
+                        ></label
+                      >
+                      <Field name="cleaningexperience" v-slot="{ field, errors }">
+                        <select
+                          v-bind="field"
+                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                          :class="{ 'border-red-500': errors.length }"
+                        >
+                          <option value="">Select an option</option>
+                          <option value="yes">Yes</option>
+                          <option value="no">No</option>
+                        </select>
+                        <span class="text-red-500 text-sm">{{ errors[0] }}</span>
+                      </Field>
+                    </div>
+
+                    <!-- Authorised to work -->
+                    <div class="form-group">
+                      <label class="font-urbanist mb-2 block"
+                        >Are you authorised to work in the UK?<span class="text-red-700"
+                          >*</span
+                        ></label
+                      >
+                      <Field name="workauthorised" v-slot="{ field, errors }">
+                        <select
+                          v-bind="field"
+                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                          :class="{ 'border-red-500': errors.length }"
+                        >
+                          <option value="">Select an option</option>
+                          <option value="yes">Yes</option>
+                          <option value="no">No</option>
+                        </select>
+                        <span class="text-red-500 text-sm">{{ errors[0] }}</span>
+                      </Field>
+                    </div>
+
+                    <!-- Driving License -->
+                    <div class="form-group">
+                      <label class="font-urbanist mb-2 block"
+                        >Do you hold a Full UK Driving License?<span class="text-red-700"
+                          >*</span
+                        ></label
+                      >
+                      <Field name="cleaningexperience" v-slot="{ field, errors }">
+                        <select
+                          v-bind="field"
+                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                          :class="{ 'border-red-500': errors.length }"
+                        >
+                          <option value="">Select an option</option>
+                          <option value="yes">Yes</option>
+                          <option value="no">No</option>
+                        </select>
+                        <span class="text-red-500 text-sm">{{ errors[0] }}</span>
+                      </Field>
+                    </div>
+
+                    <!-- State-->
+                    <div class="form-group">
+                      <label class="font-urbanist mb-2 block"
+                        >Best time to call you back <span class="text-red-700">*</span></label
+                      >
+                      <div class="flex gap-2">
+                        <Field name="hh" type="text" v-slot="{ field, errors }">
+                          <input
+                            v-bind="field"
+                            placeholder="HH"
+                            class="px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                            :class="{ 'border-red-500 bg-red-50': errors.length }"
+                          />
+                          <span class="text-red-500 text-sm">{{ errors[0] }}</span>
+                        </Field>
+                        <Field name="mm" type="text" v-slot="{ field, errors }">
+                          <input
+                            v-bind="field"
+                            placeholder="MM"
+                            class="px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                            :class="{ 'border-red-500 bg-red-50': errors.length }"
+                          />
+                          <span class="text-red-500 text-sm">{{ errors[0] }}</span>
+                        </Field>
+                        <Field name="am-pm" v-slot="{ field, errors }">
+                          <select
+                            v-bind="field"
+                            class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                            :class="{ 'border-red-500': errors.length }"
+                          >
+                            <option value="AM" selected>AM</option>
+                            <option value="PM">PM</option>
+                          </select>
+                          <span class="text-red-500 text-sm">{{ errors[0] }}</span>
+                        </Field>
+                      </div>
                     </div>
                   </div>
                   <div class="form-group mt-6">
                     <label class="font-urbanist mb-2 block"
-                      >Subject / Details<span class="text-red-700">*</span></label
+                      >Any Other thing we should know about you / Message<span class="text-red-700"
+                        >*</span
+                      ></label
                     >
-                    <Field name="subject" v-slot="{ field, errors }">
+                    <Field name="message" v-slot="{ field, errors }">
                       <textarea
                         v-bind="field"
                         rows="6"
                         class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
                         :class="{ 'border-red-500 bg-red-200': errors.length }"
                       ></textarea>
+                      <span class="text-red-500 text-sm">{{ errors[0] }}</span>
+                    </Field>
+                  </div>
+                  <div class="form-group mt-6">
+                    <label class="font-urbanist mb-2 block font-semibold"
+                      >Please Accept Our Terms & Conditions:<span class="text-red-700"
+                        >*</span
+                      ></label
+                    >
+                    <Field name="t&c" v-slot="{ field, errors }">
+                      <input
+                        type="checkbox"
+                        v-bind="field"
+                        class="rounded-xl border border-gray-300 "
+                        :class="{ 'border-red-500 bg-red-50': errors.length }"
+                      />
+                      <label class="font-urbanist mb-2 pl-3 text-lg"
+                        >T&C accepted</label
+                      >
                       <span class="text-red-500 text-sm">{{ errors[0] }}</span>
                     </Field>
                   </div>
@@ -316,14 +378,15 @@
                           class="text-brand-main bg-white w-12 h-12 rounded-full p-[0.7rem]"
                         />
                       </span>
-                      <span class="text-brand-white text-xl font-urbanist pr-4">Get in touch!</span>
+                      <span class="text-brand-white text-xl font-urbanist pr-4"
+                        >Submit your info</span
+                      >
                     </button>
                   </div>
                 </Form>
               </div>
             </div>
           </div>
-         
         </div>
 
         <div class="bg-black w-[100%] mx-auto rounded-3xl mt-25 px-20 pt-20 pb-20 text-white">
