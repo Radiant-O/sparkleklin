@@ -1,12 +1,12 @@
 <template>
   <section class="whattoexpect">
-    <div class="mx-25 pt-20 pb-20">
+    <div class="mx-5 md:mx-25 pt-10 md:pt-20 pb-20">
       <!-- Header Section -->
       <div class="mx-auto w-full text-center mb-16">
-        <p class="font-syne text-4xl w-[35%] mx-auto font-bold">
+        <p class="font-syne md:text-4xl text-3xl md:w-[35%] mx-auto font-bold">
           {{ title }}
         </p>
-        <div class="font-urbanist text-lg font-normal -mt-5 text-brand-ash w-[35%] mx-auto">
+        <div class="font-urbanist md:text-lg font-normal -mt-5 text-brand-ash md:w-[35%] md:mx-auto">
           {{ description }}
         </div>
       </div>
@@ -14,8 +14,8 @@
       <!-- Content Grid -->
       <div class="space-y-10">
         <!-- First Row -->
-        <div class="flex gap-10">
-          <div class="w-2/3 relative h-[500px] group">
+        <div class="flex flex-col md:flex-row gap-10">
+          <div class="md:w-2/3 relative h-[30rem] md:h-[500px] group">
             <img
               :src="features[0].image"
               :alt="features[0].title"
@@ -37,12 +37,12 @@
             </div>
           </div>
 
-          <div class="w-1/3 relative h-[500px] group">
-            <img
+          <div class="md:w-1/3 relative h-[30rem] md:h-[500px] bg-brand-main rounded-3xl group">
+            <!-- <img
               :src="features[1].image"
               :alt="features[1].title"
               class="w-full h-full object-cover rounded-3xl"
-            />
+            /> -->
             <div
               class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent rounded-3xl"
             >
@@ -61,8 +61,8 @@
         </div>
 
         <!-- Second Row -->
-        <div class="flex gap-10">
-          <div class="w-1/3 relative h-[500px] group">
+        <div class="flex flex-col md:flex-row gap-10">
+          <div class="md:w-1/3 relative h-[30rem] md:h-[500px] group">
             <img
               :src="features[2].image"
               :alt="features[2].title"
@@ -84,7 +84,7 @@
             </div>
           </div>
 
-          <div class="w-2/3 relative h-[500px] group">
+          <div class="md:w-2/3 relative h-[30rem] md:h-[500px] group">
             <img
               :src="features[3].image"
               :alt="features[3].title"

@@ -1,14 +1,14 @@
 <template>
-  <div class="mx-20 pt-20 bg-white">
+  <div class="md:mx-20 pt-20 bg-white">
     <!-- CTA Section -->
-    <div class="bg-brand-main w-[90%] mx-auto rounded-3xl py-25 text-center">
-      <p class="text-white font-syne font-bold text-5xl w-[60%] mx-auto">
+    <div class="bg-brand-main w-[90%] mx-auto rounded-3xl py-10 md:py-25 text-center">
+      <p class="text-white font-syne font-bold text-2xl md:text-5xl w-[90%] md:w-[60%] mx-auto">
         {{ ctaTitle }}
       </p>
-      <div class="text-white font-urbanist text-lg font-light -mt-8">
+      <div class="text-white/80 font-urbanist px-3 md:px-0 text-md md:text-lg font-light -mt-4 md:-mt-8">
         {{ ctaDescription }}
       </div>
-      <p class="text-white font-urbanist text-lg pt-2 font-light">
+      <p class="text-white/80 font-urbanist px-3 md:px-0 text-md md:text-lg pt-2 font-light">
         {{ ctaSubtext }}
       </p>
       <div class="flex items-center justify-center mt-10">
@@ -25,10 +25,10 @@
     </div>
 
     <!-- Footer Content -->
-    <div class="bg-black w-[100%] mx-auto rounded-3xl mt-25 px-20 pt-20 pb-20 text-white">
-      <div class="flex justify-between items-start">
+    <div class="bg-black w-[100%] mx-auto rounded-3xl mt-25 px-5 md:px-20 pt-10 md:pt-20 pb-20 text-white">
+      <div class="flex md:flex-row flex-col justify-between items-start">
         <!-- Logo and Description -->
-        <div class="w-[35%]">
+        <div class="md:w-[35%]">
           <img :src="logo" alt="Sparkleklin Logo" class="w-38 pb-5" />
           <p class="font-urbanist text-md text-justify font-normal text-brand-ash leading-5">
             {{ description }}
@@ -36,8 +36,8 @@
         </div>
 
         <!-- Links Section -->
-        <div class="w-[60%]">
-          <div class="flex justify-center gap-20">
+        <div class="md:w-[60%]">
+          <div class="flex flex-col md:flex-row justify-center gap-20">
             <!-- Services -->
             <div class="flex flex-col gap-3 text-brand-ash font-urbanist">
               <p class="text-white text-lg font-semibold font-syne">Services</p>
@@ -81,7 +81,7 @@
       </div>
 
       <!-- Social Media and Copyright -->
-      <div class="-mt-5">
+      <div class="md:-mt-5 mt-10">
         <div class="flex gap-5">
           <a
             v-for="social in socialMedia"
@@ -94,7 +94,7 @@
             <Icon :icon="social.icon" width="24" height="24" />
           </a>
         </div>
-        <div class="text-brand-ash font-urbanist mt-15">
+        <div class="text-brand-ash font-urbanist mt-10 md:mt-15">
           © {{ new Date().getFullYear() }} Copyright by Sparkleklin Inc.
         </div>
       </div>

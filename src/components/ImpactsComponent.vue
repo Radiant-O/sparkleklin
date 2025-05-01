@@ -1,14 +1,14 @@
 <template>
-  <div class="w-full opacity-85 bg-gradient-to-t from-orange-600 to-black relative py-30">
-    <div class="mx-25 text-center text-white">
+  <div class="w-full opacity-85 bg-gradient-to-t from-orange-600 to-black relative md:py-30 pt-20 pb-30">
+    <div class=" mx-5 md:mx-25 md:text-center text-white">
       <div class="max-w-3xl mx-auto">
         <h2 class="font-syne text-4xl font-bold">{{ title }}</h2>
-        <p class="font-urbanist text-lg text-brand-ash w-[85%] mx-auto">
+        <p class="font-urbanist text-lg text-brand-ash md:w-[85%] mx-auto">
           {{ description }}
         </p>
       </div>
 
-      <div class="flex justify-center gap-8 w-full mx-auto mt-10">
+      <div class="flex md:flex-row flex-col justify-center gap-8 w-full mx-auto mt-10">
         <div
           v-for="stat in animatedStats"
           :key="stat.label"

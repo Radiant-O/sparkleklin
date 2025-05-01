@@ -6,7 +6,7 @@
     </div>
 
     <!-- Main Content with Background -->
-    <div class="relative h-[calc(100vh-64px)] mx-10 rounded-b-3xl">
+    <div class="relative h-screen lg:mx-10 rounded-b-3xl">
       <!-- Background Carousel -->
       <div class="absolute inset-0 w-full h-full rounded-b-3xl">
         <transition-group name="fade">
@@ -24,7 +24,7 @@
       <div class="absolute inset-0 bg-black/50 rounded-b-3xl"></div>
 
       <!-- Content Layer -->
-      <div class="relative z-10 h-full">
+      <!-- <div class="relative z-10 h-full">
         <div class="pt-[11%]">
           <div class="flex flex-col items-center justify-center h-full text-center text-white">
             <p class="font-bold text-6xl font-syne w-1/2 mx-auto">
@@ -47,17 +47,37 @@
             />
           </div>
         </div>
+      </div> -->
+      <div class="relative z-10 flex flex-col justify-center h-full">
+        <div class="text-center text-white">
+          <p class="font-bold text-4xl md:text-6xl md:w-1/2 md:mx-auto font-syne ">
+            Sparkling Clean Homes, Every Time
+          </p>
+          <div class="font-urbanist text-lg text-white/90 md:w-[40%] -mt-8 mx-auto mb-6">
+            Experience the ultimate in home cleaning services. Our team delivers exceptional
+            results, ensuring your home is spotless and inviting.
+          </div>
+          <ButtonComponent
+            buttonText="Get a Free Quote"
+            width="auto"
+            height="auto"
+            fontSize="1.2em"
+            showIcon
+            textCustomClass="text-brand-white"
+            customClass="inline-flex items-center justify-center rounded-3xl px-1 py-1 font-urbanist font-semibold text-brand-white gap-2 bg-brand-main cursor-pointer hover:bg-transparent hover:border-white border-2 transition-all text-urbanist duration-300"
+          />
+        </div>
       </div>
     </div>
-    <section class="mx-25 mt-20">
-      <div class="flex justify-center w-full">
+    <section class=" mx-5 md:mx-25 mt-20">
+      <div class="flex flex-col md:flex-row justify-center w-full">
         <div class="w-[100%]">
           <p
             class="font-urbanist text-brand-main w-fit px-2 py-1 font-semibold text-lg bg-brand-main/20 rounded-2xl"
           >
             OUR SERVICES
           </p>
-          <p class="font-syne font-semibold text-4xl w-[60%]">
+          <p class="font-syne font-semibold text-2xl md:text-4xl  md:w-[60%]">
             Professional Cleaning Services for Every Home
           </p>
         </div>
@@ -68,7 +88,7 @@
           </p>
         </div>
       </div>
-      <div class="grid grid-cols-3 justify-between gap-14">
+      <div class="grid md:grid-cols-3 justify-between gap-14">
         <CardComponent
           v-for="service in services"
           :key="service.title"
@@ -91,10 +111,10 @@
       </div>
     </section>
     <section class="bg-brand-ash/10 mt-10">
-      <div class="mx-25 pt-20 pb-40">
-        <div class="flex justify-center w-full">
+      <div class="mx-5 md:mx-25 pt-20 pb-40">
+        <div class="flex flex-col md:flex-row justify-center w-full">
           <div class="w-[100%]">
-            <p class="font-syne font-semibold text-4xl w-[80%]">
+            <p class="font-syne font-semibold text-2xl md:text-4xl w-[80%]">
               Complete Residential & Commercial Cleaning Services
             </p>
           </div>
@@ -111,14 +131,14 @@
           <img
             src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329795/Sparkleklin/office.jpg"
             alt=""
-            class="rounded-4xl w-full object-cover h-[45rem]"
+            class="rounded-4xl w-full object-cover h-[25rem] md:h-[45rem]"
           />
         </div>
       </div>
     </section>
     <!-- <AboutComponent /> -->
-     <TestingComponent />
-     
+    <TestingComponent />
+
     <section class="whychoose">
       <WhyUsComponent
         imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745512033/Sparkleklin/clearnerchoose_ibnkwe.png"

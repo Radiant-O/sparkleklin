@@ -4,31 +4,31 @@
       <MainHeader />
     </div>
     <section>
-      <div class="mx-25 mt-25">
+      <div class="mx-5 md:mx-25 mt-25">
         <div>
           <p
             class="font-urbanist text-center text-brand-main w-fit mx-auto px-3 py-1.5 font-semibold text-xl bg-brand-main/20 rounded-2xl"
           >
             Jobs
           </p>
-          <p class="font-syne font-semibold text-center text-5xl">Work With Us</p>
-          <p class="font-urbanist text-center text-normal">
+          <p class="font-syne font-semibold text-center text-3xl md:text-5xl">Work With Us</p>
+          <div class="font-urbanist text-center text-normal text-black/60 md:w-[50%] mx-auto -mt-6">
             As a fast growing company, we have a lot of vacancies available for cleaning operatives,
             if you wish to apply please complete the form and we will get back to you as soon as
             possible.
-          </p>
+          </div>
         </div>
-        <div class="justify-center w-full">
-          <div class="w-[100%] border border-brand-ash/20 px-10 py-8 rounded-xl">
+        <div class="justify-center md:w-full mt-5 md:mt-10">
+          <div class="md:w-[100%] md:border border-brand-ash/20 md:px-5 md:px-10 py-2 rounded-xl">
             <div>
               <div>
                 <Form @submit="onSubmit" class="mt-10">
-                  <div class="grid grid-cols-2 gap-8">
+                  <div class="grid md:grid-cols-2 space-y-5 md:space-x-8">
                     <div class="form-group">
-                      <p>Location and Hours: Various</p>
+                      <p class="font-syne text-xl font-semibold">Location and Hours: Various</p>
                     </div>
                     <div class="form-group">
-                      <p>Salary: Competitive</p>
+                      <p class="font-syne text-xl">Salary: Competitive</p>
                     </div>
 
                     <!-- First Name -->
@@ -295,7 +295,7 @@
                       </Field>
                     </div>
 
-                    <!-- State-->
+                    <!-- Date-->
                     <div class="form-group">
                       <label class="font-urbanist mb-2 block"
                         >Best time to call you back <span class="text-red-700">*</span></label
@@ -305,7 +305,7 @@
                           <input
                             v-bind="field"
                             placeholder="HH"
-                            class="px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                            class="px-5 py-5 w-1/3 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
                             :class="{ 'border-red-500 bg-red-50': errors.length }"
                           />
                           <span class="text-red-500 text-sm">{{ errors[0] }}</span>
@@ -314,7 +314,7 @@
                           <input
                             v-bind="field"
                             placeholder="MM"
-                            class="px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                            class="px-5 py-5 w-1/3 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
                             :class="{ 'border-red-500 bg-red-50': errors.length }"
                           />
                           <span class="text-red-500 text-sm">{{ errors[0] }}</span>
@@ -322,7 +322,7 @@
                         <Field name="am-pm" v-slot="{ field, errors }">
                           <select
                             v-bind="field"
-                            class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                            class="md:w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
                             :class="{ 'border-red-500': errors.length }"
                           >
                             <option value="AM" selected>AM</option>
@@ -359,12 +359,10 @@
                       <input
                         type="checkbox"
                         v-bind="field"
-                        class="rounded-xl border border-gray-300 "
+                        class="rounded-xl border border-gray-300"
                         :class="{ 'border-red-500 bg-red-50': errors.length }"
                       />
-                      <label class="font-urbanist mb-2 pl-3 text-lg"
-                        >T&C accepted</label
-                      >
+                      <label class="font-urbanist mb-2 pl-3 text-lg">T&C accepted</label>
                       <span class="text-red-500 text-sm">{{ errors[0] }}</span>
                     </Field>
                   </div>
@@ -388,85 +386,86 @@
             </div>
           </div>
         </div>
+      </div>
+      <div
+        class="bg-black w-[100%] mx-auto rounded-3xl mt-25 px-5 md:px-20 pt-10 md:pt-20 pb-20 text-white"
+      >
+        <div class="flex md:flex-row flex-col justify-between items-start">
+          <!-- Logo and Description -->
+          <div class="md:w-[35%]">
+            <img
+              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745614935/Sparkleklin/logo_white_mix_ftx0rf.png"
+              alt="Sparkleklin Logo"
+              class="w-38 pb-5"
+            />
+            <p class="font-urbanist text-md text-justify font-normal text-brand-ash leading-5">
+              Experience the difference with Sparkleklin's professional home cleaning services. From
+              top to bottom, we ensure every corner of your home/office sparkles with cleanliness
+              and care.
+            </p>
+          </div>
 
-        <div class="bg-black w-[100%] mx-auto rounded-3xl mt-25 px-20 pt-20 pb-20 text-white">
-          <div class="flex justify-between items-start">
-            <!-- Logo and Description -->
-            <div class="w-[35%]">
-              <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745614935/Sparkleklin/logo_white_mix_ftx0rf.png"
-                alt="Sparkleklin Logo"
-                class="w-38 pb-5"
-              />
-              <p class="font-urbanist text-md text-justify font-normal text-brand-ash leading-5">
-                Experience the difference with Sparkleklin's professional home cleaning services.
-                From top to bottom, we ensure every corner of your home/office sparkles with
-                cleanliness and care.
-              </p>
-            </div>
+          <!-- Links Section -->
+          <div class="md:w-[60%]">
+            <div class="flex flex-col md:flex-row justify-center gap-20">
+              <!-- Services -->
+              <div class="flex flex-col gap-3 text-brand-ash font-urbanist">
+                <p class="text-white text-lg font-semibold font-syne">Services</p>
+                <router-link
+                  v-for="service in services"
+                  :key="service.path"
+                  :to="service.path"
+                  class="hover:text-brand-main transition-colors duration-300"
+                >
+                  {{ service.name }}
+                </router-link>
+              </div>
 
-            <!-- Links Section -->
-            <div class="w-[60%]">
-              <div class="flex justify-center gap-20">
-                <!-- Services -->
-                <div class="flex flex-col gap-3 text-brand-ash font-urbanist">
-                  <p class="text-white text-lg font-semibold font-syne">Services</p>
-                  <router-link
-                    v-for="service in services"
-                    :key="service.path"
-                    :to="service.path"
-                    class="hover:text-brand-main transition-colors duration-300"
-                  >
-                    {{ service.name }}
-                  </router-link>
-                </div>
+              <!-- Useful Links -->
+              <div class="flex flex-col gap-3 text-brand-ash font-urbanist">
+                <p class="text-white text-lg font-semibold font-syne">Useful Links</p>
+                <router-link
+                  v-for="link in usefulLinks"
+                  :key="link.path"
+                  :to="link.path"
+                  class="hover:text-brand-main transition-colors duration-300"
+                >
+                  {{ link.name }}
+                </router-link>
+              </div>
 
-                <!-- Useful Links -->
-                <div class="flex flex-col gap-3 text-brand-ash font-urbanist">
-                  <p class="text-white text-lg font-semibold font-syne">Useful Links</p>
-                  <router-link
-                    v-for="link in usefulLinks"
-                    :key="link.path"
-                    :to="link.path"
-                    class="hover:text-brand-main transition-colors duration-300"
-                  >
-                    {{ link.name }}
-                  </router-link>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="flex flex-col gap-3 text-brand-ash font-urbanist">
-                  <p class="text-white text-lg font-semibold font-syne">Contact</p>
-                  <a
-                    v-for="contact in contactInfo"
-                    :key="contact.value"
-                    :href="contact.link"
-                    class="hover:text-brand-main transition-colors duration-300"
-                  >
-                    {{ contact.value }}
-                  </a>
-                </div>
+              <!-- Contact Info -->
+              <div class="flex flex-col gap-3 text-brand-ash font-urbanist">
+                <p class="text-white text-lg font-semibold font-syne">Contact</p>
+                <a
+                  v-for="contact in contactInfo"
+                  :key="contact.value"
+                  :href="contact.link"
+                  class="hover:text-brand-main transition-colors duration-300"
+                >
+                  {{ contact.value }}
+                </a>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Social Media and Copyright -->
-          <div class="-mt-5">
-            <div class="flex gap-5">
-              <a
-                v-for="social in socialMedia"
-                :key="social.name"
-                :href="social.link"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="border rounded-full p-2 text-brand-ash border-brand-ash hover:text-brand-main hover:border-brand-main transition-colors duration-300"
-              >
-                <Icon :icon="social.icon" width="24" height="24" />
-              </a>
-            </div>
-            <div class="text-brand-ash font-urbanist mt-15">
-              © {{ new Date().getFullYear() }} Copyright by Sparkleklin Inc.
-            </div>
+        <!-- Social Media and Copyright -->
+        <div class="md:-mt-5 mt-10">
+          <div class="flex gap-5">
+            <a
+              v-for="social in socialMedia"
+              :key="social.name"
+              :href="social.link"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="border rounded-full p-2 text-brand-ash border-brand-ash hover:text-brand-main hover:border-brand-main transition-colors duration-300"
+            >
+              <Icon :icon="social.icon" width="24" height="24" />
+            </a>
+          </div>
+          <div class="text-brand-ash font-urbanist mt-10 md:mt-15">
+            © {{ new Date().getFullYear() }} Copyright by Sparkleklin Inc.
           </div>
         </div>
       </div>

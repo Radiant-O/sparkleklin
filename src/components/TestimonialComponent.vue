@@ -1,14 +1,14 @@
 <template>
   <section class="testimonial">
-    <div class="px-20 pt-[7%] pb-20 bg-brand-ash/5">
+    <div class="px-5 md:px-20 md:pt-[7%] pt-[3rem] pb-20 bg-brand-ash/5">
       <!-- Header -->
-      <div class="flex justify-center w-full gap-20 mb-12">
-        <h2 class="font-syne font-semibold text-4xl w-[30%]">
+      <div class="flex md:flex-row flex-col justify-center w-full gap-20 mb-12">
+        <p class="font-syne font-bold text-3xl md:text-4xl md:w-[30%]">
           {{ title }}
-        </h2>
-        <p class="font-urbanist text-lg font-normal text-brand-ash w-[40%] text-justify">
-          {{ description }}
         </p>
+        <div class="font-urbanist text-lg font-normal text-brand-ash -mt-[6rem] md:mt-0 md:w-[40%] text-justify">
+          {{ description }}
+        </div>
       </div>
 
       <!-- Testimonials Slider -->
@@ -72,7 +72,7 @@ const props = defineProps({
   description: {
     type: String,
     default:
-      'Sparkleklin cleaning will provide you with a reliable, value for money professional cleaning service for your business.',
+      'Sparkleklin cleaning will provide you with a reliable, value for money professional, residential and commercial cleaning service for your business at times to suit you for a free, no obligation consultation and quotation cost effective cleaning services tailored to your precise needs.',
   },
   testimonials: {
     type: Array,

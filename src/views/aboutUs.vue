@@ -3,7 +3,7 @@
     <div class="sticky top-0 z-50 w-full">
       <MainHeader />
     </div>
-    <div class="bg-black/90 text-white flex justify-center gap-20 px-28 py-20">
+    <div class="bg-black/90 text-white flex flex-col md:flex-row justify-center gap-20 px-5 md:px-28 py-20">
       <div class="bg-[#29292E] bg-opacity-90 p-10 rounded-3xl shadow-lg">
         <Icon
           icon="mynaui:flag-solid"
@@ -51,7 +51,7 @@
       </div>
     </div>
     <section>
-      <div class="bg-brand-ash/5 bg-opacity-90 rounded-3xl flex py-20 px-25 justify-center gap-20 items-center mt-15 mx-10">
+      <div class="bg-brand-ash/5 bg-opacity-90 rounded-3xl flex flex-col md:flex-row py-20 px-5 md:px-25 justify-center gap-20 items-center mt-15 md:mx-10">
         <div class="w-[100%]">
           <p
             class="font-urbanist text-brand-main w-fit px-2 py-1 font-semibold text-lg bg-brand-main/20 rounded-2xl"
@@ -63,7 +63,7 @@
             Humble Beginning <br />
             to Excellence.
           </p>
-          <div class="font-urbanist text-lg -mt-5 font-light text-gray-500 w-[75%]">
+          <div class="font-urbanist text-md leading-6 md:text-lg -mt-5 font-light text-gray-500">
             Our Journey: Sparkleklin started as a small scale business with a passion for
             cleanliness, Over the years we've grown into a trusted name in home cleaning, known for
             quality and reliability.
@@ -77,7 +77,7 @@
           <img
             src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329795/Sparkleklin/office.jpg"
             alt=""
-            class="w-[80%] h-[30rem] object-cover rounded-3xl shadow-lg"
+            class="md:w-[80%] h-[30rem] object-cover rounded-3xl shadow-lg"
           />
         </div>
       </div>

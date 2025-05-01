@@ -1,17 +1,17 @@
 <template>
-  <div class="mx-20 pt-20 pb-20">
+  <div class="mx-5 md:mx-20 md:pt-20 pb-20">
     <!-- Header Section -->
     <div class="mx-auto w-full text-center">
-      <p class="font-syne text-4xl w-[35%] mx-auto font-bold">
+      <p class="font-syne text-2xl md:text-4xl md:w-[35%] mx-auto font-bold">
         {{ title }}
       </p>
-      <div class="font-urbanist text-lg -mt-5 font-normal text-brand-ash w-[35%] mx-auto">
+      <div class="font-urbanist text-sm md:text-lg -mt-5 font-normal text-brand-ash md:w-[35%] mx-auto">
         {{ description }}
       </div>
     </div>
 
-    <div class="flex justify-center gap-10  pt-10 pb-20">
-      <div class="bg-brand-ash/5 w-[30%] bg-opacity-90 p-10 rounded-3xl shadow-lg">
+    <div class="flex flex-col md:flex-row justify-center gap-10  pt-10 pb-20">
+      <div class="bg-brand-ash/5 md:w-[30%] bg-opacity-90 p-10 rounded-3xl shadow-lg">
         <div>
           <p class="font-syne font-semibold text-2xl">Comprehensive Service</p>
           <div class="space-y-2">
@@ -66,7 +66,7 @@
           </div>
         </div>
       </div>
-      <div class="bg-brand-ash/5 w-[30%] bg-opacity-90 p-10 rounded-3xl shadow-lg">
+      <div class="bg-brand-ash/5 md:w-[30%] bg-opacity-90 p-10 rounded-3xl shadow-lg">
         <div>
           <p class="font-syne font-semibold text-2xl">Top-notch Professional</p>
           <div class="space-y-2">
@@ -94,7 +94,7 @@
           </div>
         </div>
       </div>
-      <div class="bg-brand-ash/5 w-[30%] bg-opacity-90 p-10 rounded-3xl shadow-lg">
+      <div class="bg-brand-ash/5 md:w-[30%] bg-opacity-90 p-10 rounded-3xl shadow-lg">
         <div>
           <p class="font-syne font-semibold text-2xl">What to Except</p>
           <div class="space-y-2">

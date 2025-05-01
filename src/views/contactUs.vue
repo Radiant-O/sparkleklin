@@ -4,15 +4,17 @@
       <MainHeader />
     </div>
     <section>
-      <div class="mx-25 mt-25">
-        <div class="flex gap-15 justify-center w-full">
-          <div class="w-[100%] border border-brand-ash/20 px-10 py-8 rounded-xl">
+      <div class="mx-5 md:mx-25 mt-20 md:mt-25">
+        <div class="flex flex-col md:flex-row gap-15 justify-center w-full">
+          <div class="w-[100%] md:border border-brand-ash/20 md:px-10 py-8 rounded-xl">
             <p
-              class="font-urbanist text-brand-main w-fit px-3 py-1.5 font-semibold text-xl bg-brand-main/20 rounded-2xl"
+              class="font-urbanist text-brand-main w-fit px-3 py-1.5 font-semibold text-lg md:text-xl bg-brand-main/20 rounded-2xl"
             >
               Reach Out to Us
             </p>
-            <p class="font-syne font-semibold text-5xl w-[60%]">Need Support? Contact Us Now!</p>
+            <p class="font-syne font-semibold text-3xl md:w-[60%]">
+              Need Support? Contact Us Now!
+            </p>
             <div>
               <div>
                 <!-- <div
@@ -24,7 +26,7 @@
                   </p>
                 </div> -->
                 <Form @submit="onSubmit" class="mt-10">
-                  <div class="grid grid-cols-2 gap-8">
+                  <div class="grid md:grid-cols-2 gap-5 md:gap-8">
                     <!-- First Name -->
                     <div class="form-group">
                       <label class="font-urbanist mb-2 block"
@@ -114,7 +116,7 @@
                       <Field name="service" v-slot="{ field, errors }">
                         <select
                           v-bind="field"
-                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                          class="w-full px-5 py-5 text-md rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
                           :class="{ 'border-red-500': errors.length }"
                         >
                           <option value="">Select a service</option>
@@ -330,93 +332,94 @@
               </div>
             </div>
           </div>
-          <div class="w-[100%]">
+          <div class="md:w-[70%]">
             <img
               src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329773/Sparkleklin/newwww_r43pyt.jpg"
               alt=""
-              class="w-full h-[60rem] object-cover rounded-4xl"
+              class="w-full h-[30rem] md:h-[50rem] object-cover rounded-4xl"
             />
           </div>
         </div>
+      </div>
+      <div
+        class="bg-black w-[100%] mx-auto rounded-3xl mt-25 px-5 md:px-20 pt-10 md:pt-20 pb-20 text-white"
+      >
+        <div class="flex md:flex-row flex-col justify-between items-start">
+          <!-- Logo and Description -->
+          <div class="md:w-[35%] ">
+            <img
+              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745614935/Sparkleklin/logo_white_mix_ftx0rf.png"
+              alt="Sparkleklin Logo"
+              class="w-38 pb-5"
+            />
+            <p class="font-urbanist text-md text-justify font-normal text-brand-ash leading-5">
+              Experience the difference with Sparkleklin's professional home cleaning services. From
+              top to bottom, we ensure every corner of your home/office sparkles with cleanliness
+              and care.
+            </p>
+          </div>
 
-        <div class="bg-black w-[100%] mx-auto rounded-3xl mt-25 px-20 pt-20 pb-20 text-white">
-          <div class="flex justify-between items-start">
-            <!-- Logo and Description -->
-            <div class="w-[35%]">
-              <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745614935/Sparkleklin/logo_white_mix_ftx0rf.png"
-                alt="Sparkleklin Logo"
-                class="w-38 pb-5"
-              />
-              <p class="font-urbanist text-md text-justify font-normal text-brand-ash leading-5">
-                Experience the difference with Sparkleklin's professional home cleaning services.
-                From top to bottom, we ensure every corner of your home/office sparkles with
-                cleanliness and care.
-              </p>
-            </div>
+          <!-- Links Section -->
+          <div class="md:w-[60%]">
+            <div class="flex flex-col md:flex-row justify-center gap-20">
+              <!-- Services -->
+              <div class="flex flex-col gap-3 text-brand-ash font-urbanist">
+                <p class="text-white text-lg font-semibold font-syne">Services</p>
+                <router-link
+                  v-for="service in services"
+                  :key="service.path"
+                  :to="service.path"
+                  class="hover:text-brand-main transition-colors duration-300"
+                >
+                  {{ service.name }}
+                </router-link>
+              </div>
 
-            <!-- Links Section -->
-            <div class="w-[60%]">
-              <div class="flex justify-center gap-20">
-                <!-- Services -->
-                <div class="flex flex-col gap-3 text-brand-ash font-urbanist">
-                  <p class="text-white text-lg font-semibold font-syne">Services</p>
-                  <router-link
-                    v-for="service in services"
-                    :key="service.path"
-                    :to="service.path"
-                    class="hover:text-brand-main transition-colors duration-300"
-                  >
-                    {{ service.name }}
-                  </router-link>
-                </div>
+              <!-- Useful Links -->
+              <div class="flex flex-col gap-3 text-brand-ash font-urbanist">
+                <p class="text-white text-lg font-semibold font-syne">Useful Links</p>
+                <router-link
+                  v-for="link in usefulLinks"
+                  :key="link.path"
+                  :to="link.path"
+                  class="hover:text-brand-main transition-colors duration-300"
+                >
+                  {{ link.name }}
+                </router-link>
+              </div>
 
-                <!-- Useful Links -->
-                <div class="flex flex-col gap-3 text-brand-ash font-urbanist">
-                  <p class="text-white text-lg font-semibold font-syne">Useful Links</p>
-                  <router-link
-                    v-for="link in usefulLinks"
-                    :key="link.path"
-                    :to="link.path"
-                    class="hover:text-brand-main transition-colors duration-300"
-                  >
-                    {{ link.name }}
-                  </router-link>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="flex flex-col gap-3 text-brand-ash font-urbanist">
-                  <p class="text-white text-lg font-semibold font-syne">Contact</p>
-                  <a
-                    v-for="contact in contactInfo"
-                    :key="contact.value"
-                    :href="contact.link"
-                    class="hover:text-brand-main transition-colors duration-300"
-                  >
-                    {{ contact.value }}
-                  </a>
-                </div>
+              <!-- Contact Info -->
+              <div class="flex flex-col gap-3 text-brand-ash font-urbanist">
+                <p class="text-white text-lg font-semibold font-syne">Contact</p>
+                <a
+                  v-for="contact in contactInfo"
+                  :key="contact.value"
+                  :href="contact.link"
+                  class="hover:text-brand-main transition-colors duration-300"
+                >
+                  {{ contact.value }}
+                </a>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Social Media and Copyright -->
-          <div class="-mt-5">
-            <div class="flex gap-5">
-              <a
-                v-for="social in socialMedia"
-                :key="social.name"
-                :href="social.link"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="border rounded-full p-2 text-brand-ash border-brand-ash hover:text-brand-main hover:border-brand-main transition-colors duration-300"
-              >
-                <Icon :icon="social.icon" width="24" height="24" />
-              </a>
-            </div>
-            <div class="text-brand-ash font-urbanist mt-15">
-              © {{ new Date().getFullYear() }} Copyright by Sparkleklin Inc.
-            </div>
+        <!-- Social Media and Copyright -->
+        <div class="md:-mt-5 mt-10">
+          <div class="flex gap-5">
+            <a
+              v-for="social in socialMedia"
+              :key="social.name"
+              :href="social.link"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="border rounded-full p-2 text-brand-ash border-brand-ash hover:text-brand-main hover:border-brand-main transition-colors duration-300"
+            >
+              <Icon :icon="social.icon" width="24" height="24" />
+            </a>
+          </div>
+          <div class="text-brand-ash font-urbanist mt-10 md:mt-15">
+            © {{ new Date().getFullYear() }} Copyright by Sparkleklin Inc.
           </div>
         </div>
       </div>
