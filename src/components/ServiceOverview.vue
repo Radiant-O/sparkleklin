@@ -1,6 +1,6 @@
 <template>
   <section class="service-overview bg-brand-ash/10 mt-10">
-    <div class="mx-25 pt-20 pb-20">
+    <div class="mx-5 md:mx-25 pt-10 md:pt-20 pb-20">
        <p class="font-syne text-4xl font-semibold">
           {{ title }}
         </p>
@@ -8,11 +8,11 @@
         {{ description }}
       </p>
 
-      <div class="flex justify-center w-full gap-8 pt-2">
+      <div class="flex flex-col md:flex-row justify-center w-full md:gap-8 pt-2">
         <div
           v-for="(feature, index) in features"
           :key="index"
-          :class="['flex items-start gap-3', columnClass]"
+          :class="['flex w-full items-start gap-3', columnClass]"
         >
           <img
             :src="iconUrl"
@@ -20,13 +20,13 @@
             class="w-7 h-7 bg-white p-1 rounded-xl"
           />
           <div>
-            <p class="font-urbanist font-semibold text-xl">{{ feature }}</p>
+            <p class="font-urbanist font-semibold">{{ feature }}</p>
           </div>
         </div>
       </div>
 
-      <div class="w-full mt-20">
-        <img :src="imageUrl" :alt="imageAlt" class="rounded-4xl w-full object-cover h-[35rem]" />
+      <div class="w-full mt-10 md:mt-20">
+        <img :src="imageUrl" :alt="imageAlt" class="rounded-4xl w-full md:object-cover h-[15rem] md:h-[35rem]" />
       </div>
     </div>
   </section>

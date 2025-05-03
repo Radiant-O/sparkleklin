@@ -29,10 +29,14 @@
           </router-link>
 
           <div v-else class="group cursor-pointer">
-            <div class="hover:text-brand-white flex items-center gap-1">
+            <router-link
+              :to="item.path"
+              class="hover:text-brand-white flex items-center gap-1"
+              :class="{ 'text-brand-main': isActive(item.path) }"
+            >
               {{ item.name }}
               <ChevronDown class="w-4 h-4" />
-            </div>
+            </router-link>
             <!-- Dropdown Menu -->
             <div
               class="invisible group-hover:visible absolute top-full left-0 mt-2 w-48 bg-[#191919] rounded-lg shadow-lg py-2"

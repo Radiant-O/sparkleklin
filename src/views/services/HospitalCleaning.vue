@@ -4,35 +4,27 @@
       <MainHeader />
     </div>
     <section class="c1">
-      <ServiceHero
-        imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/office_cle_o2maz1.png"
-        badge="DOMESTIC CLEANING"
-        title="Domestic Cleaning Service"
-        :description="`At Sparkleklin, we are an established, professional cleaning service provider and have extensiveexperience in cleaning of domestic premises, keeping your homes hygienically clean and tidy. 
-        \n We Provide a range of cleaning services that will keep your house feeling organized & comfortable. All our staff are insured and have been fully trained. you can relax, put your feet up and let us do the dirty work for you.`"
-        :features="[
-          'Don\'t allow your home to suffer',
-          'We are reliable and we genuinely care',
-          'All our cleaners are professionally trained',
-          'Great value for money',
-          'A comprehensive, one-stop service',
-        ]"
+      <ServiceHeroTwo
+        imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329784/Sparkleklin/woman-cleaning-ophthalmologist-s-office_i3o3h2.jpg"
+        badge="HOSPITAL CLEANING"
+        title="Hospital Cleaning Service"
+        :description="`Our Hospital cleaning services are indispensable for maintaining a clean, safe, healthy environment for patients, healthcare professionals, and visitors.\n All hospital areas, including patient rooms, operating rooms, laboratories, waiting rooms, and public spaces, will be carefully cleaned and sanitized as part of our hospital cleaning services. Typically, these services are provided by a trained and highly specialized cleaning staff that utilizes specialized equipment and products to ensure the hospital environment is free of harmful germs and bacteria.\n Our hospital cleaning services are essential to prevent the spread of infections and maintain the health and safety of patients and healthcare workers. `"
       />
     </section>
     <section class="c2">
       <section class="service-overview bg-brand-ash/10 mt-10">
         <div class="mx-5 md:mx-25 pt-20 pb-20">
-          <p class="font-syne text-2xl md:text-4xl font-semibold">
-            Here are some <span class="block">examples of cleaning:</span>
+          <p class="font-syne text-2xl md:text-5xl font-semibold">
+            Our hospital cleaning services <span class="block">can include, but not limited to:</span>
           </p>
-          <div class="font-urbanist text-lg -mt-6 font-normal text-brand-ash">
+          <!-- <div class="font-urbanist text-lg -mt-6 font-normal text-brand-ash">
             No office are alike, we will give you a detailed quote based on the size of your office
             and the specific needs of your business also help you save on costs wherever possible.
             <br />
             We will deliver according to your needs; your hours of business and your building type
             or environment to ensure your premises are cleaned to standard with minimal disruption.
             We will exceed your expectations; give us a call now for more information.
-          </div>
+          </div> -->
 
           <div class="grid md:grid-cols-2 w-full gap-3 mt-10">
             <div
@@ -43,7 +35,7 @@
               <img
                 src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
                 :alt="`feature_${index + 1}`"
-                class="w-5 h-5 md:w-7 md:h-7 bg-white p-1 rounded-xl"
+                class="w-7 h-7 bg-white p-1 rounded-xl"
               />
               <div>
                 <p class="font-urbanist font-semibold md:text-xl">{{ feature }}</p>
@@ -53,19 +45,16 @@
 
           <div class="w-full mt-20">
             <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329725/Sparkleklin/2577_ygmqnl.jpg"
+              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1746225638/Sparkleklin/Rectangle_1067330_esucsk.png"
               alt="imageAlt"
-              class="rounded-4xl w-full object-cover object-top h-[20rem] md:h-[35rem]"
+              class="rounded-4xl w-full object-cover h-[35rem]"
             />
           </div>
-          
+          <!-- <ServiceOverview /> -->
         </div>
       </section>
     </section>
-    <section>
-      <PrideComponent />
-    </section>
-    <section>
+    <section class="mt-10 md:mt-0">
       <WhatToOfferComponent />
     </section>
     <section>
@@ -96,13 +85,11 @@
 
 <script setup>
 import MainHeader from '@/components/MainHeader.vue'
-import ServiceHero from '@/components/ServiceHero.vue'
+import ServiceHeroTwo from '@/components/ServiceHeroTwo.vue'
 import WhatToOfferComponent from '@/components/WhatToOfferComponent.vue'
 import ImpactsComponent from '@/components/ImpactsComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import CardComponent from '@/components/CardComponent.vue'
-import PrideComponent from '@/components/PrideComponent.vue'
-
 // import ServiceOverview from '@/components/ServiceOverview.vue'
 
 const impactStats = [
@@ -129,34 +116,30 @@ const impactStats = [
 ]
 
 const features = [
-  'Full and deep dusting including all the corners of rooms for cobwebs',
-  'Washing all blinds',
-  'Windows cleaned fromInside',
-  'Inside of window frames and patio doors',
-  'Inside the oven including the oven',
-  'Under the sink',
-  'Behind kitchen appliances like the washing machine',
-  'Cutting through the grime that build up scale removal from all bathroom tiles, kitchen tiles, taps, shower heads etc',
+  'Patient rooms cleaning',
+  'Operating rooms cleaning',
+  'Laboratories room cleaning',
+  'Waiting rooms cleaning',
 ]
 
 const services = [
   {
-    title: 'Car Showroom',
-    slug: 'car-showroom',
+    title: 'Pubs, Clubs & Restaurants',
+    slug: 'pubs-clubs-restaurants',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/showroom_mgns43.png',
-  },
-   {
-    title: 'Sports & Leisure Centers',
-    slug: 'sports-leisure-centers',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329745/Sparkleklin/2148766021_fatbem.jpg',
+      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329760/Sparkleklin/Cleaning_Restaurant_Table-1920w_ebul5x.jpg',
   },
   {
     title: 'Shopping Mall',
     slug: 'supermarket',
     imageUrl:
       'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/supermarket_clea_hnjwfq.png',
+  },
+  {
+    title: 'Educational Center',
+    slug: 'educational-center',
+    imageUrl:
+      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/educationall_vlppma.png',
   },
 ]
 </script>

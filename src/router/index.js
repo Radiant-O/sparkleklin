@@ -40,6 +40,36 @@ const router = createRouter({
       component: () => import('../views/services/DomesticCleaning.vue'),
     },
     {
+      path: '/services/shopping-mall',
+      name: 'shopping-mall-cleaning',
+      component: () => import('../views/services/ShoppingMall.vue'),
+    },
+    {
+      path: '/services/education-centres',
+      name: 'education-centres-cleaning',
+      component: () => import('../views/services/EducationalCenter.vue'),
+    },
+    {
+      path: '/services/car-showroom',
+      name: 'car-showroom-cleaning',
+      component: () => import('../views/services/CarShowroom.vue'),
+    },
+    {
+      path: '/services/resturant',
+      name: 'resturant-cleaning',
+      component: () => import('../views/services/ResturantCleaning.vue'),
+    },
+    {
+      path: '/services/sport',
+      name: 'sportandleisure-cleaning',
+      component: () => import('../views/services/SportCleaning.vue'),
+    },
+    {
+      path: '/services/hospital',
+      name: 'hospital-cleaning',
+      component: () => import('../views/services/HospitalCleaning.vue'),
+    },
+    {
       path: '/gallery',
       name: 'gallery',
       component: () => import('../views/galleryPage.vue'),

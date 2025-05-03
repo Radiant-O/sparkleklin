@@ -1,17 +1,17 @@
 <template>
-  <div class="mx-20 pt-20 pb-20">
+  <div class="mx-5 md:mx-20 pt-20 pb-20">
     <!-- Header Section -->
-    <div class="mx-auto w-full text-center">
-      <p class="font-syne text-4xl w-[35%] mx-auto font-bold">
+    <div class="md:mx-auto w-full text-center">
+      <p class="font-syne text-3xl md:text-4xl md:w-[35%] mx-auto font-bold">
         {{ title }}
       </p>
-      <div class="font-urbanist text-lg -mt-5 font-normal text-brand-ash w-[35%] mx-auto">
+      <div class="font-urbanist text-lg -mt-5 font-normal text-brand-ash md:w-[35%] mx-auto">
         {{ description }}
       </div>
     </div>
 
-    <div class="flex justify-center gap-10  pt-10">
-      <div class="bg-brand-ash/5 w-[30%] bg-opacity-90 p-10 rounded-3xl shadow-lg">
+    <div class="flex md:flex-row flex-col justify-center gap-10  pt-10">
+      <div class="bg-brand-ash/5 md:w-[30%] bg-opacity-90 p-10 rounded-3xl shadow-lg">
     <Icon
           icon="material-symbols:laundry"
           width="40"
@@ -25,7 +25,7 @@
           </p>
         </div>
       </div>
-      <div class="bg-brand-ash/5 w-[30%] bg-opacity-90 p-10 rounded-3xl shadow-lg">
+      <div class="bg-brand-ash/5 md:w-[30%] bg-opacity-90 p-10 rounded-3xl shadow-lg">
        <Icon
           icon="gridicons:house"
           width="40"
@@ -39,7 +39,7 @@
           </p>
         </div>
       </div>
-      <div class="bg-brand-ash/5 w-[30%] bg-opacity-90 p-10 rounded-3xl shadow-lg">
+      <div class="bg-brand-ash/5 md:w-[30%] bg-opacity-90 p-10 rounded-3xl shadow-lg">
         <Icon
           icon="bxs:shopping-bag"
           width="40"

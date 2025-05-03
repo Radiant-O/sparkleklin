@@ -33,19 +33,19 @@
         imageAlt="Commercial cleaning service"
       />
     </section>
-    <section>
+    <section class="mt-10 md:mt-0">
       <WhatToOfferComponent />
     </section>
     <section>
       <ImpactsComponent :stats="impactStats" />
     </section>
     <section class="other-services">
-      <div class="mx-25 pt-20">
+      <div class="mx-5 md:mx-25 pt-20">
         <div class="flex justify-between">
-          <p class="font-syne text-3xl font-bold">Other Services</p>
+          <p class="font-syne text-xl md:text-3xl font-bold">Other Services</p>
           <p class="font-urbanist text-xl">See All</p>
         </div>
-        <div class="grid grid-cols-3 justify-between gap-14">
+        <div class="grid md:grid-cols-3 justify-between gap-14">
           <CardComponent
             v-for="service in services"
             :key="service.title"

@@ -5,31 +5,30 @@
     </div>
     <section class="c1">
       <ServiceHeroTwo
-        imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329734/Sparkleklin/445-NEW_fsjpvn.png"
-        badge="OFFICE CLEANING"
-        title="Office Cleaning Service"
-        :description="`At Sparkleklin Cleaning, our strength comes from satisfying and putting our customers first, we clean to protect your health and your environment.. \n
-        We know that having clean and tidy reception areas and washrooms is important to you so we'll always ensure your front of house is as clean and well-presented as possible. Our office cleaning services is customized to your company needs.
-        We can put in place daily, weekly, fortnightly or monthly cleaning agreement. We pay attention to details so incredible result every time.\n
-        We ensure that your cleaning is consistently delivered to a high standard providing peace of mind that will meet with on-going compliance assessments. We provide a professional service every time so rest assured, plus, to give you peace of mind, we will complete audits and frequent spot checks to ensure the cleaning you receive from us is of a high standard on a consistent basis.`"
+        imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329766/Sparkleklin/car%20showroom.jpg"
+        badge="CAR SHOWROOM CENTRES CLEANING"
+        title="Car Showroom Cleaning Service"
+        :description="`We know that having clean and tidy reception areas and washrooms is important to you so we'll always ensure your front of house is as clean and well-presented as possible. It is very important that the showroom and the reception areas also look at their best. Sparkleklin offers a comprehensive cleaning service, aimed specifically at car showrooms and show homes to help achieve this standard.`"
       />
     </section>
     <section class="c2">
       <section class="service-overview bg-brand-ash/10 mt-10">
         <div class="mx-5 md:mx-25 pt-20 pb-20">
           <p class="font-syne text-2xl md:text-5xl font-semibold">
-            Our Office Cleaning <span class="block">Options Include Thorough:</span>
+            Our Car Showroom Cleaning <span class="block">Process Includes:</span>
           </p>
           <div class="font-urbanist text-lg -mt-6 font-normal text-brand-ash">
-            No office are alike, we will give you a detailed quote based on the size of your office
-            and the specific needs of your business also help you save on costs wherever possible.
+            We ensure that all the flooring found in your showrooms is as clean and shiny as the
+            cars, ensuring the only things to notice in the showroom are the cars and display units
+            for sale. We will provide a cleaning specification for individual areas including
+            showrooms, entrance and reception areas, offices, kitchens and washrooms.
             <br />
-            We will deliver according to your needs; your hours of business and your building type
-            or environment to ensure your premises are cleaned to standard with minimal disruption.
-            We will exceed your expectations; give us a call now for more information.
+            Such plans will include periodic cleans generally on a rotation basis. These will cover
+            floor polishing and and tasks such as phone sanitising. Toilet consumables will be
+            replenished daily and if required feminine hygiene services also provided.
           </div>
 
-          <div class="grid md:grid-cols-2 w-full gap-3 mt-10">
+          <!-- <div class="grid md:grid-cols-2 w-full gap-3 mt-10">
             <div
               v-for="(feature, index) in features"
               :key="index"
@@ -44,11 +43,11 @@
                 <p class="font-urbanist font-semibold md:text-xl">{{ feature }}</p>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div class="w-full mt-20">
             <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329795/Sparkleklin/office.jpg"
+              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329765/Sparkleklin/car-mechanic-cleaning-garage-floor-auto-industry-shop-workshop_rvqrcp.jpg"
               alt="imageAlt"
               class="rounded-4xl w-full object-cover h-[35rem]"
             />
@@ -118,12 +117,12 @@ const impactStats = [
   },
 ]
 
-const features = [
-  'Restrooms cleaning, Bin emptying, Vacuuming, mopping, and polishing floors and surfaces.',
-  'Disinfecting high touch areas, stairs, elevators and other high traffic areas.',
-  'Surface Dusting, Kitchen or lounge cleaning, washing up tea cups and plates.',
-  'Reception areas and foyers, Vacuuming of carpets, spot cleaning, telephones sanitized and more.',
-]
+// const features = [
+//   'Restrooms cleaning, Bin emptying, Vacuuming, mopping, and polishing floors and surfaces.',
+//   'Disinfecting high touch areas, stairs, elevators and other high traffic areas.',
+//   'Surface Dusting, Kitchen or lounge cleaning, washing up tea cups and plates.',
+//   'Reception areas and foyers, Vacuuming of carpets, spot cleaning, telephones sanitized and more.',
+// ]
 
 const services = [
   {

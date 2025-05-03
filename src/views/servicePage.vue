@@ -3,15 +3,15 @@
     <div class="sticky top-0 z-50 w-full">
       <MainHeader />
     </div>
-    <section class="mx-25 mt-20">
-      <div class="flex justify-center w-full">
+    <section class="mx-5 md:mx-25 mt-25">
+      <div class="flex md:flex-row flex-col justify-center w-full">
         <div class="w-[100%]">
           <p
             class="font-urbanist text-brand-main w-fit px-2 py-1 font-semibold text-lg bg-brand-main/20 rounded-2xl"
           >
             OUR SERVICES
           </p>
-          <p class="font-syne font-semibold text-4xl w-[60%]">
+          <p class="font-syne font-semibold text-2xl md:text-4xl md:w-[60%]">
             Professional Cleaning Services for Every Home
           </p>
         </div>
@@ -22,7 +22,7 @@
           </p>
         </div>
       </div>
-      <div class="grid grid-cols-3 justify-between gap-14">
+      <div class="grid md:grid-cols-3 justify-between gap-14">
         <CardComponent
           v-for="service in services"
           :key="service.title"

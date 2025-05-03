@@ -18,7 +18,7 @@
       v-show="isOpen"
       class="mt-4 font-urbanist text-brand-ash overflow-hidden transition-all duration-300"
     >
-      <p class="text-lg">{{ content }}</p>
+      <p>{{ content }}</p>
     </div>
   </div>
 </template>

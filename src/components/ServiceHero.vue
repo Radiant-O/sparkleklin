@@ -1,13 +1,13 @@
 <template>
   <section class="service-hero">
     <div
-      class="bg-brand-ash/5 bg-opacity-90 rounded-3xl flex py-20 px-28 justify-center items-center mt-10 mx-10"
+      class="bg-brand-ash/5 bg-opacity-90 rounded-3xl flex flex-col-reverse md:flex-row gap-8 md:gap-0 py-20 md:px-28 justify-center items-center mt-10 mx-5 md:mx-10"
     >
-      <div class="w-[100%] flex justify-between items-center ">
+      <div class="w-[100%] flex  justify-between items-center ">
         <img
           :src="imageUrl"
           :alt="title"
-          class="w-[80%] h-[45rem] object-cover rounded-3xl shadow-lg"
+          class="md:w-[80%] h-[45rem] object-cover rounded-3xl shadow-lg"
         />
       </div>
       <div class="w-[100%]">
@@ -16,18 +16,18 @@
         >
           {{ badge }}
         </p>
-        <div class="font-syne text-5xl font-semibold">
+        <div class="font-syne text-3xl md:text-5xl font-semibold">
           <p>{{ titleFirstPart }}</p>
           <div class="-mt-10">{{ titleSecondPart }}</div>
         </div>
-        <div class="font-urbanist text-lg pt-2 font-light text-gray-500 text-justify w-[75%]">
+        <div class="font-urbanist text-lg pt-2 font-light text-gray-500 text-justify md:w-[75%]">
           {{ description }}
         </div>
         <div class="mt-5">
-          <div v-for="(feature, index) in features" :key="index" class="flex items-start gap-5">
-            <img :src="iconUrl" alt="feature_icon" class="w-7 h-7 bg-white p-1 rounded-xl" />
+          <div v-for="(feature, index) in features" :key="index" class="flex items-start gap-2 md:gap-5">
+            <img :src="iconUrl" alt="feature_icon" class="w-5 h-5 md:w-7 md:h-7 bg-white p-1 rounded-xl" />
             <div>
-              <p class="font-urbanist font-semibold text-xl">
+              <p class="font-urbanist font-semibold text-normal md:text-xl">
                 {{ feature }}
               </p>
             </div>

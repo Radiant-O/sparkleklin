@@ -1,13 +1,13 @@
 <template>
   <section class="service-hero">
     <div
-      class="bg-brand-ash/5 bg-opacity-90 rounded-3xl flex py-20 px-28 justify-center items-center mt-10 mx-10"
+      class="bg-brand-ash/5 bg-opacity-90 rounded-3xl flex flex-col-reverse md:flex-row py-20 md:px-28 justify-center items-center mt-10 px-5 md:mx-10"
     >
       <div class="w-[100%] flex justify-between items-center">
         <img
           :src="imageUrl"
           :alt="title"
-          class="w-[80%] h-[45rem] object-cover rounded-3xl shadow-lg"
+          class="md:w-[80%] md:h-[45rem] h-[30rem] object-cover rounded-3xl shadow-lg"
         />
       </div>
       <div class="w-[100%]">
@@ -16,12 +16,12 @@
         >
           {{ badge }}
         </p>
-        <div class="font-syne text-5xl font-semibold">
+        <div class="font-syne text-3xl md:text-5xl font-semibold">
           <p>{{ titleFirstPart }}</p>
           <div class="-mt-10">{{ titleSecondPart }}</div>
         </div>
         <div
-          class="font-urbanist text-lg mt-5 font-light text-gray-500 leading-7 text-justify w-[75%]"
+          class="font-urbanist text-lg mt-5 font-light text-gray-500 leading-7 text-justify md:w-[75%]"
         >
           <p
             v-for="(paragraph, index) in formattedDescription"
@@ -32,7 +32,7 @@
           </p>
         </div>
 
-        <div class="mt-8">
+        <div class="mt-8 mb-10 md:mt-0">
           <ButtonComponent
             :buttonText="buttonText"
             width="auto"
