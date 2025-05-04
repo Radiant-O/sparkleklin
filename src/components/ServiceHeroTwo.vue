@@ -7,7 +7,7 @@
         <img
           :src="imageUrl"
           :alt="title"
-          class="md:w-[80%] md:h-[45rem] h-[30rem] object-cover rounded-3xl shadow-lg"
+          class="w-full md:w-[80%] md:h-[45rem] h-[30rem] object-cover rounded-3xl shadow-lg"
         />
       </div>
       <div class="w-[100%]">

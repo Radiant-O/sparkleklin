@@ -70,6 +70,41 @@ const router = createRouter({
       component: () => import('../views/services/HospitalCleaning.vue'),
     },
     {
+      path: '/special-cleaning/contract',
+      name: 'contract-cleaning',
+      component: () => import('../views/special/ContractCleaning.vue'),
+    },
+    {
+      path: '/special-cleaning/deep',
+      name: 'deepcleaning',
+      component: () => import('../views/special/DeepCleaning.vue'),
+    },
+    {
+      path: '/special-cleaning/after-building',
+      name: 'afterbuilding',
+      component: () => import('../views/special/AfterBuilding.vue'),
+    },
+    {
+      path: '/special-cleaning/spring',
+      name: 'springcleaning',
+      component: () => import('../views/special/SpringCleaning.vue'),
+    },
+    {
+      path: '/special-cleaning/event-or-party',
+      name: 'eventorparty',
+      component: () => import('../views/special/EventCleaning.vue'),
+    },
+    {
+      path: '/special-cleaning/tenancycleaning',
+      name: 'tenancycleaning',
+      component: () => import('../views/special/TenancyCleaning.vue'),
+    },
+    {
+      path: '/special-cleaning/decluttercleaning',
+      name: 'decluttercleaning',
+      component: () => import('../views/special/DeclutteringCleaning.vue'),
+    },
+    {
       path: '/gallery',
       name: 'gallery',
       component: () => import('../views/galleryPage.vue'),
