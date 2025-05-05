@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="reveal">
     <div class="sticky top-0 z-50 w-full">
       <MainHeader />
     </div>
@@ -167,6 +167,9 @@ import FooterComponent from '@/components/FooterComponent.vue'
 import CardComponent from '@/components/CardComponent.vue'
 import ButtonComponent from '@/components/ButtonComponent.vue'
 // import ServiceOverview from '@/components/ServiceOverview.vue'
+import { useScrollAnimation } from '@/composables/useScrollAnimation'
+
+useScrollAnimation()
 
 const impactStats = [
   {

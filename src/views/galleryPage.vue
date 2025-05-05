@@ -1,10 +1,13 @@
 <script setup>
 import FooterComponent from '@/components/FooterComponent.vue';
 import MainHeader from '@/components/MainHeader.vue'
+import { useScrollAnimation } from '@/composables/useScrollAnimation'
+
+useScrollAnimation()
 </script>
 
 <template>
-  <div>
+  <div class="reveal">
     <div class="sticky top-0 z-50 w-full">
       <MainHeader />
     </div>

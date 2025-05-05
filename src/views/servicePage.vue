@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="reveal">
     <div class="sticky top-0 z-50 w-full">
       <MainHeader />
     </div>
@@ -42,6 +42,9 @@
 import MainHeader from '@/components/MainHeader.vue'
 import CardComponent from '@/components/CardComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
+import { useScrollAnimation } from '@/composables/useScrollAnimation'
+
+useScrollAnimation()
 
 const services = [
   {

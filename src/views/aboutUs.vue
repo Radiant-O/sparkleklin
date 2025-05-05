@@ -1,5 +1,5 @@
 <template>
-  <section class="">
+  <section class="reveal">
     <div class="sticky top-0 z-50 w-full">
       <MainHeader />
     </div>
@@ -109,6 +109,9 @@ import WhatToExpectComponent from '@/components/WhatToExpectComponent.vue'
 import WhatToOfferComponent from '@/components/WhatToOfferComponent.vue'
 import WhyUsComponent from '@/components/WhyUsComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
+import { useScrollAnimation } from '@/composables/useScrollAnimation'
+
+useScrollAnimation()
 
 const expectFeatures = [
   {

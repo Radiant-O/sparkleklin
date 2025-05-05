@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="reveal">
     <div class="sticky top-0 z-50 w-full">
       <MainHeader />
     </div>
@@ -498,6 +498,9 @@ import { ArrowUpRight } from 'lucide-vue-next'
 import { ref, reactive } from 'vue'
 import MainHeader from '@/components/MainHeader.vue'
 import { Icon } from '@iconify/vue'
+import { useScrollAnimation } from '@/composables/useScrollAnimation'
+
+useScrollAnimation()
 
 const hasFormErrors = ref(false)
 const errors = reactive({})

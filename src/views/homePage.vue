@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="reveal">
     <!-- Sticky Header -->
     <div class="sticky top-0 z-50 w-full">
       <MainHeader />
@@ -175,6 +175,9 @@ import TestimonialComponent from '@/components/TestimonialComponent.vue'
 import ImpactsComponent from '@/components/ImpactsComponent.vue'
 import WhatToExpectComponent from '@/components/WhatToExpectComponent.vue'
 import TestingComponent from '@/components/TestingComponent.vue'
+import { useScrollAnimation } from '@/composables/useScrollAnimation'
+
+useScrollAnimation()
 
 const backgroundImages = [
   'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329764/Sparkleklin/hero_3_cahozr.jpg',
@@ -369,7 +372,7 @@ const expectFeatures = [
 </script>
 
 <style scoped>
-.fade-enter-active,
+/* .fade-enter-active,
 .fade-leave-active {
   transition: opacity 1s ease;
 }
@@ -382,5 +385,5 @@ const expectFeatures = [
 .fade-enter-to,
 .fade-leave-from {
   opacity: 1;
-}
+} */
 </style>
