@@ -213,7 +213,7 @@
                     <!-- Address Line 2 -->
                     <div class="form-group">
                       <label class="font-urbanist mb-2 block"
-                        >Address Line 2 <span class="text-red-700">*</span></label
+                        >Address Line 2</label
                       >
                       <input
                         v-model="form.addressline"
@@ -275,15 +275,54 @@
                   <!-- Submit Button -->
                   <div class="mt-8">
                     <button
-                      class="flex items-center justify-center rounded-4xl border border-brand-ash/15 px-1.5 py-1.5 font-urbanist font-semibold text-[1.2em] text-brand-white gap-2 bg-brand-main cursor-pointer"
+                      type="submit"
+                      :disabled="isSubmitting"
+                      class="flex items-center justify-center rounded-4xl border border-brand-ash/15 px-1.5 py-1.5 font-urbanist font-semibold text-[1.2em] text-brand-white gap-2 bg-brand-main cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                      <span
-                        ><ArrowUpRight
+                      <span v-if="isSubmitting" class="animate-spin mr-2">
+                        <svg
+                          class="w-6 h-6"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                        >
+                          <circle
+                            class="opacity-25"
+                            cx="12"
+                            cy="12"
+                            r="10"
+                            stroke="currentColor"
+                            stroke-width="4"
+                          ></circle>
+                          <path
+                            class="opacity-75"
+                            fill="currentColor"
+                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                          ></path>
+                        </svg>
+                      </span>
+                      <span v-else>
+                        <ArrowUpRight
                           class="text-brand-main bg-white w-12 h-12 rounded-full p-[0.7rem]"
                         />
                       </span>
-                      <span class="text-brand-white text-xl font-urbanist pr-4">Get in touch!</span>
+                      <span class="text-brand-white text-xl font-urbanist pr-4">
+                        {{ isSubmitting ? 'Submitting...' : 'Get in touch!' }}
+                      </span>
                     </button>
+                  </div>
+                  <div
+                    v-if="showSuccess"
+                    class="fixed top-5 right-5 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-xl shadow-lg z-50 flex items-center gap-2"
+                  >
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <span>Contact Form submitted successfully!</span>
                   </div>
                 </form>
               </div>
@@ -390,6 +429,8 @@ import { ref, reactive } from 'vue'
 import MainHeader from '@/components/MainHeader.vue'
 import { Icon } from '@iconify/vue'
 
+const isSubmitting = ref(false)
+const showSuccess = ref(false)
 const form = reactive({
   firstName: '',
   lastName: '',
@@ -408,6 +449,7 @@ const form = reactive({
   state: '',
   country: 'United Kingdom',
   subject: '',
+  headersubject: 'New Request Form Submitted!',
 })
 
 const errors = reactive({})
@@ -452,25 +494,46 @@ const validateForm = () => {
   return Object.keys(newErrors).length === 0
 }
 
-const handleSubmit = (event) => {
+const handleSubmit = async (event) => {
   event.preventDefault()
   hasFormErrors.value = false
 
   if (validateForm()) {
-    console.log('Form submitted:', form)
-    alert('Form submitted successfully!')
-    // Reset form
-    Object.keys(form).forEach((key) => {
-      if (key !== 'country') form[key] = ''
-    })
+    isSubmitting.value = true
+    try {
+      const response = await fetch('https://hook.eu2.make.com/dcvbne4wixk9oufemwi1naqy7f7cobm4', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form)
+      })
+
+      if (response.ok) {
+        // Reset form
+        Object.keys(form).forEach((key) => {
+          if (key !== 'country') form[key] = ''
+        })
+        // Show success message
+        showSuccess.value = true
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+          showSuccess.value = false
+        }, 5000)
+      } else {
+        throw new Error('Failed to submit form')
+      }
+    } catch (error) {
+      console.error('Submission error:', error)
+      alert('Failed to submit form. Please try again.')
+    } finally {
+      isSubmitting.value = false
+    }
   } else {
     hasFormErrors.value = true
-
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 }
-
-
 
 const services = [
   { name: 'Commercial Cleaning', path: '/services/commercial' },
@@ -496,8 +559,16 @@ const contactInfo = [
 
 const socialMedia = [
   { name: 'Twitter', icon: 'proicons:x-twitter', link: 'https://x.com/sparklekli57710?s=21' },
-  { name: 'Instagram', icon: 'mdi:instagram', link: 'https://www.instagram.com/sparkleklin?igsh=OThwcjl1dG0zazFr&utm_source=qr' },
-  { name: 'Tiktok', icon: 'ic:outline-tiktok', link: 'https://www.tiktok.com/@sparkleklin?_t=ZN-8vff1WNWVUc&_r=1' },
+  {
+    name: 'Instagram',
+    icon: 'mdi:instagram',
+    link: 'https://www.instagram.com/sparkleklin?igsh=OThwcjl1dG0zazFr&utm_source=qr',
+  },
+  {
+    name: 'Tiktok',
+    icon: 'ic:outline-tiktok',
+    link: 'https://www.tiktok.com/@sparkleklin?_t=ZN-8vff1WNWVUc&_r=1',
+  },
 ]
 </script>
 

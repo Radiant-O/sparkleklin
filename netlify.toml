@@ -4,6 +4,9 @@
   functions = "netlify/functions"
 
 [[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
+  from = "/*"
+  to = "/index.html"
   status = 200
+
+[build.environment]
+  VITE_APP_ENV = "production"

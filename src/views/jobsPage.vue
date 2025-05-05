@@ -132,7 +132,7 @@
                     <!-- Address Line 2 -->
                     <div class="form-group">
                       <label class="font-urbanist mb-2 block"
-                        >Address Line 2 <span class="text-red-700">*</span></label
+                        >Address Line 2 </label
                       >
                       <input
                         v-model="form.addressline"
@@ -216,7 +216,7 @@
                         ></label
                       >
                       <select
-                        v-model="cleaningexp"
+                        v-model="form.cleaningexp"
                         class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
                         :class="{ 'border-red-500': errors.cleaningexp }"
                       >
@@ -254,7 +254,7 @@
                         ></label
                       >
                       <select
-                        v-bind="drivinglicense"
+                        v-model="form.drivinglicense"
                         class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
                         :class="{ 'border-red-500': errors.drivinglicense }"
                       >
@@ -270,29 +270,29 @@
                       <label class="font-urbanist mb-2 block"
                         >Best time to call you back <span class="text-red-700">*</span></label
                       >
-                      <div class="flex gap-2">
-                        <div>
+                      <div class="flex gap-5">
+                        <div class="">
                           <input
                             v-model="form.hh"
                             placeholder="HH"
-                            class="px-5 py-5 w-1/3 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                            class="px-5 w-[100%] py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
                             :class="{ 'border-red-500 bg-red-50': errors.hh }"
                           />
                           <span class="text-red-500 text-sm">{{ errors.hh }}</span>
                         </div>
-                        <div>
+                        <div class="">
                           <input
                             v-model="form.mm"
                             placeholder="MM"
-                            class="px-5 py-5 w-1/3 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                            class="px-5 py-5 w-[100%] text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
                             :class="{ 'border-red-500 bg-red-50': errors.mm }"
                           />
                           <span class="text-red-500 text-sm">{{ errors.mm }}</span>
                         </div>
-                        <div>
+                        <div class="w-full">
                           <select
                             v-model="form.am_pm"
-                            class="md:w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                            class="px-5 py-5 w-full text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
                             :class="{ 'border-red-500': errors.am_pm }"
                           >
                             <option value="AM" selected>AM</option>
@@ -318,35 +318,88 @@
                     <span class="text-red-500 text-sm">{{ errors.message }}</span>
                   </div>
                   <div class="form-group mt-6">
+                    <label class="font-urbanist mb-2 block font-semibold">
+                      Please Accept Our Terms & Conditions:<span class="text-red-700">*</span>
+                    </label>
+                    <div class="flex items-center">
+                      <input
+                        type="checkbox"
+                        v-model="form.tc"
+                        class="w-5 h-5 rounded-xl border border-gray-300 text-brand-main focus:ring-brand-main"
+                        :class="{ 'border-red-500': errors.tc }"
+                      />
+                      <label class="font-urbanist mb-0 pl-3 text-lg"
+                        >I accept the Terms & Conditions</label
+                      >
+                    </div>
+                    <span class="text-red-500 text-sm block mt-1">{{ errors.tc }}</span>
+                  </div>
+                  <!-- <div class="form-group mt-6">
                     <label class="font-urbanist mb-2 block font-semibold"
                       >Please Accept Our Terms & Conditions:<span class="text-red-700"
                         >*</span
                       ></label
                     >
-                      <input
-                        type="checkbox"
-                        v-model="form.tc"
-                        class="rounded-xl border border-gray-300"
-                        :class="{ 'border-red-500 bg-red-50': errors.tc }"
-                      />
-                      <label class="font-urbanist mb-2 pl-3 text-lg">T&C accepted</label>
-                      <span class="text-red-500 text-sm">{{ errors.tc }}</span>
-                  </div>
+                    <input
+                      type="checkbox"
+                      v-model="form.tc"
+                      class="rounded-xl border border-gray-300"
+                      :class="{ 'border-red-500 bg-red-50': errors.tc }"
+                    />
+                    <label class="font-urbanist mb-2 pl-3 text-lg">T&C accepted</label>
+                    <span class="text-red-500 text-sm">{{ errors.tc }}</span>
+                  </div> -->
                   <!-- Submit Button -->
                   <div class="mt-8">
                     <button
-                    type="submit"
-                      class="flex items-center justify-center rounded-4xl border border-brand-ash/15 px-1.5 py-1.5 font-urbanist font-semibold text-[1.2em] text-brand-white gap-2 bg-brand-main cursor-pointer"
+                      type="submit"
+                      :disabled="isSubmitting"
+                      class="flex items-center justify-center rounded-4xl border border-brand-ash/15 px-1.5 py-1.5 font-urbanist font-semibold text-[1.2em] text-brand-white gap-2 bg-brand-main cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                      <span
-                        ><ArrowUpRight
+                      <span v-if="isSubmitting" class="animate-spin mr-2">
+                        <svg
+                          class="w-6 h-6"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                        >
+                          <circle
+                            class="opacity-25"
+                            cx="12"
+                            cy="12"
+                            r="10"
+                            stroke="currentColor"
+                            stroke-width="4"
+                          ></circle>
+                          <path
+                            class="opacity-75"
+                            fill="currentColor"
+                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                          ></path>
+                        </svg>
+                      </span>
+                      <span v-else>
+                        <ArrowUpRight
                           class="text-brand-main bg-white w-12 h-12 rounded-full p-[0.7rem]"
                         />
                       </span>
-                      <span class="text-brand-white text-xl font-urbanist pr-4"
-                        >Submit your info</span
-                      >
+                      <span class="text-brand-white text-xl font-urbanist pr-4">
+                        {{ isSubmitting ? 'Submitting...' : 'Get in touch!' }}
+                      </span>
                     </button>
+                  </div>
+                  <div
+                    v-if="showSuccess"
+                    class="fixed top-5 right-5 bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-xl shadow-lg z-50 flex items-center gap-2"
+                  >
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <span>Application Form submitted successfully!</span>
                   </div>
                 </Form>
               </div>
@@ -448,7 +501,8 @@ import { Icon } from '@iconify/vue'
 
 const hasFormErrors = ref(false)
 const errors = reactive({})
-
+const isSubmitting = ref(false)
+const showSuccess = ref(false)
 const form = reactive({
   firstName: '',
   lastName: '',
@@ -466,10 +520,9 @@ const form = reactive({
   cleaningexp: '',
   workauthorised: '',
   drivinglicense: '',
-  hh: '',
-  mm: '',
-  am_pm: '',
+  time: '',
   message: '',
+  headersubject: 'New Job Application Form Submitted'
 })
 
 const validateForm = () => {
@@ -489,13 +542,14 @@ const validateForm = () => {
   if (!form.apartment) newErrors.apartment = 'Please Enter apartment'
   if (!form.dbscert) newErrors.dbscert = 'Please select if you have a dbs certificate or not'
   if (!form.cleaningexp) newErrors.cleaningexp = 'Let us know if you have work experience'
-  if (!form.workauthorised) newErrors.workauthorised = 'Please select if you have work authorization or not '
+  if (!form.workauthorised)
+    newErrors.workauthorised = 'Please select if you have work authorization or not '
   if (!form.drivinglicense) newErrors.drivinglicense = 'Please select if you have a driver license'
   if (!form.message) newErrors.message = 'Message are required'
 
   // Email validation
   if (form.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
-    newErrors.email = 'Please enter a valid email address' 
+    newErrors.email = 'Please enter a valid email address'
   }
 
   // Phone validation
@@ -508,24 +562,72 @@ const validateForm = () => {
     newErrors.hoursPerVisit = 'Minimum 1 hour required'
   }
 
+  if (!form.tc) {
+    newErrors.tc = 'You must accept the Terms & Conditions to proceed'
+  }
+
+  const timePattern = /^(0?[1-9]|1[0-2]):[0-5][0-9] (AM|PM)$/
+  const formattedTime = `${form.hh}:${form.mm} ${form.am_pm}`
+  if (!formattedTime.match(timePattern)) {
+    newErrors.time = 'Please enter a valid time'
+  }
+
   Object.assign(errors, newErrors)
   return Object.keys(newErrors).length === 0
 }
 
-const handleSubmit = (event) => {
+const updateTime = () => {
+  if (form.hh && form.mm && form.am_pm) {
+    // Pad hours and minutes with leading zeros if needed
+    const hours = form.hh.padStart(2, '0')
+    const minutes = form.mm.padStart(2, '0')
+    form.time = `${hours}:${minutes} ${form.am_pm}`
+  }
+}
+
+const handleSubmit = async (event) => {
   event.preventDefault()
   hasFormErrors.value = false
 
+  updateTime()
   if (validateForm()) {
-    console.log('Form submitted:', form)
-    alert('Form submitted successfully!')
-    // Reset form
-    Object.keys(form).forEach((key) => {
-      if (key !== 'country') form[key] = ''
-    })
+    isSubmitting.value = true
+    try {
+      const formData = { ...form }
+      delete formData.hh
+      delete formData.mm
+      delete formData.am_pm
+
+      const response = await fetch('https://hook.eu2.make.com/dcvbne4wixk9oufemwi1naqy7f7cobm4', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form),
+      })
+
+      if (response.ok) {
+        // Reset form
+        Object.keys(form).forEach((key) => {
+          if (key !== 'country') form[key] = ''
+        })
+        // Show success message
+        showSuccess.value = true
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+          showSuccess.value = false
+        }, 5000)
+      } else {
+        throw new Error('Failed to submit form')
+      }
+    } catch (error) {
+      console.error('Submission error:', error)
+      alert('Failed to submit form. Please try again.')
+    } finally {
+      isSubmitting.value = false
+    }
   } else {
     hasFormErrors.value = true
-
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 }
