@@ -22,7 +22,7 @@
           <div class="md:w-[100%] md:border border-brand-ash/20 md:px-5 md:px-10 py-2 rounded-xl">
             <div>
               <div>
-                <Form @submit="onSubmit" class="mt-10">
+                <Form @submit="handleSubmit" class="mt-10">
                   <div class="grid md:grid-cols-2 space-y-5 md:space-x-8">
                     <div class="form-group">
                       <p class="font-syne text-xl font-semibold">Location and Hours: Various</p>
@@ -36,14 +36,13 @@
                       <label class="font-urbanist mb-2 block"
                         >First Name <span class="text-red-700">*</span></label
                       >
-                      <Field name="firstName" type="text" v-slot="{ field, errors }">
-                        <input
-                          v-bind="field"
-                          class="w-full px-5 py-5 rounded-xl text-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                          :class="{ 'border-red-500 bg-red-50': errors.length }"
-                        />
-                        <span class="text-red-500 text-sm">{{ errors[0] }}</span>
-                      </Field>
+                      <input
+                        v-model="form.firstName"
+                        type="text"
+                        class="w-full px-5 py-5 rounded-xl text-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                        :class="{ 'border-red-500 bg-red-50': errors.firstName }"
+                      />
+                      <span class="text-red-500 text-sm">{{ errors.firstName }}</span>
                     </div>
 
                     <!-- Last Name -->
@@ -51,14 +50,12 @@
                       <label class="font-urbanist mb-2 block"
                         >Last Name <span class="text-red-700">*</span></label
                       >
-                      <Field name="lastName" type="text" v-slot="{ field, errors }">
-                        <input
-                          v-bind="field"
-                          class="w-full px-5 py-5 rounded-xl text-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                          :class="{ 'border-red-500 bg-red-50': errors.length }"
-                        />
-                        <span class="text-red-500 text-sm">{{ errors[0] }}</span>
-                      </Field>
+                      <input
+                        v-model="form.lastName"
+                        class="w-full px-5 py-5 rounded-xl text-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                        :class="{ 'border-red-500 bg-red-50': errors.lastName }"
+                      />
+                      <span class="text-red-500 text-sm">{{ errors.lastName }}</span>
                     </div>
 
                     <!-- Phone -->
@@ -66,14 +63,12 @@
                       <label class="font-urbanist mb-2 block"
                         >Phone <span class="text-red-700">*</span></label
                       >
-                      <Field name="phone" type="tel" v-slot="{ field, errors }">
-                        <input
-                          v-bind="field"
-                          class="w-full px-5 py-5 rounded-xl text-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                          :class="{ 'border-red-500 bg-red-50': errors.length }"
-                        />
-                        <span class="text-red-500 text-sm">{{ errors[0] }}</span>
-                      </Field>
+                      <input
+                        v-model="form.phone"
+                        class="w-full px-5 py-5 rounded-xl text-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                        :class="{ 'border-red-500 bg-red-50': errors.phone }"
+                      />
+                      <span class="text-red-500 text-sm">{{ errors.phone }}</span>
                     </div>
 
                     <!-- DOB -->
@@ -81,20 +76,18 @@
                       <label class="font-urbanist mb-2 block"
                         >Date of Birth <span class="text-red-700">*</span></label
                       >
-                      <Field name="cleaningDate" v-slot="{ field, errors }">
-                        <div class="relative">
-                          <input
-                            type="date"
-                            v-bind="field"
-                            class="w-full px-5 py-5 rounded-xl text-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                            :class="{ 'border-red-500 bg-red-50': errors.length }"
-                          />
-                          <span class="absolute right-3 top-3">
-                            <i class="fas fa-calendar"></i>
-                          </span>
-                        </div>
-                        <span class="text-red-500 text-sm">{{ errors[0] }}</span>
-                      </Field>
+                      <div class="relative">
+                        <input
+                          type="date"
+                          v-model="form.dob"
+                          class="w-full px-5 py-5 rounded-xl text-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                          :class="{ 'border-red-500 bg-red-50': errors.dob }"
+                        />
+                        <span class="absolute right-3 top-3">
+                          <i class="fas fa-calendar"></i>
+                        </span>
+                      </div>
+                      <span class="text-red-500 text-sm">{{ errors.dob }}</span>
                     </div>
 
                     <!-- Email -->
@@ -102,14 +95,12 @@
                       <label class="font-urbanist mb-2 block"
                         >Email address <span class="text-red-700">*</span></label
                       >
-                      <Field name="email" type="email" v-slot="{ field, errors }">
-                        <input
-                          v-bind="field"
-                          class="w-full px-5 py-5 rounded-xl text-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                          :class="{ 'border-red-500 bg-red-50': errors.length }"
-                        />
-                        <span class="text-red-500 text-sm">{{ errors[0] }}</span>
-                      </Field>
+                      <input
+                        v-model="form.email"
+                        class="w-full px-5 py-5 rounded-xl text-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                        :class="{ 'border-red-500 bg-red-50': errors.email }"
+                      />
+                      <span class="text-red-500 text-sm">{{ errors.email }}</span>
                     </div>
 
                     <!-- Address -->
@@ -117,14 +108,12 @@
                       <label class="font-urbanist mb-2 block"
                         >Address <span class="text-red-700">*</span></label
                       >
-                      <Field name="address" type="text" v-slot="{ field, errors }">
-                        <input
-                          v-bind="field"
-                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                          :class="{ 'border-red-500 bg-red-50': errors.length }"
-                        />
-                        <span class="text-red-500 text-sm">{{ errors[0] }}</span>
-                      </Field>
+                      <input
+                        v-model="form.address"
+                        class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                        :class="{ 'border-red-500 bg-red-50': errors.address }"
+                      />
+                      <span class="text-red-500 text-sm">{{ errors.address }}</span>
                     </div>
 
                     <!-- Street Address -->
@@ -132,14 +121,12 @@
                       <label class="font-urbanist mb-2 block"
                         >Street Address <span class="text-red-700">*</span></label
                       >
-                      <Field name="streetaddress" type="text" v-slot="{ field, errors }">
-                        <input
-                          v-bind="field"
-                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                          :class="{ 'border-red-500 bg-red-50': errors.length }"
-                        />
-                        <span class="text-red-500 text-sm">{{ errors[0] }}</span>
-                      </Field>
+                      <input
+                        v-model="form.streetaddress"
+                        class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                        :class="{ 'border-red-500 bg-red-50': errors.streetaddress }"
+                      />
+                      <span class="text-red-500 text-sm">{{ errors.streetaddress }}</span>
                     </div>
 
                     <!-- Address Line 2 -->
@@ -147,25 +134,21 @@
                       <label class="font-urbanist mb-2 block"
                         >Address Line 2 <span class="text-red-700">*</span></label
                       >
-                      <Field name="addressline" type="text" v-slot="{ field, errors }">
-                        <input
-                          v-bind="field"
-                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                          :class="{ 'border-red-500 bg-red-50': errors.length }"
-                        />
-                      </Field>
+                      <input
+                        v-model="form.addressline"
+                        class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                      />
                     </div>
 
                     <!-- Apartment, building, etc.(optional) -->
                     <div class="form-group">
                       <label class="font-urbanist mb-2 block">Apartment, building, etc. </label>
-                      <Field name="apartment" type="text" v-slot="{ field, errors }">
-                        <input
-                          v-bind="field"
-                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                          :class="{ 'border-red-500 bg-red-50': errors.length }"
-                        />
-                      </Field>
+                      <input
+                        v-model="form.apartment"
+                        class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                        :class="{ 'border-red-500 bg-red-50': errors.apartment }"
+                      />
+                      <span class="text-red-500 text-sm">{{ errors.apartment }}</span>
                     </div>
 
                     <!-- Zip Code -->
@@ -173,13 +156,12 @@
                       <label class="font-urbanist mb-2 block"
                         >Zip / Postal Code<span class="text-red-700">*</span></label
                       >
-                      <Field name="zipcode" type="text" v-slot="{ field, errors }">
-                        <input
-                          v-bind="field"
-                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                          :class="{ 'border-red-500 bg-red-50': errors.length }"
-                        />
-                      </Field>
+                      <input
+                        v-model="form.zipcode"
+                        class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                        :class="{ 'border-red-500 bg-red-50': errors.zipcode }"
+                      />
+                      <span class="text-red-500 text-sm">{{ errors.zipcode }}</span>
                     </div>
 
                     <!-- City -->
@@ -187,14 +169,12 @@
                       <label class="font-urbanist mb-2 block"
                         >City <span class="text-red-700">*</span></label
                       >
-                      <Field name="city" type="text" v-slot="{ field, errors }">
-                        <input
-                          v-bind="field"
-                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                          :class="{ 'border-red-500 bg-red-50': errors.length }"
-                        />
-                        <span class="text-red-500 text-sm">{{ errors[0] }}</span>
-                      </Field>
+                      <input
+                        v-model="form.city"
+                        class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                        :class="{ 'border-red-500 bg-red-50': errors.city }"
+                      />
+                      <span class="text-red-500 text-sm">{{ errors.city }}</span>
                     </div>
 
                     <!-- State-->
@@ -202,14 +182,12 @@
                       <label class="font-urbanist mb-2 block"
                         >State / Province / Region <span class="text-red-700">*</span></label
                       >
-                      <Field name="state" type="text" v-slot="{ field, errors }">
-                        <input
-                          v-bind="field"
-                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                          :class="{ 'border-red-500 bg-red-50': errors.length }"
-                        />
-                        <span class="text-red-500 text-sm">{{ errors[0] }}</span>
-                      </Field>
+                      <input
+                        v-model="form.state"
+                        class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                        :class="{ 'border-red-500 bg-red-50': errors.state }"
+                      />
+                      <span class="text-red-500 text-sm">{{ errors.state }}</span>
                     </div>
 
                     <!-- DBS Cert -->
@@ -218,18 +196,16 @@
                         >Do you hold a DBS (Disclosure and Barring Service) Certificate
                         <span class="text-red-700">*</span></label
                       >
-                      <Field name="dbscertificate" v-slot="{ field, errors }">
-                        <select
-                          v-bind="field"
-                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                          :class="{ 'border-red-500': errors.length }"
-                        >
-                          <option value="">Select an option</option>
-                          <option value="yes">Yes</option>
-                          <option value="no">No</option>
-                        </select>
-                        <span class="text-red-500 text-sm">{{ errors[0] }}</span>
-                      </Field>
+                      <select
+                        v-model="form.dbscert"
+                        class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                        :class="{ 'border-red-500': errors.dbscert }"
+                      >
+                        <option value="">Select an option</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                      </select>
+                      <span class="text-red-500 text-sm">{{ errors.dbscert }}</span>
                     </div>
 
                     <!-- Cleaning Experience -->
@@ -239,18 +215,16 @@
                           >*</span
                         ></label
                       >
-                      <Field name="cleaningexperience" v-slot="{ field, errors }">
-                        <select
-                          v-bind="field"
-                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                          :class="{ 'border-red-500': errors.length }"
-                        >
-                          <option value="">Select an option</option>
-                          <option value="yes">Yes</option>
-                          <option value="no">No</option>
-                        </select>
-                        <span class="text-red-500 text-sm">{{ errors[0] }}</span>
-                      </Field>
+                      <select
+                        v-model="cleaningexp"
+                        class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                        :class="{ 'border-red-500': errors.cleaningexp }"
+                      >
+                        <option value="">Select an option</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                      </select>
+                      <span class="text-red-500 text-sm">{{ errors.cleaningexp }}</span>
                     </div>
 
                     <!-- Authorised to work -->
@@ -260,18 +234,16 @@
                           >*</span
                         ></label
                       >
-                      <Field name="workauthorised" v-slot="{ field, errors }">
-                        <select
-                          v-bind="field"
-                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                          :class="{ 'border-red-500': errors.length }"
-                        >
-                          <option value="">Select an option</option>
-                          <option value="yes">Yes</option>
-                          <option value="no">No</option>
-                        </select>
-                        <span class="text-red-500 text-sm">{{ errors[0] }}</span>
-                      </Field>
+                      <select
+                        v-model="form.workauthorised"
+                        class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                        :class="{ 'border-red-500': errors.workauthorised }"
+                      >
+                        <option value="">Select an option</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                      </select>
+                      <span class="text-red-500 text-sm">{{ errors.workauthorised }}</span>
                     </div>
 
                     <!-- Driving License -->
@@ -281,18 +253,16 @@
                           >*</span
                         ></label
                       >
-                      <Field name="cleaningexperience" v-slot="{ field, errors }">
-                        <select
-                          v-bind="field"
-                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                          :class="{ 'border-red-500': errors.length }"
-                        >
-                          <option value="">Select an option</option>
-                          <option value="yes">Yes</option>
-                          <option value="no">No</option>
-                        </select>
-                        <span class="text-red-500 text-sm">{{ errors[0] }}</span>
-                      </Field>
+                      <select
+                        v-bind="drivinglicense"
+                        class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                        :class="{ 'border-red-500': errors.drivinglicense }"
+                      >
+                        <option value="">Select an option</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                      </select>
+                      <span class="text-red-500 text-sm">{{ errors.drivinglicense }}</span>
                     </div>
 
                     <!-- Date-->
@@ -301,35 +271,35 @@
                         >Best time to call you back <span class="text-red-700">*</span></label
                       >
                       <div class="flex gap-2">
-                        <Field name="hh" type="text" v-slot="{ field, errors }">
+                        <div>
                           <input
-                            v-bind="field"
+                            v-model="form.hh"
                             placeholder="HH"
                             class="px-5 py-5 w-1/3 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                            :class="{ 'border-red-500 bg-red-50': errors.length }"
+                            :class="{ 'border-red-500 bg-red-50': errors.hh }"
                           />
-                          <span class="text-red-500 text-sm">{{ errors[0] }}</span>
-                        </Field>
-                        <Field name="mm" type="text" v-slot="{ field, errors }">
+                          <span class="text-red-500 text-sm">{{ errors.hh }}</span>
+                        </div>
+                        <div>
                           <input
-                            v-bind="field"
+                            v-model="form.mm"
                             placeholder="MM"
                             class="px-5 py-5 w-1/3 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                            :class="{ 'border-red-500 bg-red-50': errors.length }"
+                            :class="{ 'border-red-500 bg-red-50': errors.mm }"
                           />
-                          <span class="text-red-500 text-sm">{{ errors[0] }}</span>
-                        </Field>
-                        <Field name="am-pm" v-slot="{ field, errors }">
+                          <span class="text-red-500 text-sm">{{ errors.mm }}</span>
+                        </div>
+                        <div>
                           <select
-                            v-bind="field"
+                            v-model="form.am_pm"
                             class="md:w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                            :class="{ 'border-red-500': errors.length }"
+                            :class="{ 'border-red-500': errors.am_pm }"
                           >
                             <option value="AM" selected>AM</option>
                             <option value="PM">PM</option>
                           </select>
-                          <span class="text-red-500 text-sm">{{ errors[0] }}</span>
-                        </Field>
+                          <span class="text-red-500 text-sm">{{ errors.am_pm }}</span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -339,15 +309,13 @@
                         >*</span
                       ></label
                     >
-                    <Field name="message" v-slot="{ field, errors }">
-                      <textarea
-                        v-bind="field"
-                        rows="6"
-                        class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
-                        :class="{ 'border-red-500 bg-red-200': errors.length }"
-                      ></textarea>
-                      <span class="text-red-500 text-sm">{{ errors[0] }}</span>
-                    </Field>
+                    <textarea
+                      v-model="form.message"
+                      rows="6"
+                      class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                      :class="{ 'border-red-500 bg-red-200': errors.message }"
+                    ></textarea>
+                    <span class="text-red-500 text-sm">{{ errors.message }}</span>
                   </div>
                   <div class="form-group mt-6">
                     <label class="font-urbanist mb-2 block font-semibold"
@@ -355,20 +323,19 @@
                         >*</span
                       ></label
                     >
-                    <Field name="t&c" v-slot="{ field, errors }">
                       <input
                         type="checkbox"
-                        v-bind="field"
+                        v-model="form.tc"
                         class="rounded-xl border border-gray-300"
-                        :class="{ 'border-red-500 bg-red-50': errors.length }"
+                        :class="{ 'border-red-500 bg-red-50': errors.tc }"
                       />
                       <label class="font-urbanist mb-2 pl-3 text-lg">T&C accepted</label>
-                      <span class="text-red-500 text-sm">{{ errors[0] }}</span>
-                    </Field>
+                      <span class="text-red-500 text-sm">{{ errors.tc }}</span>
                   </div>
                   <!-- Submit Button -->
                   <div class="mt-8">
                     <button
+                    type="submit"
                       class="flex items-center justify-center rounded-4xl border border-brand-ash/15 px-1.5 py-1.5 font-urbanist font-semibold text-[1.2em] text-brand-white gap-2 bg-brand-main cursor-pointer"
                     >
                       <span
@@ -475,74 +442,93 @@
 
 <script setup>
 import { ArrowUpRight } from 'lucide-vue-next'
-import { Form, Field } from 'vee-validate'
-import { ref } from 'vue'
+import { ref, reactive } from 'vue'
 import MainHeader from '@/components/MainHeader.vue'
-import * as yup from 'yup'
-import { useForm } from 'vee-validate'
 import { Icon } from '@iconify/vue'
 
 const hasFormErrors = ref(false)
+const errors = reactive({})
 
-const validationSchema = yup.object({
-  firstName: yup.string().required('First name is required'),
-  lastName: yup.string().required('Last name is required'),
-  phone: yup
-    .string()
-    .matches(/^[\d\s+()-]+$/, 'Please enter a valid phone number')
-    .required('Phone number is required'),
-  email: yup.string().email('Invalid email').required('Email is required'),
-  cleaningDate: yup.string().required('Cleaning date is required'), // Changed from date() to string()
-  service: yup.string().required('Service selection is required'),
-  hoursPerVisit: yup.number().min(1).required('Hours per visit is required'),
-  frequency: yup.string().required('Frequency is required'),
-  daysfrequency: yup.string().required('Days selection is required'),
-  oftenfrequency: yup.string().required('How often cleaning required selection is required'),
-  address: yup.string().required('Address is required'),
-  streetaddress: yup.string().required('Street Address is required'),
-  city: yup.string().required('City is required'),
-  state: yup.string().required('State is required'),
-  country: yup.string().default('United Kingdom'),
-  subject: yup.string().required('Give us few details'),
-})
-
-const initialValues = {
+const form = reactive({
   firstName: '',
   lastName: '',
   phone: '',
   email: '',
-  cleaningDate: '',
-  service: '',
-  hoursPerVisit: '',
-  frequency: '',
-  daysfrequency: '',
-  oftenfrequency: '',
+  dob: '',
   address: '',
+  addressline: '',
   streetaddress: '',
+  zipcode: '',
+  apartment: '',
   city: '',
   state: '',
-  country: 'United Kingdom',
-  subject: '',
-}
-
-const { handleSubmit, resetForm } = useForm({
-  validationSchema,
-  initialValues,
+  dbscert: '',
+  cleaningexp: '',
+  workauthorised: '',
+  drivinglicense: '',
+  hh: '',
+  mm: '',
+  am_pm: '',
+  message: '',
 })
 
-const onSubmit = handleSubmit(
-  (values) => {
-    console.log('Form submitted:', values)
-    hasFormErrors.value = false
+const validateForm = () => {
+  const newErrors = {}
+
+  // Required field validation
+  if (!form.firstName) newErrors.firstName = 'First name is required'
+  if (!form.lastName) newErrors.lastName = 'Last name is required'
+  if (!form.phone) newErrors.phone = 'Phone number is required'
+  if (!form.email) newErrors.email = 'Email is required'
+  if (!form.dob) newErrors.dob = 'Date of Birth is required'
+  if (!form.address) newErrors.address = 'Address is required'
+  if (!form.streetaddress) newErrors.streetaddress = 'Street address is required'
+  if (!form.city) newErrors.city = 'City is required'
+  if (!form.state) newErrors.state = 'State is required'
+  if (!form.zipcode) newErrors.zipcode = 'Please Enter Zipcode'
+  if (!form.apartment) newErrors.apartment = 'Please Enter apartment'
+  if (!form.dbscert) newErrors.dbscert = 'Please select if you have a dbs certificate or not'
+  if (!form.cleaningexp) newErrors.cleaningexp = 'Let us know if you have work experience'
+  if (!form.workauthorised) newErrors.workauthorised = 'Please select if you have work authorization or not '
+  if (!form.drivinglicense) newErrors.drivinglicense = 'Please select if you have a driver license'
+  if (!form.message) newErrors.message = 'Message are required'
+
+  // Email validation
+  if (form.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
+    newErrors.email = 'Please enter a valid email address' 
+  }
+
+  // Phone validation
+  if (form.phone && !/^[\d\s+()-]+$/.test(form.phone)) {
+    newErrors.phone = 'Please enter a valid phone number'
+  }
+
+  // Hours validation
+  if (form.hoursPerVisit && Number(form.hoursPerVisit) < 1) {
+    newErrors.hoursPerVisit = 'Minimum 1 hour required'
+  }
+
+  Object.assign(errors, newErrors)
+  return Object.keys(newErrors).length === 0
+}
+
+const handleSubmit = (event) => {
+  event.preventDefault()
+  hasFormErrors.value = false
+
+  if (validateForm()) {
+    console.log('Form submitted:', form)
     alert('Form submitted successfully!')
-    resetForm()
-  },
-  (errors) => {
-    console.log('Validation errors:', errors)
+    // Reset form
+    Object.keys(form).forEach((key) => {
+      if (key !== 'country') form[key] = ''
+    })
+  } else {
     hasFormErrors.value = true
+
     window.scrollTo({ top: 0, behavior: 'smooth' })
-  },
-)
+  }
+}
 
 const services = [
   { name: 'Commercial Cleaning', path: '/services/commercial' },
@@ -568,8 +554,16 @@ const contactInfo = [
 
 const socialMedia = [
   { name: 'Twitter', icon: 'proicons:x-twitter', link: 'https://x.com/sparklekli57710?s=21' },
-  { name: 'Instagram', icon: 'mdi:instagram', link: 'https://www.instagram.com/sparkleklin?igsh=OThwcjl1dG0zazFr&utm_source=qr' },
-  { name: 'Tiktok', icon: 'ic:outline-tiktok', link: 'https://www.tiktok.com/@sparkleklin?_t=ZN-8vff1WNWVUc&_r=1' },
+  {
+    name: 'Instagram',
+    icon: 'mdi:instagram',
+    link: 'https://www.instagram.com/sparkleklin?igsh=OThwcjl1dG0zazFr&utm_source=qr',
+  },
+  {
+    name: 'Tiktok',
+    icon: 'ic:outline-tiktok',
+    link: 'https://www.tiktok.com/@sparkleklin?_t=ZN-8vff1WNWVUc&_r=1',
+  },
 ]
 </script>
 
