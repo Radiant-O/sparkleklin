@@ -174,7 +174,7 @@ import FooterComponent from '@/components/FooterComponent.vue'
 import TestimonialComponent from '@/components/TestimonialComponent.vue'
 import ImpactsComponent from '@/components/ImpactsComponent.vue'
 import WhatToExpectComponent from '@/components/WhatToExpectComponent.vue'
-import TestingComponent from '@/components/TestingComponent.vue'
+// import TestingComponent from '@/components/TestingComponent.vue'
 import { useScrollAnimation } from '@/composables/useScrollAnimation'
 
 useScrollAnimation()
