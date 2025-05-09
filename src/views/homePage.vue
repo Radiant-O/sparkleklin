@@ -137,7 +137,7 @@
       </div>
     </section>
     <!-- <AboutComponent /> -->
-    <TestingComponent />
+    <!-- <TestingComponent /> -->
 
     <section class="whychoose">
       <WhyUsComponent

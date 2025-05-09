@@ -138,6 +138,11 @@ const router = createRouter({
       component: () => import('../views/faqsPage.vue'),
     },
     {
+      path: '/aboutcc',
+      name: 'aboutcc',
+      component: () => import('../components/CircleArc.vue'),
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'not-found',
       component: () => import('../views/NotFound.vue'),

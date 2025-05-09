@@ -27,11 +27,10 @@ useScrollAnimation()
           <p class="font-urbanist md:mx-auto md:text-center md:w-[50%] text-lg font-normal text-brand-ash">
             Explore our galery to see a curated selection of projects that showcase our creatiity
             and expertise. Each piece tells a unique story and reflects our commitment to innovative
-            design
+            design.
           </p>
         </div>
       </div>
-
       <div class="flex flex-col md:flex-row gap-10 g1">
         <div class="md:w-2/3 relative h-[25rem] md:h-[500px] group">
           <img

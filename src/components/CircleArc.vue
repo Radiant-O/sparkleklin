@@ -1,47 +1,136 @@
 <template>
-  <div class="relative flex items-center justify-center">
-    <svg
-      width="200"
-      height="200"
-      class="absolute inset-0"
-      viewBox="0 0 200 200"
-    >
-      <g transform="translate(100, 100)">
-        <g v-for="(image, index) in images" :key="index">
-          <image
-            :href="image"
-            width="40" 
-            height="40"
-            :transform="'rotate(' + ((index / images.length) * 360) + ') translate(70, 0) rotate(-' + ((index / images.length) * 360) + ')'"
-            clip-path="url(#clip)"
-          />
-        </g>
-      </g>
-    </svg>
-    <div class="bg-white rounded-full p-4 text-center z-10">
-      <span class="font-bold text-lg">{{ centeredText }}</span>
+  <section>
+    <div class="container">
+      <div class="box">
+        <div class="img">
+          <div class="imgBx" style="--i: 1">
+            <img
+              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745512033/Sparkleklin/clearnerchoose_ibnkwe.png"
+              alt=""
+            />
+          </div>
+          <div class="imgBx" style="--i: 2">
+            <img
+              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745512033/Sparkleklin/clearnerchoose_ibnkwe.png"
+              alt=""
+            />
+          </div>
+          <div class="imgBx" style="--i: 3">
+            <img
+              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745512033/Sparkleklin/clearnerchoose_ibnkwe.png"
+              alt=""
+            />
+          </div>
+          <div class="imgBx" style="--i: 4">
+            <img
+              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745512033/Sparkleklin/clearnerchoose_ibnkwe.png"
+              alt=""
+            />
+          </div>
+          <div class="imgBx" style="--i: 5">
+            <img
+              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745512033/Sparkleklin/clearnerchoose_ibnkwe.png"
+              alt=""
+            />
+          </div>
+          <div class="imgBx" style="--i: 6">
+            <img
+              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745512033/Sparkleklin/clearnerchoose_ibnkwe.png"
+              alt=""
+            />
+          </div>
+          <div class="imgBx" style="--i: 7">
+            <img
+              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745512033/Sparkleklin/clearnerchoose_ibnkwe.png"
+              alt=""
+            />
+          </div>
+          <div class="imgBx" style="--i: 8">
+            <img
+              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745512033/Sparkleklin/clearnerchoose_ibnkwe.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
-<script>
-export default {
-  name: 'CircleArc',
-  props: {
-    images: {
-      type: Array,
-      required: true,
-    },
-    centeredText: {
-      type: String,
-      default: 'Centered Text',
-    },
-  },
-};
-</script>
+<script></script>
 
 <style scoped>
-svg {
-  transform: rotate(-90deg); /* Rotate to start from the top */
+section{
+  /* display: flex; */
+  width: 100vh;
+  margin: 0 auto;
+   /* justify-content: center;
+   align-items: center; */
+  min-height: 100vh;
+  background: #222;
+  overflow: hidden;
+} 
+.container{
+  width: fit-content;
+  /* margin: 0 auto; */
+}
+.box{
+  position:relative;
+  top: 0;
+  width: 100vh;
+  height: 100vh;
+  animation: animate 15s linear infinite;
+}
+@keyframes animate {
+  0%{
+    rotate: 0deg;
+  }
+  100%{
+    rotate: 360deg;
+  }
+}
+.container:hover .box{
+  animation-play-state: paused;
+}
+.img{
+  position: relative;
+  left:-50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.img .imgBx{
+  position: absolute;
+  width: 300px;
+  height:400px;
+  border-radius: 5%;
+  box-shadow: 0 0 0 2px #fff;
+  transform: rotate(calc(360deg/8 * var(--i)));
+  transform-origin: 50vh;
+}
+.img .imgBx img{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+  transform: rotate(calc(-360deg/8 * var(--i)));
+  animation: animateImgBx 15s linear infinite;
+}
+.container:hover .img .imgBx img{
+  animation-play-state: paused;
+}
+@keyframes animateImgBx {
+  0%{
+    rotate: 0deg;
+  }
+  100%{
+    rotate: -360deg;
+  }
 }
 </style>

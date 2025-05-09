@@ -31,14 +31,14 @@
           <div v-else class="group cursor-pointer">
             <router-link
               :to="item.path"
-              class="hover:text-brand-white flex items-center gap-1"
+              class="hover:text-brand-white flex items-center gap-1 pb-2"
               :class="{ 'text-brand-main': isActive(item.path) }"
             >
               {{ item.name }}
               <ChevronDown class="w-4 h-4" />
             </router-link>
             <!-- Dropdown Menu -->
-            <div
+            <!-- <div
               class="invisible group-hover:visible absolute top-full left-0 mt-2 w-48 bg-[#191919] rounded-lg shadow-lg py-2"
             >
               <router-link
@@ -46,6 +46,21 @@
                 :key="subItem.name"
                 :to="subItem.path"
                 class="block px-4 py-2 text-brand-ash hover:text-brand-white hover:bg-[#252525]"
+                :class="{ 'text-brand-main': isActive(subItem.path) }"
+              >
+                {{ subItem.name }}
+              </router-link>
+            </div> -->
+            <div
+              class="invisible group-hover:visible opacity-0 group-hover:opacity-100 absolute left-0 w-52 bg-[#191919] rounded-lg shadow-lg py-2 transition-all duration-300 ease-in-out"
+              style="top: calc(100% - 8px)"
+            >
+              <div class="absolute -top-2 left-0 right-0 h-4 bg-transparent"></div>
+              <router-link
+                v-for="subItem in item.dropdown"
+                :key="subItem.name"
+                :to="subItem.path"
+                class="block px-4 py-2 text-brand-ash hover:text-brand-white hover:bg-[#252525] transition-colors duration-200"
                 :class="{ 'text-brand-main': isActive(subItem.path) }"
               >
                 {{ subItem.name }}
