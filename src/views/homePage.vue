@@ -50,10 +50,12 @@
       </div> -->
       <div class="relative z-10 flex flex-col justify-center h-full">
         <div class="text-center text-white">
-          <p class="font-bold text-4xl md:text-6xl md:w-1/2 md:mx-auto font-syne ">
+          <p class="font-bold text-4xl md:text-6xl md:w-1/2 md:mx-auto font-syne">
             Sparkling Clean Homes, Every Time
           </p>
-          <div class="font-urbanist text-lg text-white/90 md:w-[40%] px-2 md:px-0 -mt-8 mx-auto mb-6">
+          <div
+            class="font-urbanist text-lg text-white/90 md:w-[40%] px-2 md:px-0 -mt-8 mx-auto mb-6"
+          >
             Experience the ultimate in home cleaning services. Our team delivers exceptional
             results, ensuring your home is spotless and inviting.
           </div>
@@ -69,7 +71,7 @@
         </div>
       </div>
     </div>
-    <section class=" mx-5 md:mx-25 mt-20">
+    <section class="mx-5 md:mx-25 mt-20">
       <div class="flex flex-col md:flex-row justify-center w-full">
         <div class="w-[100%]">
           <p
@@ -77,7 +79,7 @@
           >
             OUR SERVICES
           </p>
-          <p class="font-syne font-semibold text-2xl md:text-4xl  md:w-[60%]">
+          <p class="font-syne font-semibold text-2xl md:text-4xl md:w-[60%]">
             Professional Cleaning Services for Every Home
           </p>
         </div>
@@ -138,7 +140,12 @@
     </section>
     <!-- <AboutComponent /> -->
     <!-- <TestingComponent /> -->
-
+    <CircleArc
+      backgroundColor="#000856"
+      title="ABOUT US"
+      subtitle="Trusted Home Cleaning\nExperts Since 2025"
+      description="At Sparkleklin, we are dedicated to delivering top-notch home cleaning services, ensuring your home is always spotless, comfortable, and inviting."
+    />
     <section class="whychoose">
       <WhyUsComponent
         imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745512033/Sparkleklin/clearnerchoose_ibnkwe.png"
@@ -174,6 +181,7 @@ import FooterComponent from '@/components/FooterComponent.vue'
 import TestimonialComponent from '@/components/TestimonialComponent.vue'
 import ImpactsComponent from '@/components/ImpactsComponent.vue'
 import WhatToExpectComponent from '@/components/WhatToExpectComponent.vue'
+import CircleArc from '@/components/CircleArc.vue'
 // import TestingComponent from '@/components/TestingComponent.vue'
 import { useScrollAnimation } from '@/composables/useScrollAnimation'
 
