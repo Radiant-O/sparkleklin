@@ -131,9 +131,7 @@
 
                     <!-- Address Line 2 -->
                     <div class="form-group">
-                      <label class="font-urbanist mb-2 block"
-                        >Address Line 2 </label
-                      >
+                      <label class="font-urbanist mb-2 block">Address Line 2 </label>
                       <input
                         v-model="form.addressline"
                         class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
@@ -246,6 +244,29 @@
                       <span class="text-red-500 text-sm">{{ errors.workauthorised }}</span>
                     </div>
 
+                    <!-- Visa -->
+                    <div class="form-group">
+                      <label class="font-urbanist mb-2 block"
+                        >Type of Visa<span class="text-red-700">*</span></label
+                      >
+                      <select
+                        v-model="form.visatype"
+                        class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                        :class="{ 'border-red-500': errors.visatype }"
+                      >
+                        <option value="">Select an option</option>
+                        <option value="work_visa">Work Visa</option>
+                        <option value="study_visa">Study Visa</option>
+                        <option value="family_visa">Family Visa</option>
+                        <option value="visitor_visa">Visitor Visa</option>
+                        <option value="asylum_visa">Asylum & Humaniterian Visa</option>
+                        <option value="ilr_visa">
+                          Settlement and Indefinite Leave to Remain (ILR)
+                        </option>
+                      </select>
+                      <span class="text-red-500 text-sm">{{ errors.visatype }}</span>
+                    </div>
+
                     <!-- Driving License -->
                     <div class="form-group">
                       <label class="font-urbanist mb-2 block"
@@ -263,6 +284,19 @@
                         <option value="no">No</option>
                       </select>
                       <span class="text-red-500 text-sm">{{ errors.drivinglicense }}</span>
+                    </div>
+                    <!-- Availability -->
+                    <div class="form-group">
+                      <label class="font-urbanist mb-2 block"
+                        >How many hours would you be available to work?
+                        <span class="text-red-700">*</span></label
+                      >
+                      <input
+                        v-model="form.availability"
+                        class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                        :class="{ 'border-red-500 bg-red-50': errors.availability }"
+                      />
+                      <span class="text-red-500 text-sm">{{ errors.availability }}</span>
                     </div>
 
                     <!-- Date-->
@@ -301,6 +335,44 @@
                           <span class="text-red-500 text-sm">{{ errors.am_pm }}</span>
                         </div>
                       </div>
+                    </div>
+
+                    <!-- Resume Upload -->
+                    <div class="form-group">
+                      <label class="font-urbanist mb-2 block">
+                        Upload your CV/Resume <span class="text-red-700">*</span>
+                      </label>
+                      <div class="relative">
+                        <input
+                          type="file"
+                          @change="handleFileUpload"
+                          accept=".pdf,.doc,.docx"
+                          class="hidden"
+                          ref="fileInput"
+                        />
+                        <button
+                          type="button"
+                          @click="$refs.fileInput.click()"
+                          class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main flex items-center gap-2"
+                          :class="{ 'border-red-500 bg-red-50': errors.resume }"
+                        >
+                          <span v-if="form.resume">
+                            {{ form.resume.name }}
+                          </span>
+                          <span v-else> Click to upload CV/Resume </span>
+                        </button>
+                        <span
+                          v-if="form.resume"
+                          @click="removeFile"
+                          class="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer text-red-500"
+                        >
+                          ✕
+                        </span>
+                      </div>
+                      <p class="text-sm text-gray-500 mt-1">
+                        Accepted formats: PDF, DOC, DOCX (Max 5MB)
+                      </p>
+                      <span class="text-red-500 text-sm">{{ errors.resume }}</span>
                     </div>
                   </div>
                   <div class="form-group mt-6">
@@ -523,9 +595,12 @@ const form = reactive({
   cleaningexp: '',
   workauthorised: '',
   drivinglicense: '',
+  visatype: '',
+  availability: '',
+  resume: null,
   time: '',
   message: '',
-  headersubject: 'New Job Application Form Submitted'
+  headersubject: 'New Job Application Form Submitted',
 })
 
 const validateForm = () => {
@@ -546,7 +621,10 @@ const validateForm = () => {
   if (!form.dbscert) newErrors.dbscert = 'Please select if you have a dbs certificate or not'
   if (!form.cleaningexp) newErrors.cleaningexp = 'Let us know if you have work experience'
   if (!form.workauthorised)
-    newErrors.workauthorised = 'Please select if you have work authorization or not '
+    newErrors.workauthorised = 'Please select if you have work authorization or not'
+  if (!form.visatype) newErrors.visatype = 'Please select your visa type'
+  if (!form.availability) newErrors.availability = 'Please specify your available hours'
+  if (!form.resume) newErrors.resume = 'Please upload your CV/Resume'
   if (!form.drivinglicense) newErrors.drivinglicense = 'Please select if you have a driver license'
   if (!form.message) newErrors.message = 'Message are required'
 
@@ -569,6 +647,21 @@ const validateForm = () => {
     newErrors.tc = 'You must accept the Terms & Conditions to proceed'
   }
 
+  if (form.resume) {
+    const allowedTypes = [
+      'application/pdf',
+      'application/msword',
+      'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+    ]
+    if (!allowedTypes.includes(form.resume.type)) {
+      newErrors.resume = 'Please upload PDF or Word document only'
+    }
+    // Check if file is larger than 5MB
+    if (form.resume.size > 5 * 1024 * 1024) {
+      newErrors.resume = 'File size should be less than 5MB'
+    }
+  }
+
   const timePattern = /^(0?[1-9]|1[0-2]):[0-5][0-9] (AM|PM)$/
   const formattedTime = `${form.hh}:${form.mm} ${form.am_pm}`
   if (!formattedTime.match(timePattern)) {
@@ -588,6 +681,24 @@ const updateTime = () => {
   }
 }
 
+const handleFileUpload = (event) => {
+  const file = event.target.files[0]
+  if (file) {
+    form.resume = file
+    // Clear any previous error
+    if (errors.resume) {
+      delete errors.resume
+    }
+  }
+}
+
+const removeFile = () => {
+  form.resume = null
+  if (errors.resume) {
+    delete errors.resume
+  }
+}
+
 const handleSubmit = async (event) => {
   event.preventDefault()
   hasFormErrors.value = false
@@ -596,23 +707,43 @@ const handleSubmit = async (event) => {
   if (validateForm()) {
     isSubmitting.value = true
     try {
-      const formData = { ...form }
-      delete formData.hh
-      delete formData.mm
-      delete formData.am_pm
+      // const formData = { ...form }
+      // delete formData.hh
+      // delete formData.mm
+      // delete formData.am_pm
+
+      // const response = await fetch('https://hook.eu2.make.com/dcvbne4wixk9oufemwi1naqy7f7cobm4', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //   },
+      //   body: JSON.stringify(form),
+      // })
+
+      const formData = new FormData()
+
+      // Add all form fields
+      Object.keys(form).forEach((key) => {
+        if (key === 'resume') {
+          formData.append('resume', form.resume)
+        } else {
+          formData.append(key, form[key])
+        }
+      })
 
       const response = await fetch('https://hook.eu2.make.com/dcvbne4wixk9oufemwi1naqy7f7cobm4', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(form),
+        body: formData, // Send as FormData instead of JSON
       })
 
       if (response.ok) {
         // Reset form
+        // Object.keys(form).forEach((key) => {
+        //   if (key !== 'country') form[key] = ''
+        // })
+
         Object.keys(form).forEach((key) => {
-          if (key !== 'country') form[key] = ''
+          form[key] = key === 'country' ? 'United Kingdom' : key === 'resume' ? null : ''
         })
         // Show success message
         showSuccess.value = true

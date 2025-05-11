@@ -3,6 +3,9 @@
     <div class="sticky top-0 z-50 w-full">
       <MainHeader />
     </div>
+    <!-- <div>
+      <CircleArc />
+    </div> -->
     <div class="bg-black/90 text-white flex flex-col md:flex-row justify-center gap-20 px-5 md:px-28 py-20">
       <div class="bg-[#29292E] bg-opacity-90 p-10 rounded-3xl shadow-lg">
         <Icon
@@ -110,6 +113,7 @@ import WhatToOfferComponent from '@/components/WhatToOfferComponent.vue'
 import WhyUsComponent from '@/components/WhyUsComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import { useScrollAnimation } from '@/composables/useScrollAnimation'
+// import CircleArc from '@/components/CircleArc.vue'
 
 useScrollAnimation()
 

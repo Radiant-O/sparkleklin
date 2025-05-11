@@ -181,7 +181,7 @@ const faqs = [
     id: 9,
     title: 'What time will my Housekeeper arrive?',
     content:
-      'We wll book for arrival but we cannot guarantee at a specific time, as our local Housekeepers travel on foot or by public transport and we need to allow for public transport delays. We will however be able to provide a time window in which your housekeeper will arrive. This allows for travel time between jobs and any transport delays that may occur.',
+      'We will book for arrival but we cannot guarantee at a specific time, as our local Housekeepers travel on foot or by public transport and we need to allow for public transport delays. We will however be able to provide a time window in which your housekeeper will arrive. This allows for travel time between jobs and any transport delays that may occur.',
   },
   {
     id: 10,
@@ -242,30 +242,37 @@ const faqs = [
 const services = [
   { name: 'Commercial Cleaning', path: '/services/commercial' },
   { name: 'Domestic Cleaning', path: '/services/domestic' },
-  { name: 'Clearance Cleaning', path: '/services/clearance' },
-  { name: 'Spring Cleaning', path: '/services/spring' },
-  { name: 'Pre & Post Tenancy Cleaning', path: '/services/tenancy' },
+  { name: 'Clearance Cleaning', path: '/special-cleaning/decluttercleaning' },
+  { name: 'Spring Cleaning', path: '/special-cleaning/spring' },
+  { name: 'Pre & Post Tenancy Cleaning', path: '/special-cleaning/tenancycleaning' },
 ]
 
 const usefulLinks = [
-  { name: 'About Us', path: '/about' },
-  { name: 'Career', path: '/career' },
-  { name: 'Why Choose Us?', path: '/why-choose-us' },
-  { name: 'Terms & Conditions', path: '/terms' },
-  { name: 'Privacy Policy', path: '/privacy' },
+  { name: 'About Us', path: '/aboutus' },
+  { name: 'Career', path: '/jobs' },
+  { name: 'Why Choose Us?', path: '/faqs' },
+  { name: 'Terms & Conditions', path: '#' },
+  { name: 'Privacy Policy', path: '#' },
 ]
 
 const contactInfo = [
   { value: '+447351357925', link: 'tel:+447351357925' },
-  { value: 'info@sparklelin.co.uk', link: 'mailto:info@sparklelin.co.uk' },
+  { value: 'admin@sparklelin.co.uk', link: 'mailto:admin@sparklelin.co.uk' },
   { value: 'contact@sparkleklin.co.uk', link: 'mailto:contact@sparkleklin.co.uk' },
 ]
 
 const socialMedia = [
-  { name: 'Facebook', icon: 'ic:baseline-facebook', link: 'https://facebook.com' },
-  { name: 'Twitter', icon: 'proicons:x-twitter', link: 'https://twitter.com' },
-  { name: 'Instagram', icon: 'mdi:instagram', link: 'https://instagram.com' },
-  { name: 'YouTube', icon: 'mdi:youtube', link: 'https://youtube.com' },
+  { name: 'Twitter', icon: 'proicons:x-twitter', link: 'https://x.com/sparklekli57710?s=21' },
+  {
+    name: 'Instagram',
+    icon: 'mdi:instagram',
+    link: 'https://www.instagram.com/sparkleklin?igsh=OThwcjl1dG0zazFr&utm_source=qr',
+  },
+  {
+    name: 'Tiktok',
+    icon: 'ic:outline-tiktok',
+    link: 'https://www.tiktok.com/@sparkleklin?_t=ZN-8vff1WNWVUc&_r=1',
+  },
 ]
 
 </script>

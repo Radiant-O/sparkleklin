@@ -53,7 +53,7 @@
           <p class="font-bold text-4xl md:text-6xl md:w-1/2 md:mx-auto font-syne ">
             Sparkling Clean Homes, Every Time
           </p>
-          <div class="font-urbanist text-lg text-white/90 md:w-[40%] -mt-8 mx-auto mb-6">
+          <div class="font-urbanist text-lg text-white/90 md:w-[40%] px-2 md:px-0 -mt-8 mx-auto mb-6">
             Experience the ultimate in home cleaning services. Our team delivers exceptional
             results, ensuring your home is spotless and inviting.
           </div>

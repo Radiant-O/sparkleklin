@@ -21,7 +21,7 @@
           <div
             v-for="testimonial in duplicatedTestimonials"
             :key="`${testimonial.id}-${testimonial.name}`"
-            class="min-w-[500px]"
+            class="min-w-full md:min-w-[500px]"
           >
             <div class="bg-white rounded-2xl shadow-lg p-8 h-full">
               <img
