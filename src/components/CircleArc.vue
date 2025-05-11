@@ -34,7 +34,7 @@ const setup = (wheel, imageElements) => {
   // const wheelElement = wheel.value
   if (!wheel || !imageElements.length) return
 
-  const radius = wheel.offsetWidth / 2
+  const radius = wheel.offsetWidth / 3
   const center = wheel.offsetWidth / 2
   const total = imageElements.length
   const slice = (2 * Math.PI) / total
@@ -130,18 +130,18 @@ onMounted(() => {
     Human stories, <br />
     Superman audiovisuals
   </div> -->
-  <div class="main-container" :style="{ backgroundColor }">
-    <div class="center-content">
+  <div class="main-container min-h-[120vh] md:min-h-[135vh]" :style="{ backgroundColor }">
+    <div class="center-content mt-[70%] md:mt-[28%] ">
       <p
-        class="font-urbanist text-center text-white w-fit mx-auto px-3 py-1.5 font-semibold text-xl bg-brand-main/30 rounded-2xl"
+        class="font-urbanist text-center text-white w-fit mx-auto px-3 py-1.5 font-semibold bg-brand-main/30 rounded-2xl"
       >
         ABOUT US
       </p>
-      <p class="font-syne font-semibold text-center text-3xl md:text-5xl">
+      <p class="font-syne font-semibold text-center text-3xl md:text-4xl">
         Trusted Home Cleaning <br />
         Experts Since 2025
       </p>
-      <div class="description w-[60%] mx-auto -mt-6">{{ props.description }}</div>
+      <div class="description  md:w-[60%] text-small px-5 mx-auto -mt-6">{{ props.description }}</div>
       <div class=" w-fit mx-auto mt-8">
         <ButtonComponent
           buttonText="Get a Free Quote"
@@ -155,7 +155,7 @@ onMounted(() => {
       </div>
     </div>
     <section class="slider-section">
-      <div class="wheel">
+      <div class="wheel -top-[10%] lg:-top-[25%]">
         <div class="wheel__card">
           <img
             src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329734/Sparkleklin/445-NEW_fsjpvn.png"
@@ -252,7 +252,7 @@ onMounted(() => {
 } */
 
 .main-container {
-  min-height: 150vh;
+  /* min-height: 120vh; */
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -260,6 +260,7 @@ onMounted(() => {
   align-items: center;
   justify-content: center;
   padding: 4rem 0;
+  background: linear-gradient(to top, rgba(116, 116, 116, 0.712), transparent);
 }
 .center-content {
   /* position: fixed; */
@@ -268,7 +269,7 @@ onMounted(() => {
   text-align: center;
   color: #ffffff;
   /* max-width: 600px; */
-  padding: 2rem;
+  padding: 2rem 0;
   /* background-color: rgba(0, 0, 0, 0.5);  */
   border-radius: 1rem;
 }
@@ -327,7 +328,6 @@ onMounted(() => {
 
 .wheel {
   position: absolute;
-  top: 0;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -339,6 +339,7 @@ onMounted(() => {
   max-height: 2000px;
   z-index: 1;
 }
+
 
 .wheel__card {
   position: absolute;
