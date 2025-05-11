@@ -137,13 +137,13 @@ const services = [
   },
   {
     title: 'Shopping Mall',
-    slug: 'supermarket',
+    slug: 'shopping-mall',
     imageUrl:
       'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/supermarket_clea_hnjwfq.png',
   },
   {
     title: 'Educational Center',
-    slug: 'educational-center',
+    slug: 'education-centres',
     imageUrl:
       'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/educationall_vlppma.png',
   },

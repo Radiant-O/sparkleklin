@@ -256,24 +256,24 @@ const reasons = [
 ]
 
 const services = [
-  {
+ {
     title: 'Car Showroom',
     slug: 'car-showroom',
     imageUrl:
       'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/showroom_mgns43.png',
   },
   {
-    title: 'Sports & Leisure Centers',
-    slug: 'sports-leisure-centers',
+    title: 'Pubs, Clubs & Restaurants',
+    slug: 'pubs-clubs-restaurants',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329745/Sparkleklin/2148766021_fatbem.jpg',
+      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329760/Sparkleklin/Cleaning_Restaurant_Table-1920w_ebul5x.jpg',
   },
   {
-    title: 'Shopping Mall',
-    slug: 'supermarket',
+    title: 'Hospitals',
+    slug: 'hospitals',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/supermarket_clea_hnjwfq.png',
-  },
+      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329784/Sparkleklin/woman-cleaning-ophthalmologist-s-office_i3o3h2.jpg',
+    },
 ]
 </script>
 

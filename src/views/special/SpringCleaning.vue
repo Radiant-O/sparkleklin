@@ -181,23 +181,23 @@ const features = [
 
 const services = [
   {
-    title: 'Pubs, Clubs & Restaurants',
-    slug: 'pubs-clubs-restaurants',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329760/Sparkleklin/Cleaning_Restaurant_Table-1920w_ebul5x.jpg',
-  },
-  {
-    title: 'Shopping Mall',
-    slug: 'supermarket',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/supermarket_clea_hnjwfq.png',
-  },
-  {
-    title: 'Educational Center',
-    slug: 'educational-center',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/educationall_vlppma.png',
-  },
+     title: 'Domestic',
+     slug: 'domestic',
+     imageUrl:
+       'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/office_cle_o2maz1.png',
+   },
+   {
+     title: 'Shopping Mall',
+     slug: 'shopping-mall',
+     imageUrl:
+       'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329773/Sparkleklin/hero_2_c3g96t.jpg',
+   },
+   {
+     title: 'Educational Center',
+     slug: 'education-centres',
+     imageUrl:
+       'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/educationall_vlppma.png',
+   },
 ]
 </script>
 

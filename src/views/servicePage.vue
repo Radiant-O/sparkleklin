@@ -55,7 +55,7 @@ const services = [
   },
   {
     title: 'Office',
-    slug: 'office',
+    slug: 'offices',
     imageUrl:
       'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/officee_bzjpqq.png',
   },
@@ -67,13 +67,13 @@ const services = [
   },
   {
     title: 'Shopping Mall',
-    slug: 'supermarket',
+    slug: 'shopping-mall',
     imageUrl:
       'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329773/Sparkleklin/hero_2_c3g96t.jpg',
   },
   {
     title: 'Educational Center',
-    slug: 'educational-center',
+    slug: 'education-centres',
     imageUrl:
       'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/educationall_vlppma.png',
   },

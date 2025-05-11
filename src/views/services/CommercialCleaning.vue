@@ -101,7 +101,7 @@ const services = [
  
   {
     title: 'Office',
-    slug: 'office',
+    slug: 'offices',
     imageUrl:
       'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/officee_bzjpqq.png',
   },
@@ -113,7 +113,7 @@ const services = [
   },
   {
     title: 'Shopping Mall',
-    slug: 'supermarket',
+    slug: 'shopping-mall',
     imageUrl:
       'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/supermarket_clea_hnjwfq.png',
   },

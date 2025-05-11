@@ -148,16 +148,16 @@ const services = [
       'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329760/Sparkleklin/Cleaning_Restaurant_Table-1920w_ebul5x.jpg',
   },
   {
-    title: 'Shopping Mall',
-    slug: 'supermarket',
+      title: 'Office',
+      slug: 'offices',
+      imageUrl:
+        'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/officee_bzjpqq.png',
+    },
+ {
+    title: 'Domestic',
+    slug: 'domestic',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/supermarket_clea_hnjwfq.png',
-  },
-  {
-    title: 'Educational Center',
-    slug: 'educational-center',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/educationall_vlppma.png',
+      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/office_cle_o2maz1.png',
   },
 ]
 </script>

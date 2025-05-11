@@ -128,24 +128,24 @@ const features = [
 ]
 
 const services = [
-  {
-    title: 'Pubs, Clubs & Restaurants',
-    slug: 'pubs-clubs-restaurants',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329760/Sparkleklin/Cleaning_Restaurant_Table-1920w_ebul5x.jpg',
-  },
-  {
-    title: 'Shopping Mall',
-    slug: 'supermarket',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/supermarket_clea_hnjwfq.png',
-  },
-  {
-    title: 'Educational Center',
-    slug: 'educational-center',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/educationall_vlppma.png',
-  },
+   {
+      title: 'Pubs, Clubs & Restaurants',
+      slug: 'pubs-clubs-restaurants',
+      imageUrl:
+        'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329760/Sparkleklin/Cleaning_Restaurant_Table-1920w_ebul5x.jpg',
+    },
+    {
+      title: 'Hospitals',
+      slug: 'hospitals',
+      imageUrl:
+        'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329784/Sparkleklin/woman-cleaning-ophthalmologist-s-office_i3o3h2.jpg',
+      },
+    {
+      title: 'Sports & Leisure Centers',
+      slug: 'sports-leisure-centers',
+      imageUrl:
+        'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329745/Sparkleklin/2148766021_fatbem.jpg',
+    },
 ]
 </script>
 

@@ -68,17 +68,17 @@ const router = createRouter({
       component: () => import('../views/services/CarShowroom.vue'),
     },
     {
-      path: '/services/resturant',
+      path: '/services/pubs-clubs-restaurants',
       name: 'resturant-cleaning',
       component: () => import('../views/services/ResturantCleaning.vue'),
     },
     {
-      path: '/services/sport',
+      path: '/services/sports-leisure-centers',
       name: 'sportandleisure-cleaning',
       component: () => import('../views/services/SportCleaning.vue'),
     },
     {
-      path: '/services/hospital',
+      path: '/services/hospitals',
       name: 'hospital-cleaning',
       component: () => import('../views/services/HospitalCleaning.vue'),
     },
