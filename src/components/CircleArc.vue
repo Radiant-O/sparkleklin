@@ -231,25 +231,10 @@ onMounted(() => {
       </div>
     </section>
   </div>
-  <!-- <div class="scroll-down">Scroll down</div>
-  <div class="scroll-down-icon">
-    <img
-      src="https://storage.googleapis.com/studio-design-asset-files/projects/BXaxK3jMq7/s-61x9_2c6bd15e-43e5-4ebf-bf39-a6ff23fb93dd.svg"
-      alt=""
-    />
-  </div> -->
+
 </template>
 
 <style scoped>
-/* body{
-    padding: 0;
-    margin: 0;
-    height: 600vh;
-    width: 100vw;
-    background: #90836a;
-    color: #000;
-    overflow-x: hidden;
-} */
 
 .main-container {
   /* min-height: 120vh; */
@@ -295,29 +280,6 @@ onMounted(() => {
   font-family: 'Urbanist', sans-serif;
 }
 
-/* .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 8vw;
-  font-family: 'Neue World Ultralight';
-  font-weight: lighter;
-  text-align: center;
-} */
-/* h1{
-    font-size: 8vw;
-    font-family: "Neue World Ultralight";
-    font-weight: lighter;
-    text-align: center;
-} */
-
 .slider-section {
   height: 100vh;
   bottom: 0;
@@ -361,13 +323,6 @@ onMounted(() => {
   border-radius: 1rem; /* Add border radius */
   pointer-events: none;
 }
-
-/* img {
-  width: 100%;
-  pointer-events: none;
-  z-index: 999;
-  cursor: pointer;
-} */
 
 .scroll-down-icon {
   position: fixed;
