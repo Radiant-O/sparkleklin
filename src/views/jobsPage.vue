@@ -304,12 +304,16 @@
                       <label class="font-urbanist mb-2 block"
                         >Best time to call you back <span class="text-red-700">*</span></label
                       >
+
                       <div class="flex gap-5">
                         <div class="">
                           <input
                             v-model="form.hh"
+                            type="number"
+                            min="1"
+                            max="12"
                             placeholder="HH"
-                            class="px-5 w-[100%] py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                            class="px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
                             :class="{ 'border-red-500 bg-red-50': errors.hh }"
                           />
                           <span class="text-red-500 text-sm">{{ errors.hh }}</span>
@@ -317,19 +321,23 @@
                         <div class="">
                           <input
                             v-model="form.mm"
+                            type="number"
+                            min="0"
+                            max="59"
                             placeholder="MM"
-                            class="px-5 py-5 w-[100%] text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                            class="px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
                             :class="{ 'border-red-500 bg-red-50': errors.mm }"
                           />
                           <span class="text-red-500 text-sm">{{ errors.mm }}</span>
                         </div>
-                        <div class="w-full">
+                        <div class="">
                           <select
                             v-model="form.am_pm"
-                            class="px-5 py-5 w-full text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
+                            class="px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
                             :class="{ 'border-red-500': errors.am_pm }"
                           >
-                            <option value="AM" selected>AM</option>
+                            <option value="">Select</option>
+                            <option value="AM">AM</option>
                             <option value="PM">PM</option>
                           </select>
                           <span class="text-red-500 text-sm">{{ errors.am_pm }}</span>
@@ -571,8 +579,14 @@ import { ref, reactive } from 'vue'
 import MainHeader from '@/components/MainHeader.vue'
 import { Icon } from '@iconify/vue'
 import { useScrollAnimation } from '@/composables/useScrollAnimation'
+import { createClient } from '@supabase/supabase-js'
 
 useScrollAnimation()
+
+const supabaseUrl = 'https://qjhwzwiymibswvxonemf.supabase.co'
+const supabaseKey =
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFqaHd6d2l5bWlic3d2eG9uZW1mIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY2Mjg4OTQsImV4cCI6MjA2MjIwNDg5NH0.xVPdst-duHJDVye7V2VTtRt6SjGuDSx6SW0aVh92hWY' // avoid hardcoding this in production
+const supabase = createClient(supabaseUrl, supabaseKey)
 
 const hasFormErrors = ref(false)
 const errors = reactive({})
@@ -647,6 +661,27 @@ const validateForm = () => {
     newErrors.tc = 'You must accept the Terms & Conditions to proceed'
   }
 
+  if (!form.hh) newErrors.hh = 'Hours required'
+  if (!form.mm) newErrors.mm = 'Minutes required'
+  if (!form.am_pm) newErrors.am_pm = 'AM/PM required'
+
+  if (form.hh && form.mm && form.am_pm) {
+    const hours = parseInt(form.hh)
+    const minutes = parseInt(form.mm)
+
+    if (hours < 1 || hours > 12) {
+      newErrors.hh = 'Hours must be between 1-12'
+    }
+    if (minutes < 0 || minutes > 59) {
+      newErrors.mm = 'Minutes must be between 0-59'
+    }
+
+    if (!newErrors.hh && !newErrors.mm && !newErrors.am_pm) {
+      const paddedHours = hours.toString().padStart(2, '0')
+      const paddedMinutes = minutes.toString().padStart(2, '0')
+      form.time = `${paddedHours}:${paddedMinutes} ${form.am_pm}`
+    }
+  }
   if (form.resume) {
     const allowedTypes = [
       'application/pdf',
@@ -662,22 +697,20 @@ const validateForm = () => {
     }
   }
 
-  const timePattern = /^(0?[1-9]|1[0-2]):[0-5][0-9] (AM|PM)$/
-  const formattedTime = `${form.hh}:${form.mm} ${form.am_pm}`
-  if (!formattedTime.match(timePattern)) {
-    newErrors.time = 'Please enter a valid time'
-  }
-
   Object.assign(errors, newErrors)
   return Object.keys(newErrors).length === 0
 }
 
 const updateTime = () => {
   if (form.hh && form.mm && form.am_pm) {
-    // Pad hours and minutes with leading zeros if needed
-    const hours = form.hh.padStart(2, '0')
-    const minutes = form.mm.padStart(2, '0')
-    form.time = `${hours}:${minutes} ${form.am_pm}`
+    const hours = parseInt(form.hh)
+    const minutes = parseInt(form.mm)
+
+    if (hours >= 1 && hours <= 12 && minutes >= 0 && minutes <= 59) {
+      const paddedHours = hours.toString().padStart(2, '0')
+      const paddedMinutes = minutes.toString().padStart(2, '0')
+      form.time = `${paddedHours}:${paddedMinutes} ${form.am_pm}`
+    }
   }
 }
 
@@ -699,6 +732,68 @@ const removeFile = () => {
   }
 }
 
+const uploadToSupabase = async (formData, file) => {
+  try {
+    const fileExt = file.name.split('.').pop()
+    const fileName = `${formData.firstName.trim()}-${formData.lastName.trim()}-${Date.now()}.${fileExt}`
+    const filePath = `${fileName}`
+
+    const { error: uploadError } = await supabase.storage
+      .from('sparkleklinform') // this is the bucket name
+      .upload(filePath, file, {
+        cacheControl: '3600',
+        upsert: true,
+        contentType: file.type,
+      })
+
+    if (uploadError) {
+      throw new Error('File upload failed: ' + uploadError.message)
+    }
+
+    // Get public URL
+    const { data: publicUrlData } = supabase.storage.from('sparkleklinform').getPublicUrl(filePath)
+
+    const fileUrl = publicUrlData.publicUrl
+
+    // Continue to insert application data
+    const applicationData = {
+      first_name: formData.firstName,
+      last_name: formData.lastName,
+      email: formData.email,
+      phone: formData.phone,
+      dob: formData.dob,
+      address: formData.address,
+      str_add: formData.streetaddress,
+      address2: formData.addressline,
+      apartment: formData.apartment,
+      city: formData.city,
+      state: formData.state,
+      zipcode: formData.zipcode,
+      dbs_cert: formData.dbscert,
+      clean_exp: formData.cleaningexp,
+      work_auth: formData.workauthorised,
+      visa_type: formData.visatype,
+      driving_license: formData.drivinglicense,
+      availability: formData.availability,
+      callback_time: formData.time,
+      message: formData.message,
+      resume_url: fileUrl,
+      created_at: new Date().toISOString(),
+    }
+
+    const { error: dbError } = await supabase.from('sparkleklinjobforms').insert(applicationData)
+
+    if (dbError) {
+      throw new Error('Failed to save application data: ' + dbError.message)
+    }
+
+    return true
+  } catch (error) {
+    console.error('Supabase error:', error)
+    throw error
+  }
+}
+
 const handleSubmit = async (event) => {
   event.preventDefault()
   hasFormErrors.value = false
@@ -707,53 +802,30 @@ const handleSubmit = async (event) => {
   if (validateForm()) {
     isSubmitting.value = true
     try {
-      // const formData = { ...form }
-      // delete formData.hh
-      // delete formData.mm
-      // delete formData.am_pm
-
-      // const response = await fetch('https://hook.eu2.make.com/dcvbne4wixk9oufemwi1naqy7f7cobm4', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      //   body: JSON.stringify(form),
-      // })
+      // Upload to Supabase first
+      await uploadToSupabase(form, form.resume)
 
       const formData = new FormData()
 
       // Add all form fields
       Object.keys(form).forEach((key) => {
-        if (key === 'resume') {
-          formData.append('resume', form.resume)
-        } else {
-          formData.append(key, form[key])
-        }
+        formData.append(key, form[key])
       })
 
-      const response = await fetch('https://hook.eu2.make.com/dcvbne4wixk9oufemwi1naqy7f7cobm4', {
+      await fetch('https://hook.eu2.make.com/dcvbne4wixk9oufemwi1naqy7f7cobm4', {
         method: 'POST',
         body: formData, // Send as FormData instead of JSON
       })
 
-      if (response.ok) {
-        // Reset form
-        // Object.keys(form).forEach((key) => {
-        //   if (key !== 'country') form[key] = ''
-        // })
-
-        Object.keys(form).forEach((key) => {
-          form[key] = key === 'country' ? 'United Kingdom' : key === 'resume' ? null : ''
-        })
-        // Show success message
-        showSuccess.value = true
-        // Hide success message after 5 seconds
-        setTimeout(() => {
-          showSuccess.value = false
-        }, 5000)
-      } else {
-        throw new Error('Failed to submit form')
-      }
+      Object.keys(form).forEach((key) => {
+        form[key] = key === 'country' ? 'United Kingdom' : key === 'resume' ? null : ''
+      })
+      // Show success message
+      showSuccess.value = true
+      // Hide success message after 5 seconds
+      setTimeout(() => {
+        showSuccess.value = false
+      }, 5000)
     } catch (error) {
       console.error('Submission error:', error)
       alert('Failed to submit form. Please try again.')

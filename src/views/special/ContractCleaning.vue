@@ -30,12 +30,11 @@ This guarantees the smooth running of all your cleaning tasks.`"
           <div class="font-urbanist text-lg -mt-2 font-normal text-brand-ash">
             Our clients have the opportunity to have exactly what they want included in their
             cleaning contract. We will deliver according to your needs; your hours of business and
-            your building type or environment to ensure your premises are cleaned to a good
-            standard with minimal disruption. Best of all, this is provided to you at
-            really competitive prices. We are an established and professional cleaning service
-            provider and have extensive experience in contract cleaning services. We provide a
-            bespoke contract cleaning services that can be on daily, weekly, fortnightly, or on
-            a monthly basis.
+            your building type or environment to ensure your premises are cleaned to a good standard
+            with minimal disruption. Best of all, this is provided to you at really competitive
+            prices. We are an established and professional cleaning service provider and have
+            extensive experience in contract cleaning services. We provide a bespoke contract
+            cleaning services that can be on daily, weekly, fortnightly, or on a monthly basis.
           </div>
 
           <!-- <div class="grid md:grid-cols-2 w-full gap-3 mt-10">
@@ -138,24 +137,24 @@ const impactStats = [
 // ]
 
 const services = [
-   {
-      title: 'Domestic',
-      slug: 'domestic',
-      imageUrl:
-        'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/office_cle_o2maz1.png',
-    },
-    {
-      title: 'Shopping Mall',
-      slug: 'shopping-mall',
-      imageUrl:
-        'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329773/Sparkleklin/hero_2_c3g96t.jpg',
-    },
-    {
-      title: 'Educational Center',
-      slug: 'education-centres',
-      imageUrl:
-        'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/educationall_vlppma.png',
-    },
+  {
+    title: 'Domestic',
+    slug: 'domestic',
+    imageUrl:
+      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/office_cle_o2maz1.png',
+  },
+  {
+    title: 'Shopping Mall',
+    slug: 'shopping-mall',
+    imageUrl:
+      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329773/Sparkleklin/hero_2_c3g96t.jpg',
+  },
+  {
+    title: 'Educational Center',
+    slug: 'education-centres',
+    imageUrl:
+      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/educationall_vlppma.png',
+  },
 ]
 </script>
 
