@@ -456,7 +456,7 @@
                         />
                       </span>
                       <span class="text-brand-white text-xl font-urbanist pr-4">
-                        {{ isSubmitting ? 'Submitting...' : 'Get in touch!' }}
+                        {{ isSubmitting ? 'Submitting...' : 'Submit Your Info!' }}
                       </span>
                     </button>
                   </div>
@@ -784,7 +784,7 @@ const usefulLinks = [
 
 const contactInfo = [
   { value: '+447351357925', link: 'tel:+447351357925' },
-  { value: 'admin@sparklelin.co.uk', link: 'mailto:admin@sparkleklin.co.uk' },
+  { value: 'admin@sparkleklin.co.uk', link: 'mailto:admin@sparkleklin.co.uk' },
   { value: 'contact@sparkleklin.co.uk', link: 'mailto:contact@sparkleklin.co.uk' },
 ]
 

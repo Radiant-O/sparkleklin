@@ -556,7 +556,7 @@ const usefulLinks = [
 
 const contactInfo = [
   { value: '+447351357925', link: 'tel:+447351357925' },
-  { value: 'admin@sparklelin.co.uk', link: 'mailto:admin@sparkleklin.co.uk' },
+  { value: 'admin@sparkleklin.co.uk', link: 'mailto:admin@sparkleklin.co.uk' },
   { value: 'contact@sparkleklin.co.uk', link: 'mailto:contact@sparkleklin.co.uk' },
 ]
 
