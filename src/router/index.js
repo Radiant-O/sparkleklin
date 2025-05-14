@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 // import HomeView from '../views/coming_soon.vue'
+import { requireAuth } from '@/middleware/auth'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -147,7 +149,45 @@ const router = createRouter({
       name: 'not-found',
       component: () => import('../views/NotFound.vue'),
     },
+
+    {
+      path: '/admin',
+      component: () => import('@/layouts/AdminLayout.vue'),
+      meta: { requiresAuth: true },
+      beforeEnter: requireAuth,
+      children: [
+        {
+          path: '',
+          name: 'admin-dashboard',
+          component: () => import('@/views/admin/AdminDashboard.vue'),
+        },
+        // {
+        //   path: 'contacts',
+        //   name: 'admin-contacts',
+        //   component: () => import('@/views/admin/Contacts.vue'),
+        // },
+        // {
+        //   path: 'jobs',
+        //   name: 'admin-jobs',
+        //   component: () => import('@/views/admin/Jobs.vue'),
+        // },
+      ],
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: () => import('@/views/auth/Login.vue'),
+    },
   ],
+})
+
+// Global navigation guard
+router.beforeEach((to, from, next) => {
+  if (to.matched.some(record => record.meta.requiresAuth)) {
+    requireAuth(to, from, next)
+  } else {
+    next()
+  }
 })
 
 export default router

@@ -212,9 +212,7 @@
 
                     <!-- Address Line 2 -->
                     <div class="form-group">
-                      <label class="font-urbanist mb-2 block"
-                        >Address Line 2</label
-                      >
+                      <label class="font-urbanist mb-2 block">Address Line 2</label>
                       <input
                         v-model="form.addressline"
                         class="w-full px-5 py-5 text-xl rounded-xl border border-gray-300 focus:border-brand-main focus:ring-1 focus:ring-brand-main"
@@ -429,6 +427,12 @@ import { ref, reactive } from 'vue'
 import MainHeader from '@/components/MainHeader.vue'
 import { Icon } from '@iconify/vue'
 import { useScrollAnimation } from '@/composables/useScrollAnimation'
+import { createClient } from '@supabase/supabase-js'
+
+const supabase = createClient(
+  'https://qjhwzwiymibswvxonemf.supabase.co',
+  import.meta.env.VITE_APP_SUPABASE_KEY,
+)
 
 useScrollAnimation()
 
@@ -504,12 +508,35 @@ const handleSubmit = async (event) => {
   if (validateForm()) {
     isSubmitting.value = true
     try {
+      const { error: dbError } = await supabase.from('sparkleklincontactform').insert({
+        first_name: form.firstName,
+        last_name: form.lastName,
+        email: form.email,
+        phone: form.phone,
+        cleaning_date: form.cleaningDate,
+        service: form.service,
+        hours_per_visit: form.hoursPerVisit,
+        frequency: form.frequency,
+        daysfrequency: form.daysfrequency,
+        oftenfrequency: form.oftenfrequency,
+        address: form.address,
+        address_line: form.addressline,
+        str_add: form.streetaddress,
+        city: form.city,
+        state: form.state,
+        country: form.country,
+        subject: form.subject,
+        created_at: new Date().toISOString(),
+      })
+
+      if (dbError) throw new Error('Failed to save to database: ' + dbError.message)
+
       const response = await fetch('https://hook.eu2.make.com/dcvbne4wixk9oufemwi1naqy7f7cobm4', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(form)
+        body: JSON.stringify(form),
       })
 
       if (response.ok) {

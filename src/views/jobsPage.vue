@@ -583,10 +583,10 @@ import { createClient } from '@supabase/supabase-js'
 
 useScrollAnimation()
 
-const supabaseUrl = 'https://qjhwzwiymibswvxonemf.supabase.co'
-const supabaseKey =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFqaHd6d2l5bWlic3d2eG9uZW1mIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY2Mjg4OTQsImV4cCI6MjA2MjIwNDg5NH0.xVPdst-duHJDVye7V2VTtRt6SjGuDSx6SW0aVh92hWY' // avoid hardcoding this in production
-const supabase = createClient(supabaseUrl, supabaseKey)
+const supabase = createClient(
+  'https://qjhwzwiymibswvxonemf.supabase.co',
+  import.meta.env.VITE_APP_SUPABASE_KEY,
+)
 
 const hasFormErrors = ref(false)
 const errors = reactive({})
