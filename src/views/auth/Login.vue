@@ -29,11 +29,11 @@ const handleLogin = async () => {
 
   isLoading.value = true
   error.value = ''
-  
+
   try {
     const { error: loginError } = await authStore.login(email.value, password.value)
     if (loginError) throw new Error(loginError)
-    
+
     const redirectPath = route.query.redirect || '/admin'
     router.push(redirectPath)
   } catch (err) {
@@ -69,15 +69,20 @@ const handleLogin = async () => {
             />
           </div>
           <div v-if="error" class="text-red-500 text-sm">{{ error }}</div>
-          <p
+          <button
             type="submit"
             :disabled="isLoading"
             class="w-full bg-brand-main text-white text-center py-2 px-4 rounded-md hover:bg-brand-main/90"
           >
-            {{ isLoading ? 'Logging in...' : 'Login' }}
-        </p>
+            <span class="text-white">{{ isLoading ? 'Logging in...' : 'Login' }}</span>
+          </button>
         </div>
       </form>
+      <div class="text-center mt-4">
+        <router-link to="/forgot-password" class="text-brand-main hover:underline">
+          Forgot Password?
+        </router-link>
+      </div>
     </div>
   </div>
 </template>
