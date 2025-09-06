@@ -5,7 +5,7 @@
     </div>
     <section class="c1">
       <ServiceHeroTwo
-        imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329760/Sparkleklin/Cleaning_Restaurant_Table-1920w_ebul5x.jpg"
+        imageUrl="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178754/Cleaning_Restaurant_Table-1920w_b2fpqz.jpg"
         badge="PUBS, CLUBS AND RESTURANT CLEANING"
         title="Pubs, clubs and Resturant Cleaning Service"
         :description="`We offer a complete range of services to these clients. Our flexible cleaning means we can cater for high and low seasons. We can also provide additional cleaners for those busy times and can arrange the cleaning schedules around your normal business hours. If you just want your carpet cleaned, we will be there to help.\n
@@ -19,8 +19,8 @@ We cover all Birmingham and surrounding areas with quality cleaning cleaning ser
             Our Office Cleaning <span class="block">Options Include Thorough:</span>
           </p> -->
           <div class="font-urbanist text-lg -mt-6 font-normal text-brand-ash">
-            Clubs can become hot and sweaty environments with a lot of spilt drinks staining the floor.
-            
+            Clubs can become hot and sweaty environments with a lot of spilt drinks staining the
+            floor.
           </div>
 
           <div class="grid md:grid-cols-2 w-full gap-3 mt-10">
@@ -30,7 +30,7 @@ We cover all Birmingham and surrounding areas with quality cleaning cleaning ser
               class="flex gap-5 items-start md:w-[80%]"
             >
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 :alt="`feature_${index + 1}`"
                 class="w-7 h-7 bg-white p-1 rounded-xl"
               />
@@ -42,7 +42,7 @@ We cover all Birmingham and surrounding areas with quality cleaning cleaning ser
 
           <div class="w-full mt-20">
             <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329730/Sparkleklin/11368_lwj7dt.jpg"
+              src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178681/11368_ulgjll.jpg"
               alt="imageAlt"
               class="rounded-4xl w-full object-cover h-[35rem]"
             />
@@ -123,24 +123,23 @@ const features = [
 ]
 
 const services = [
- {
-     title: 'Commercial',
-     slug: 'commercial',
-     imageUrl:
-       'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445013/Sparkleklin/commerciall_woasfw.png',
-   },
+  {
+    title: 'Commercial',
+    slug: 'commercial',
+    imageUrl:
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/commerciall_kow4as.png',
+  },
   {
     title: 'Shopping Mall',
     slug: 'shopping-mall',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/supermarket_clea_hnjwfq.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/supermarket_clea_kmmvhs.png',
   },
   {
-     title: 'Car Showroom',
-     slug: 'car-showroom',
-     imageUrl:
-       'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/showroom_mgns43.png',
-   },
+    title: 'Car Showroom',
+    slug: 'car-showroom',
+    imageUrl: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/showroom_woylrb.png',
+  },
 ]
 </script>
 

@@ -1,5 +1,5 @@
 <script setup>
-import FooterComponent from '@/components/FooterComponent.vue';
+import FooterComponent from '@/components/FooterComponent.vue'
 import MainHeader from '@/components/MainHeader.vue'
 import { useScrollAnimation } from '@/composables/useScrollAnimation'
 
@@ -24,7 +24,9 @@ useScrollAnimation()
           </p>
         </div>
         <div class="md:-mt-7 -mt-4">
-          <p class="font-urbanist md:mx-auto md:text-center md:w-[50%] text-lg font-normal text-brand-ash">
+          <p
+            class="font-urbanist md:mx-auto md:text-center md:w-[50%] text-lg font-normal text-brand-ash"
+          >
             Explore our galery to see a curated selection of projects that showcase our creatiity
             and expertise. Each piece tells a unique story and reflects our commitment to innovative
             design.
@@ -34,7 +36,7 @@ useScrollAnimation()
       <div class="flex flex-col md:flex-row gap-10 g1">
         <div class="md:w-2/3 relative h-[25rem] md:h-[500px] group">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329780/Sparkleklin/commercial.jpg"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/commerciall_kow4as.png"
             alt="img1"
             class="w-full h-full object-cover rounded-3xl"
           />
@@ -42,7 +44,7 @@ useScrollAnimation()
 
         <div class="md:w-1/3 relative h-[25rem] md:h-[500px] group">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329734/Sparkleklin/445-NEW_fsjpvn.png"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178708/445-NEW_zzlkpn.png"
             alt="img2"
             class="w-full h-full object-cover rounded-3xl"
           />
@@ -51,7 +53,7 @@ useScrollAnimation()
       <div class="grid md:grid-flow-col md:grid-rows-2 md:grid-cols-3 gap-10 g2">
         <div class="group">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329745/Sparkleklin/supermarket.png"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/supermarket_clea_kmmvhs.png"
             alt="img1"
             class="w-full h-[25rem] md:h-full object-cover rounded-3xl"
           />
@@ -59,14 +61,14 @@ useScrollAnimation()
 
         <div class="group">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/office_cle_o2maz1.png"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/office_cle_jpedsv.png"
             alt="img2"
             class="w-full h-[25rem] md:h-full object-cover rounded-3xl"
           />
         </div>
         <div class="md:row-span-2 md:col-span-2 group">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329795/Sparkleklin/office.jpg"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178781/professional-cleaning-service-person-using-vacuum-cleaner-office-2_smdr4u.jpg"
             alt="img2"
             class="w-full h-[25rem] md:h-full object-cover rounded-3xl"
           />
@@ -75,7 +77,7 @@ useScrollAnimation()
       <div class="flex flex-col md:flex-row gap-10 g3">
         <div class="md:w-2/3 relative h-[25rem] md:h-[500px] group">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329766/Sparkleklin/car%20showroom.jpg"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/showroom_woylrb.png"
             alt="img1"
             class="w-full h-full object-cover rounded-3xl"
           />
@@ -83,7 +85,7 @@ useScrollAnimation()
 
         <div class="md:w-1/3 relative h-[25rem] md:h-[500px] group">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329784/Sparkleklin/woman-cleaning-ophthalmologist-s-office_i3o3h2.jpg"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178800/woman-cleaning-ophthalmologist-s-office_gpmwwc.jpg"
             alt="img2"
             class="w-full h-full object-cover rounded-3xl"
           />
@@ -92,7 +94,7 @@ useScrollAnimation()
       <div class="grid md:grid-flow-col md:grid-rows-2 md:grid-cols-3 gap-10 g4">
         <div class="group md:h-[30rem]">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329773/Sparkleklin/home3_gsuwcz.png"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178757/home3_m0e0cl.png"
             alt="img1"
             class="w-full h-[25rem] md:h-full object-cover rounded-3xl"
           />
@@ -100,14 +102,14 @@ useScrollAnimation()
 
         <div class="group md:h-[30rem]">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329730/Sparkleklin/11368_lwj7dt.jpg"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178681/11368_ulgjll.jpg"
             alt="img2"
             class="w-full h-[25rem] md:h-full object-cover rounded-3xl"
           />
         </div>
         <div class="md:row-span-2 md:h-[63rem] md:col-span-2 group">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329773/Sparkleklin/newwww_r43pyt.jpg"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178760/newwww_wpyaom.jpg"
             alt="img2"
             class="w-full h-[25rem] md:h-full object-cover rounded-3xl"
           />

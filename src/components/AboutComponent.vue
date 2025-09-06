@@ -48,14 +48,14 @@ let rotation = 0
 
 // Image URLs array
 const imageUrls = [
-  'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/showroom_mgns43.png',
-  'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445013/Sparkleklin/commerciall_woasfw.png',
-  'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/officee_bzjpqq.png',
-  'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/office_cle_o2maz1.png',
-  'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/supermarket_clea_hnjwfq.png',
-  'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/educationall_vlppma.png',
-  'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329795/Sparkleklin/office.jpg',
-  'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329784/Sparkleklin/woman-cleaning-ophthalmologist-s-office_i3o3h2.jpg',
+  'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/showroom_woylrb.png',
+  'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/commerciall_kow4as.png',
+  'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161864/officee_uqslu6.png',
+  'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/office_cle_jpedsv.png',
+  'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/supermarket_clea_kmmvhs.png',
+  'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161864/educationall_rcxhfk.png',
+  'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161864/officee_uqslu6.png',
+  'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178800/woman-cleaning-ophthalmologist-s-office_gpmwwc.jpg',
 ]
 
 // Initialize images

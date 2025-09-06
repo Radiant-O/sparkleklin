@@ -328,7 +328,7 @@
           </div>
           <div class="md:w-[70%]">
             <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329773/Sparkleklin/newwww_r43pyt.jpg"
+              src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178760/newwww_wpyaom.jpg"
               alt=""
               class="w-full h-[30rem] md:h-[50rem] object-cover rounded-4xl"
             />
@@ -342,7 +342,7 @@
           <!-- Logo and Description -->
           <div class="md:w-[35%]">
             <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745614935/Sparkleklin/logo_white_mix_ftx0rf.png"
+              src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757160964/logo_white_mix_ehbdku.png"
               alt="Sparkleklin Logo"
               class="w-38 pb-5"
             />

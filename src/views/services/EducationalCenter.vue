@@ -5,7 +5,7 @@
     </div>
     <section class="c1">
       <ServiceHeroTwo
-        imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329738/Sparkleklin/4579288_oon8ue.jpg"
+        imageUrl="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178794/4579288_cdtidd.jpg"
         badge="EDUCATIONAL CENTRES CLEANING"
         :title="`Education Centres \n Cleaning Service`"
         :description="`We tailor our services to your educational centre requirements. This may include scheduled deep cleans during term holidays or daily attendance in the morning, afternoon, evening or weekends. Our aim is to offer a professional and reliable service at all times with minimal disruption to teaching staff, students and young children.\n
@@ -37,7 +37,7 @@
               class="flex gap-5 items-start md:w-[80%]"
             >
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 :alt="`feature_${index + 1}`"
                 class="w-7 h-7 bg-white p-1 rounded-xl"
               />
@@ -49,7 +49,7 @@
 
           <div class="w-full mt-20">
             <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329771/Sparkleklin/man-wearing-mask-walks-past-bin-full-cleaning-supplies_y5sx3k.jpg"
+              src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178761/man-wearing-mask-walks-past-bin-full-cleaning-supplies_bbzyhd.jpg"
               alt="imageAlt"
               class="rounded-4xl w-full object-cover object-top h-[25rem] md:h-[45rem]"
             />
@@ -59,7 +59,7 @@
               <p class="font-syne font-semibold md:text-xl">Computer Classroom</p>
               <div class="flex gap-5 items-start md:w-[80%]">
                 <img
-                  src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                  src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                   alt=""
                   class="w-7 h-7 bg-white p-1 rounded-xl"
                 />
@@ -75,7 +75,7 @@
               <p class="font-syne font-semibold md:text-xl">Gym Room</p>
               <div class="flex gap-5 items-start md:w-[80%]">
                 <img
-                  src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                  src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                   alt=""
                   class="w-7 h-7 bg-white p-1 rounded-xl"
                 />
@@ -92,7 +92,7 @@
 
               <div class="flex gap-5 items-start md:w-[80%]">
                 <img
-                  src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                  src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                   alt=""
                   class="w-7 h-7 bg-white p-1 rounded-xl"
                 />
@@ -189,19 +189,19 @@ const services = [
     title: 'Pubs, Clubs & Restaurants',
     slug: 'pubs-clubs-restaurants',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329760/Sparkleklin/Cleaning_Restaurant_Table-1920w_ebul5x.jpg',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178754/Cleaning_Restaurant_Table-1920w_b2fpqz.jpg',
   },
   {
     title: 'Shopping Mall',
     slug: 'shopping-mall',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/supermarket_clea_hnjwfq.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/supermarket_clea_kmmvhs.png',
   },
   {
     title: 'Educational Center',
     slug: 'education-centres',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/educationall_vlppma.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161864/educationall_rcxhfk.png',
   },
 ]
 </script>

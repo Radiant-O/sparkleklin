@@ -7,10 +7,11 @@
       <div class="logo cursor-pointer">
         <router-link to="/">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745614935/Sparkleklin/logo_white_mix_ftx0rf.png"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757160964/logo_white_mix_ehbdku.png"
             alt="sparkleklin logo"
             class="w-28 md:w-40"
           />
+          
         </router-link>
       </div>
 
@@ -190,7 +191,7 @@ const menuItems = ref([
       { name: 'Car Showroom Cleaning', path: '/services/car-showroom' },
       { name: 'Pubs, Clubs & Resturant Cleaning', path: '/services/resturant' },
       { name: 'Sports / Leisure Centre Cleaning', path: '/services/sport' },
-      { name: 'Hospital Cleaning', path: '/services/hospital' },
+      { name: 'Hospital Cleaning', path: '/services/hospitals' },
     ],
   },
   {

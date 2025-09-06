@@ -11,8 +11,12 @@
           >
             FAQs
           </p>
-          <p class="font-syne font-semibold text-center text-3xl md:text-5xl">Frequently Asked Questions</p>
-          <div class="font-urbanist text-center text-normal text-black/60 md:w-[50%] mx-auto -mt-5 md:-mt-6">
+          <p class="font-syne font-semibold text-center text-3xl md:text-5xl">
+            Frequently Asked Questions
+          </p>
+          <div
+            class="font-urbanist text-center text-normal text-black/60 md:w-[50%] mx-auto -mt-5 md:-mt-6"
+          >
             If you have any other questions, please email us.
           </div>
         </div>
@@ -32,17 +36,15 @@
             />
           </div>
         </div>
-
-       
       </div>
       <div
         class="bg-black w-[100%] mx-auto rounded-3xl mt-25 px-5 md:px-20 pt-10 md:pt-20 pb-20 text-white"
       >
         <div class="flex md:flex-row flex-col justify-between items-start">
           <!-- Logo and Description -->
-          <div class="md:w-[35%] ">
+          <div class="md:w-[35%]">
             <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745614935/Sparkleklin/logo_white_mix_ftx0rf.png"
+              src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757160964/logo_white_mix_ehbdku.png"
               alt="Sparkleklin Logo"
               class="w-38 pb-5"
             />
@@ -205,7 +207,7 @@ const faqs = [
     id: 13,
     title: 'If a clearner is sick, can I have a replacement?',
     content:
-      'Yes, If we have any notice, we will send you another cleaner. If there\'s no notice and we cannot assign a replacement in time, we will send you a refund or the cleaner can make up the hours. ',
+      "Yes, If we have any notice, we will send you another cleaner. If there's no notice and we cannot assign a replacement in time, we will send you a refund or the cleaner can make up the hours. ",
   },
   {
     id: 14,
@@ -235,7 +237,7 @@ const faqs = [
     id: 18,
     title: 'Are there a minimum number of hours per visit?',
     content:
-      'Yes, We require 2 hours minimum per cleaning visit, to ensure the cleaner\'s travel cost are covered. ',
+      "Yes, We require 2 hours minimum per cleaning visit, to ensure the cleaner's travel cost are covered. ",
   },
 ]
 
@@ -274,8 +276,6 @@ const socialMedia = [
     link: 'https://www.tiktok.com/@sparkleklin?_t=ZN-8vff1WNWVUc&_r=1',
   },
 ]
-
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

@@ -1,9 +1,9 @@
 <template>
   <section class="service-overview bg-brand-ash/10 mt-10">
     <div class="mx-5 md:mx-25 pt-10 md:pt-20 pb-20">
-       <p class="font-syne text-4xl font-semibold">
-          {{ title }}
-        </p>
+      <p class="font-syne text-4xl font-semibold">
+        {{ title }}
+      </p>
       <p class="font-urbanist text-lg font-normal text-brand-ash">
         {{ description }}
       </p>
@@ -26,7 +26,11 @@
       </div>
 
       <div class="w-full mt-10 md:mt-20">
-        <img :src="imageUrl" :alt="imageAlt" class="rounded-4xl w-full md:object-cover h-[15rem] md:h-[35rem]" />
+        <img
+          :src="imageUrl"
+          :alt="imageAlt"
+          class="rounded-4xl w-full md:object-cover h-[15rem] md:h-[35rem]"
+        />
       </div>
     </div>
   </section>
@@ -55,8 +59,7 @@ const props = defineProps({
   },
   iconUrl: {
     type: String,
-    default:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png',
+    default: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png',
   },
   imageUrl: {
     type: String,

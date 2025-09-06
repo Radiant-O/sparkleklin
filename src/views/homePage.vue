@@ -131,7 +131,7 @@
         </div>
         <div class="w-full">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329795/Sparkleklin/office.jpg"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178781/professional-cleaning-service-person-using-vacuum-cleaner-office-2_smdr4u.jpg"
             alt=""
             class="rounded-4xl w-full object-cover h-[25rem] md:h-[45rem]"
           />
@@ -148,7 +148,7 @@
     />
     <section class="whychoose">
       <WhyUsComponent
-        imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745512033/Sparkleklin/clearnerchoose_ibnkwe.png"
+        imageUrl="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161864/clearnerchoose_bhc5ph.png"
         overlayText="Discover the standout features and exceptional benefits of choosing our home cleaning services, designed to meet all your needs and exceed your expectations."
         title="Why Choose Sparkleklin?"
         description="Sparkleklin is based in London and provides a variety of cleaning services at affordable prices."
@@ -188,10 +188,10 @@ import { useScrollAnimation } from '@/composables/useScrollAnimation'
 useScrollAnimation()
 
 const backgroundImages = [
-  'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329764/Sparkleklin/hero_3_cahozr.jpg',
-  'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329773/Sparkleklin/hero_2_c3g96t.jpg',
-  'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329763/Sparkleklin/hero_1_xzsa01.png',
-  'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329777/Sparkleklin/hero_4_nui3vo.jpg',
+  'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178755/happy-product-portrt-woman-with-cleaning-service-tools-bucket-work-smile-office-NEW_NEW_hfktf5.jpg',
+  'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178789/woman-mopping-floor-store-cleaning-janitorial-retail-concepts_cvmu9f.jpg',
+  'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178706/79111_krg0f5.jpg',
+  'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178681/11368_ulgjll.jpg',
 ]
 
 const services = [
@@ -199,37 +199,34 @@ const services = [
     title: 'Commercial',
     slug: 'commercial',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445013/Sparkleklin/commerciall_woasfw.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/commerciall_kow4as.png',
   },
   {
     title: 'Office',
     slug: 'offices',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/officee_bzjpqq.png',
+    imageUrl: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161864/officee_uqslu6.png',
   },
   {
     title: 'Domestic',
     slug: 'domestic',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/office_cle_o2maz1.png',
+    imageUrl: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/office_cle_jpedsv.png',
   },
   {
     title: 'Supermarket',
     slug: 'shopping-mall',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/supermarket_clea_hnjwfq.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/supermarket_clea_kmmvhs.png',
   },
   {
     title: 'Educational Center',
     slug: 'education-centres',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/educationall_vlppma.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161864/educationall_rcxhfk.png',
   },
   {
     title: 'Hospitals',
     slug: 'hospitals',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/showroom_mgns43.png',
+    imageUrl: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/showroom_woylrb.png',
   },
 ]
 
@@ -255,25 +252,25 @@ const whyChooseFeatures = [
     title: 'Experienced Cleaners',
     description:
       'We keep your home sparkling clean and germ free. Our disinfecting process kills 99% of common bacteria and viruses.',
-    icon: 'https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png',
+    icon: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png',
   },
   {
     title: 'Satisfaction Guaranteed',
     description:
       'We stand by the quality of our work with a satisfaction guarantee, ensuring you are delight with the results every time.',
-    icon: 'https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png',
+    icon: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png',
   },
   {
     title: 'Flexible Scheduling',
     description:
       'We offer flexible scheduling options to fit your busy lifestyle, making it easy to book a cleaning service at your convenience.',
-    icon: 'https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png',
+    icon: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png',
   },
   {
     title: 'Affordable Rates',
     description:
       'Our competitive pricing ensures that you receive top-quality cleaning services at a price that fits your budget.',
-    icon: 'https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png',
+    icon: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png',
   },
 ]
 
@@ -285,7 +282,7 @@ const testimonials = [
     comment:
       "Sparkleklin transformed my home from cluttered to spotless in no time. The team are professional, friendly, and thorough. I couldn't be happier with their service!",
     image:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745618885/Sparkleklin/img1_b1eixi.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161862/img1_vta329.png',
   },
   {
     id: 2,
@@ -294,7 +291,7 @@ const testimonials = [
     comment:
       'Outstanding service! Their attention to detail and professional approach has made our office space immaculate. Highly recommended!',
     image:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745618885/Sparkleklin/img2_qrwu2u.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161862/img2_r0ztlu.png',
   },
   {
     id: 3,
@@ -303,7 +300,7 @@ const testimonials = [
     comment:
       "Reliable, thorough, and always on time. Sparkleklin has been instrumental in maintaining our restaurant's cleanliness standards.",
     image:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745618885/Sparkleklin/img3_hyo11d.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161862/img3_kckld2.png',
   },
   {
     id: 4,
@@ -312,7 +309,7 @@ const testimonials = [
     comment:
       'I love coming home to a clean house! The team at Sparkleklin is friendly and does an amazing job every time.',
     image:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745618885/Sparkleklin/img2_qrwu2u.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161862/img2_r0ztlu.png',
   },
   {
     id: 5,
@@ -321,7 +318,7 @@ const testimonials = [
     comment:
       'Sparkleklin has transformed our office cleaning routine. Their team is efficient and the results are always impressive.',
     image:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745618885/Sparkleklin/img3_hyo11d.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161862/img3_kckld2.png',
   },
 ]
 
@@ -353,28 +350,25 @@ const expectFeatures = [
     title: 'Trusted & Experienced',
     description:
       'We are trusted and Experienced company working for many years both in domestic and commercial sector. Our quality control programmes ensures top quality cleaning service every time.',
-    image:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329766/Sparkleklin/car%20showroom.jpg',
+    image: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/showroom_woylrb.png',
   },
   {
     title: 'Available on Short Notice',
     description:
       'We are available 24/7 and can work on short notices. We have good number of staffs, through which we can carry any size job.',
-    image:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329734/Sparkleklin/445-NEW_fsjpvn.png',
+    image: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178708/445-NEW_zzlkpn.png',
   },
   {
     title: 'Satisfaction Guaranteed',
     description: 'We are competitively priced, 100% guaranteed services at guaranteed prices.',
-    image:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329734/Sparkleklin/445-NEW_fsjpvn.png',
+    image: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178708/445-NEW_zzlkpn.png',
   },
   {
     title: 'Reliable & Fully Insured',
     description:
       'Our motivated Staffs are courteous, hardworking, efficient, and have keen eye for details. Staffs are carefully selected and vetted for your security at all times.',
     image:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329745/Sparkleklin/supermarket.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/supermarket_clea_kmmvhs.png',
   },
 ]
 </script>

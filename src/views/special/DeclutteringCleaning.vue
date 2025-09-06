@@ -10,7 +10,7 @@
         >
           <div class="w-[100%] flex justify-between items-center">
             <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329726/Sparkleklin/3204_jmr3wq.jpg"
+              src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178686/3204_crz2ky.jpg"
               alt="title"
               class="w-full md:w-[80%] md:h-[45rem] h-[30rem] object-cover rounded-3xl shadow-lg"
             />
@@ -31,7 +31,7 @@
                 Are you looking to de-clutter your home or office? Preparing a house, flat for sale,
                 for rent or clearing the house of a deceased relative? Then look no further. Don’t
                 throw away your unwanted items. We are here to serve your clearance and removal
-                needs. <br/>We will declutter, clear properties of size and everything removed is
+                needs. <br />We will declutter, clear properties of size and everything removed is
                 disposed off in an environmentally friendly manner and if possible reuse or
                 recycled. We’re conscious of the Earth and recycle whenever possible and are fully
                 insured.
@@ -73,7 +73,7 @@
               class="flex gap-5 items-start md:w-[80%]"
             >
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 :alt="`feature_${index + 1}`"
                 class="w-5 h-5 md:w-7 md:h-7 bg-white p-1 rounded-xl"
               />
@@ -82,7 +82,6 @@
               </div>
             </div>
           </div>
-
         </div>
         <div class="mx-5 md:mx-25 pt-20 pb-20">
           <p class="font-syne text-2xl md:text-4xl font-semibold">
@@ -102,7 +101,7 @@
               class="flex gap-5 items-start md:w-[80%]"
             >
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 :alt="`feature_${index + 1}`"
                 class="w-5 h-5 md:w-7 md:h-7 bg-white p-1 rounded-xl"
               />
@@ -114,7 +113,7 @@
 
           <div class="w-full mt-20">
             <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329731/Sparkleklin/11867_duem8e.jpg"
+              src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178689/11867_f5clgs.jpg"
               alt="imageAlt"
               class="rounded-4xl w-full object-cover object-top h-[20rem] md:h-[35rem]"
             />
@@ -122,18 +121,24 @@
         </div>
         <div class="mx-5 md:mx-25 pt-20 pb-20">
           <p class="font-syne text-2xl md:text-4xl font-semibold">
-            Does your wardrobe, room or house needs to get cleaned up and organized but you feel over whelmed?
+            Does your wardrobe, room or house needs to get cleaned up and organized but you feel
+            over whelmed?
           </p>
           <div class="font-urbanist text-lg -mt-6 font-normal text-brand-ash">
-            Are you overwhelmed by clutter? Feeling disorganised, depressed or out of control?Would you like to get organised? declutter and enjoy life? Just can't face tackling your clutter on your own? We can help you regain your home/office space back? Perhaps it's family member or a friend that has a problem or or you’re a social worker seeking to help a service user
-            <br/>
-            <span class="block text-brand-main">Then Let Sparkleklin services do it all for you!!!</span>
-            <br/>
-            We offer help to declutter and clean up any space in your home/offices/commercial premises, a shelf, a room, a basement, or a garage, shed, kitchen, and many more.
+            Are you overwhelmed by clutter? Feeling disorganised, depressed or out of control?Would
+            you like to get organised? declutter and enjoy life? Just can't face tackling your
+            clutter on your own? We can help you regain your home/office space back? Perhaps it's
+            family member or a friend that has a problem or or you’re a social worker seeking to
+            help a service user
+            <br />
+            <span class="block text-brand-main"
+              >Then Let Sparkleklin services do it all for you!!!</span
+            >
+            <br />
+            We offer help to declutter and clean up any space in your home/offices/commercial
+            premises, a shelf, a room, a basement, or a garage, shed, kitchen, and many more.
           </div>
-          <p class="font-syne text-2xl md:text-4xl font-semibold">
-            Reason to declutter:
-          </p>
+          <p class="font-syne text-2xl md:text-4xl font-semibold">Reason to declutter:</p>
           <div class="grid md:grid-cols-2 w-full gap-3 mt-10">
             <div
               v-for="(feature, index) in reasons"
@@ -141,7 +146,7 @@
               class="flex gap-5 items-start md:w-[80%]"
             >
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 :alt="`feature_${index + 1}`"
                 class="w-5 h-5 md:w-7 md:h-7 bg-white p-1 rounded-xl"
               />
@@ -153,12 +158,15 @@
 
           <div class="w-full mt-20">
             <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329784/Sparkleklin/room-before-after-cleaning-comparison-messy-bedroom-clean-kid-bedroom-home-interior-after-tiding-service-dirty-window-bed-paper-around-room-table-bookshelf-vector-illustrati_eqix8c.jpg"
+              src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178786/room-before-after-cleaning-comparison-messy-bedroom-clean-kid-bedroom-home-interior-after-tiding-service-dirty-window-bed-paper-around-room-table-bookshelf-vector-illustrati_hfu1kp.jpg"
               alt="imageAlt"
               class="rounded-4xl w-full object-cover object-top h-[20rem] md:h-[35rem]"
             />
-            <br/>
-            <p class="font-urbanist text-light md:text-lg mt-5">Tidy Space is a happy Mind.<br/>We know decluttering and clearance services can be stressful times so let us take care of it for you.</p>
+            <br />
+            <p class="font-urbanist text-light md:text-lg mt-5">
+              Tidy Space is a happy Mind.<br />We know decluttering and clearance services can be
+              stressful times so let us take care of it for you.
+            </p>
           </div>
         </div>
       </section>
@@ -243,7 +251,7 @@ const items = [
   'Tables, chairs, desks, cabinets',
   'Beds and bedroom furniture',
   'TVs, Hi-Fis, washing machines, small and big electricals',
-  'We can also collect clothes, shoes, books, DVDs, CDs, bric-a-brac and toys at the same time.'
+  'We can also collect clothes, shoes, books, DVDs, CDs, bric-a-brac and toys at the same time.',
 ]
 const reasons = [
   'Get back control of your life',
@@ -256,24 +264,23 @@ const reasons = [
 ]
 
 const services = [
- {
+  {
     title: 'Car Showroom',
     slug: 'car-showroom',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/showroom_mgns43.png',
+    imageUrl: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/showroom_woylrb.png',
   },
   {
     title: 'Pubs, Clubs & Restaurants',
     slug: 'pubs-clubs-restaurants',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329760/Sparkleklin/Cleaning_Restaurant_Table-1920w_ebul5x.jpg',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178754/Cleaning_Restaurant_Table-1920w_b2fpqz.jpg',
   },
   {
     title: 'Hospitals',
     slug: 'hospitals',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329784/Sparkleklin/woman-cleaning-ophthalmologist-s-office_i3o3h2.jpg',
-    },
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178800/woman-cleaning-ophthalmologist-s-office_gpmwwc.jpg',
+  },
 ]
 </script>
 

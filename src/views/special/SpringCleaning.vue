@@ -5,7 +5,7 @@
     </div>
     <section class="c1">
       <ServiceHeroTwo
-        imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329738/Sparkleklin/2148119211_q5yf9n.jpg"
+        imageUrl="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178726/2148119211_z1mhx0.jpg"
         badge="SPRING CLEANING"
         :title="`Spring Cleaning Service`"
         :description="`We provide a full range of cleaning and hygiene services for domestic and commercial clients that cover just about any cleaning problem you may have. All parts of your household or premises cleaned to perfection. This service is available as a one off or as regular as you may want it done.\n 
@@ -35,7 +35,7 @@
               class="flex gap-5 items-start md:w-[80%]"
             >
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 :alt="`feature_${index + 1}`"
                 class="w-7 h-7 bg-white p-1 rounded-xl"
               />
@@ -47,7 +47,7 @@
 
           <div class="w-full mt-20">
             <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329751/Sparkleklin/2148119225_kisq4r.jpg"
+              src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178736/2148119225_nhqxdp.jpg"
               alt="imageAlt"
               class="rounded-4xl w-full object-cover object-top h-[25rem] md:h-[45rem]"
             />
@@ -57,7 +57,7 @@
               <p class="font-syne font-semibold md:text-xl">Computer Classroom</p>
               <div class="flex gap-5 items-start md:w-[80%]">
                 <img
-                  src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                  src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                   alt=""
                   class="w-7 h-7 bg-white p-1 rounded-xl"
                 />
@@ -73,7 +73,7 @@
               <p class="font-syne font-semibold md:text-xl">Gym Room</p>
               <div class="flex gap-5 items-start md:w-[80%]">
                 <img
-                  src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                  src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                   alt=""
                   class="w-7 h-7 bg-white p-1 rounded-xl"
                 />
@@ -90,7 +90,7 @@
 
               <div class="flex gap-5 items-start md:w-[80%]">
                 <img
-                  src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                  src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                   alt=""
                   class="w-7 h-7 bg-white p-1 rounded-xl"
                 />
@@ -181,23 +181,22 @@ const features = [
 
 const services = [
   {
-     title: 'Domestic',
-     slug: 'domestic',
-     imageUrl:
-       'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/office_cle_o2maz1.png',
-   },
-   {
-     title: 'Shopping Mall',
-     slug: 'shopping-mall',
-     imageUrl:
-       'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329773/Sparkleklin/hero_2_c3g96t.jpg',
-   },
-   {
-     title: 'Educational Center',
-     slug: 'education-centres',
-     imageUrl:
-       'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/educationall_vlppma.png',
-   },
+    title: 'Domestic',
+    slug: 'domestic',
+    imageUrl: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/office_cle_jpedsv.png',
+  },
+  {
+    title: 'Shopping Mall',
+    slug: 'shopping-mall',
+    imageUrl:
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178789/woman-mopping-floor-store-cleaning-janitorial-retail-concepts_cvmu9f.jpg',
+  },
+  {
+    title: 'Educational Center',
+    slug: 'education-centres',
+    imageUrl:
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161864/educationall_rcxhfk.png',
+  },
 ]
 </script>
 

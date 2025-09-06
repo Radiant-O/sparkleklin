@@ -5,7 +5,9 @@
       <p class="text-white font-syne font-bold text-2xl md:text-5xl w-[90%] md:w-[60%] mx-auto">
         {{ ctaTitle }}
       </p>
-      <div class="text-white/80 font-urbanist px-3 md:px-0 text-md md:text-lg font-light -mt-4 md:-mt-8">
+      <div
+        class="text-white/80 font-urbanist px-3 md:px-0 text-md md:text-lg font-light -mt-4 md:-mt-8"
+      >
         {{ ctaDescription }}
       </div>
       <p class="text-white/80 font-urbanist px-3 md:px-0 text-md md:text-lg pt-2 font-light">
@@ -25,7 +27,9 @@
     </div>
 
     <!-- Footer Content -->
-    <div class="bg-black w-[100%] mx-auto rounded-3xl mt-25 px-5 md:px-20 pt-10 md:pt-20 pb-20 text-white">
+    <div
+      class="bg-black w-[100%] mx-auto rounded-3xl mt-25 px-5 md:px-20 pt-10 md:pt-20 pb-20 text-white"
+    >
       <div class="flex md:flex-row flex-col justify-between items-start">
         <!-- Logo and Description -->
         <div class="md:w-[35%]">
@@ -111,7 +115,7 @@ defineProps({
   logo: {
     type: String,
     default:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745614935/Sparkleklin/logo_white_mix_ftx0rf.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757160964/logo_white_mix_ehbdku.png',
   },
   description: {
     type: String,
@@ -157,8 +161,16 @@ const contactInfo = [
 
 const socialMedia = [
   { name: 'Twitter', icon: 'proicons:x-twitter', link: 'https://x.com/sparklekli57710?s=21' },
-  { name: 'Instagram', icon: 'mdi:instagram', link: 'https://www.instagram.com/sparkleklin?igsh=OThwcjl1dG0zazFr&utm_source=qr' },
-  { name: 'Tiktok', icon: 'ic:outline-tiktok', link: 'https://www.tiktok.com/@sparkleklin?_t=ZN-8vff1WNWVUc&_r=1' },
+  {
+    name: 'Instagram',
+    icon: 'mdi:instagram',
+    link: 'https://www.instagram.com/sparkleklin?igsh=OThwcjl1dG0zazFr&utm_source=qr',
+  },
+  {
+    name: 'Tiktok',
+    icon: 'ic:outline-tiktok',
+    link: 'https://www.tiktok.com/@sparkleklin?_t=ZN-8vff1WNWVUc&_r=1',
+  },
 ]
 </script>
 

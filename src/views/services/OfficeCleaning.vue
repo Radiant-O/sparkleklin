@@ -5,7 +5,7 @@
     </div>
     <section class="c1">
       <ServiceHeroTwo
-        imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329734/Sparkleklin/445-NEW_fsjpvn.png"
+        imageUrl="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178708/445-NEW_zzlkpn.png"
         badge="OFFICE CLEANING"
         title="Office Cleaning Service"
         :description="`At Sparkleklin Cleaning, our strength comes from satisfying and putting our customers first, we clean to protect your health and your environment.. \n
@@ -36,7 +36,7 @@
               class="flex gap-5 items-start md:w-[80%]"
             >
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 :alt="`feature_${index + 1}`"
                 class="w-7 h-7 bg-white p-1 rounded-xl"
               />
@@ -48,7 +48,7 @@
 
           <div class="w-full mt-20">
             <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329795/Sparkleklin/office.jpg"
+              src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178781/professional-cleaning-service-person-using-vacuum-cleaner-office-2_smdr4u.jpg"
               alt="imageAlt"
               class="rounded-4xl w-full object-cover h-[35rem]"
             />
@@ -133,19 +133,19 @@ const services = [
     title: 'Pubs, Clubs & Restaurants',
     slug: 'pubs-clubs-restaurants',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329760/Sparkleklin/Cleaning_Restaurant_Table-1920w_ebul5x.jpg',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178754/Cleaning_Restaurant_Table-1920w_b2fpqz.jpg',
   },
   {
     title: 'Shopping Mall',
     slug: 'shopping-mall',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/supermarket_clea_hnjwfq.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/supermarket_clea_kmmvhs.png',
   },
   {
     title: 'Educational Center',
     slug: 'education-centres',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/educationall_vlppma.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161864/educationall_rcxhfk.png',
   },
 ]
 </script>

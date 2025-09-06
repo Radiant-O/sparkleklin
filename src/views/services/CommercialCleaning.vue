@@ -5,7 +5,7 @@
     </div>
     <section class="c1">
       <ServiceHero
-        imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745445013/Sparkleklin/commerciall_woasfw.png"
+        imageUrl="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/commerciall_kow4as.png"
         badge="COMMERCIAL CLEANING"
         title="Commercial Cleaning Service"
         description="Sparkleklin's cleaning will provide you with a reliable, value for money professional commercial cleaning service for your business at times to suit you and help create a welcoming atmosphere for your visitors and supports a productive working environment for your staff and a strict sickness program is operated to ensure continuity of service."
@@ -20,7 +20,7 @@
     </section>
     <section class="c2">
       <ServiceOverview
-      title=""
+        title=""
         description="You will receive high quality, cost effective cleaning services tailored to your precise needs. This leaves you free to focus on your core business activities with peace of mind that your cleaning is in expert hands. We can provide you services in different ways."
         :features="[
           'One off cleaning',
@@ -29,7 +29,7 @@
           'Deep commercial Cleaning',
         ]"
         :columns="4"
-        imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329764/Sparkleklin/hero_3_cahozr.jpg"
+        imageUrl="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178755/happy-product-portrt-woman-with-cleaning-service-tools-bucket-work-smile-office-NEW_NEW_hfktf5.jpg"
         imageAlt="Commercial cleaning service"
       />
     </section>
@@ -98,26 +98,22 @@ const impactStats = [
 ]
 
 const services = [
- 
   {
     title: 'Office',
     slug: 'offices',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/officee_bzjpqq.png',
+    imageUrl: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161864/officee_uqslu6.png',
   },
   {
     title: 'Domestic',
     slug: 'domestic',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/office_cle_o2maz1.png',
+    imageUrl: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/office_cle_jpedsv.png',
   },
   {
     title: 'Shopping Mall',
     slug: 'shopping-mall',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/supermarket_clea_hnjwfq.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/supermarket_clea_kmmvhs.png',
   },
- 
 ]
 </script>
 

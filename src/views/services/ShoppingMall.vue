@@ -5,7 +5,7 @@
     </div>
     <section class="c1">
       <ServiceHeroTwo
-        imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329773/Sparkleklin/hero_2_c3g96t.jpg"
+        imageUrl="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178789/woman-mopping-floor-store-cleaning-janitorial-retail-concepts_cvmu9f.jpg"
         badge="SUPERMARKET CLEANING"
         title="Supermarket Cleaning Service"
         :description="`We know that, however large or small your shop, you will want your retail premises to give the right first impression. From the smallest boutique to the largest big-name store, we can provide a retail cleaning service to match your budget and requirements and Offer your customers a welcoming clean environment in which to shop every time.\n 
@@ -34,7 +34,7 @@
               class="flex gap-5 items-start md:w-[80%]"
             >
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 :alt="`feature_${index + 1}`"
                 class="w-7 h-7 bg-white p-1 rounded-xl"
               />
@@ -46,7 +46,7 @@
 
           <div class="w-full mt-20">
             <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329795/Sparkleklin/office.jpg"
+              src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178781/professional-cleaning-service-person-using-vacuum-cleaner-office-2_smdr4u.jpg"
               alt="imageAlt"
               class="rounded-4xl w-full object-cover h-[25rem] md:h-[45rem]"
             />
@@ -134,23 +134,22 @@ const features = [
 ]
 
 const services = [
- {
+  {
     title: 'Hospitals',
     slug: 'hospitals',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329784/Sparkleklin/woman-cleaning-ophthalmologist-s-office_i3o3h2.jpg',
-    },
-   {
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178800/woman-cleaning-ophthalmologist-s-office_gpmwwc.jpg',
+  },
+  {
     title: 'Car Showroom',
     slug: 'car-showroom',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/showroom_mgns43.png',
+    imageUrl: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/showroom_woylrb.png',
   },
   {
     title: 'Educational Center',
     slug: 'education-centres',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/educationall_vlppma.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161864/educationall_rcxhfk.png',
   },
 ]
 </script>

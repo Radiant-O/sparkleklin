@@ -5,13 +5,15 @@
     </div>
     <div>
       <CircleArc
-      backgroundColor="#191919"
-      title="ABOUT US"
-      subtitle="Trusted Home Cleaning\nExperts Since 2025"
-      description="At Sparkleklin, we are dedicated to delivering top-notch home cleaning services, ensuring your home is always spotless, comfortable, and inviting."
-    />
+        backgroundColor="#191919"
+        title="ABOUT US"
+        subtitle="Trusted Home Cleaning\nExperts Since 2025"
+        description="At Sparkleklin, we are dedicated to delivering top-notch home cleaning services, ensuring your home is always spotless, comfortable, and inviting."
+      />
     </div>
-    <div class="bg-black/90 text-white flex flex-col md:flex-row justify-center gap-20 px-5 md:px-28 py-20">
+    <div
+      class="bg-black/90 text-white flex flex-col md:flex-row justify-center gap-20 px-5 md:px-28 py-20"
+    >
       <div class="bg-[#29292E] bg-opacity-90 p-10 rounded-3xl shadow-lg">
         <Icon
           icon="mynaui:flag-solid"
@@ -59,7 +61,9 @@
       </div>
     </div>
     <section>
-      <div class="bg-brand-ash/5 bg-opacity-90 rounded-3xl flex flex-col md:flex-row py-20 px-5 md:px-25 justify-center gap-20 items-center mt-15 md:mx-10">
+      <div
+        class="bg-brand-ash/5 bg-opacity-90 rounded-3xl flex flex-col md:flex-row py-20 px-5 md:px-25 justify-center gap-20 items-center mt-15 md:mx-10"
+      >
         <div class="w-[100%]">
           <p
             class="font-urbanist text-brand-main w-fit px-2 py-1 font-semibold text-lg bg-brand-main/20 rounded-2xl"
@@ -83,7 +87,7 @@
         </div>
         <div class="w-[100%]">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329795/Sparkleklin/office.jpg"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178781/professional-cleaning-service-person-using-vacuum-cleaner-office-2_smdr4u.jpg"
             alt=""
             class="md:w-[80%] h-[30rem] object-cover rounded-3xl shadow-lg"
           />
@@ -98,7 +102,7 @@
     </section>
     <section class="whychoose">
       <WhyUsComponent
-        imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745512033/Sparkleklin/clearnerchoose_ibnkwe.png"
+        imageUrl="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161864/clearnerchoose_bhc5ph.png"
         overlayText="Discover the standout features and exceptional benefits of choosing our home cleaning services, designed to meet all your needs and exceed your expectations."
         title="Why Choose Sparkleklin?"
         description="Sparkleklin is based in London and provides a variety of cleaning services at affordable prices."
@@ -127,28 +131,25 @@ const expectFeatures = [
     title: 'Trusted & Experienced',
     description:
       'We are trusted and Experienced company working for many years both in domestic and commercial sector. Our quality control programmes ensures top quality cleaning service every time.',
-    image:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329766/Sparkleklin/car%20showroom.jpg',
+    image: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/showroom_woylrb.png',
   },
   {
     title: 'Available on Short Notice',
     description:
       'We are available 24/7 and can work on short notices. We have good number of staffs, through which we can carry any size job.',
-    image:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329734/Sparkleklin/445-NEW_fsjpvn.png',
+    image: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178708/445-NEW_zzlkpn.png',
   },
   {
     title: 'Satisfaction Guaranteed',
     description: 'We are competitively priced, 100% guaranteed services at guaranteed prices.',
-    image:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329734/Sparkleklin/445-NEW_fsjpvn.png',
+    image: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178708/445-NEW_zzlkpn.png',
   },
   {
     title: 'Reliable & Fully Insured',
     description:
       'Our motivated Staffs are courteous, hardworking, efficient, and have keen eye for details. Staffs are carefully selected and vetted for your security at all times.',
     image:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329745/Sparkleklin/supermarket.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/supermarket_clea_kmmvhs.png',
   },
 ]
 
@@ -157,25 +158,25 @@ const whyChooseFeatures = [
     title: 'Experienced Cleaners',
     description:
       'We keep your home sparkling clean and germ free. Our disinfecting process kills 99% of common bacteria and viruses.',
-    icon: 'https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png',
+    icon: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png',
   },
   {
     title: 'Satisfaction Guaranteed',
     description:
       'We stand by the quality of our work with a satisfaction guarantee, ensuring you are delight with the results every time.',
-    icon: 'https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png',
+    icon: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png',
   },
   {
     title: 'Flexible Scheduling',
     description:
       'We offer flexible scheduling options to fit your busy lifestyle, making it easy to book a cleaning service at your convenience.',
-    icon: 'https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png',
+    icon: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png',
   },
   {
     title: 'Affordable Rates',
     description:
       'Our competitive pricing ensures that you receive top-quality cleaning services at a price that fits your budget.',
-    icon: 'https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png',
+    icon: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png',
   },
 ]
 </script>

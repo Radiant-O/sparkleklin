@@ -32,7 +32,7 @@
         />
       </div>
     </section>
-     <section class="footer">
+    <section class="footer">
       <FooterComponent />
     </section>
   </div>
@@ -51,55 +51,51 @@ const services = [
     title: 'Commercial',
     slug: 'commercial',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445013/Sparkleklin/commerciall_woasfw.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/commerciall_kow4as.png',
   },
   {
     title: 'Office',
     slug: 'offices',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/officee_bzjpqq.png',
+    imageUrl: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161864/officee_uqslu6.png',
   },
   {
     title: 'Domestic',
     slug: 'domestic',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/office_cle_o2maz1.png',
+    imageUrl: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/office_cle_jpedsv.png',
   },
   {
     title: 'Shopping Mall',
     slug: 'shopping-mall',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329773/Sparkleklin/hero_2_c3g96t.jpg',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178789/woman-mopping-floor-store-cleaning-janitorial-retail-concepts_cvmu9f.jpg',
   },
   {
     title: 'Educational Center',
     slug: 'education-centres',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/educationall_vlppma.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161864/educationall_rcxhfk.png',
   },
   {
     title: 'Car Showroom',
     slug: 'car-showroom',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/showroom_mgns43.png',
+    imageUrl: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/showroom_woylrb.png',
   },
   {
     title: 'Pubs, Clubs & Restaurants',
     slug: 'pubs-clubs-restaurants',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329760/Sparkleklin/Cleaning_Restaurant_Table-1920w_ebul5x.jpg',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178754/Cleaning_Restaurant_Table-1920w_b2fpqz.jpg',
   },
   {
     title: 'Hospitals',
     slug: 'hospitals',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329784/Sparkleklin/woman-cleaning-ophthalmologist-s-office_i3o3h2.jpg',
-    },
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178800/woman-cleaning-ophthalmologist-s-office_gpmwwc.jpg',
+  },
   {
     title: 'Sports & Leisure Centers',
     slug: 'sports-leisure-centers',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329745/Sparkleklin/2148766021_fatbem.jpg',
+    imageUrl: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178741/2148766021_e4vsa1.jpg',
   },
 ]
 </script>

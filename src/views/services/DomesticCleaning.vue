@@ -5,7 +5,7 @@
     </div>
     <section class="c1">
       <ServiceHero
-        imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/office_cle_o2maz1.png"
+        imageUrl="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/office_cle_jpedsv.png"
         badge="DOMESTIC CLEANING"
         title="Domestic Cleaning Service"
         :description="`At Sparkleklin, we are an established, professional cleaning service provider and have extensiveexperience in cleaning of domestic premises, keeping your homes hygienically clean and tidy. 
@@ -41,7 +41,7 @@
               class="flex gap-5 items-start md:w-[80%]"
             >
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 :alt="`feature_${index + 1}`"
                 class="w-5 h-5 md:w-7 md:h-7 bg-white p-1 rounded-xl"
               />
@@ -53,12 +53,11 @@
 
           <div class="w-full mt-20">
             <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329725/Sparkleklin/2577_ygmqnl.jpg"
+              src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178707/2577_l5khkm.jpg"
               alt="imageAlt"
               class="rounded-4xl w-full object-cover object-top h-[20rem] md:h-[35rem]"
             />
           </div>
-          
         </div>
       </section>
     </section>
@@ -146,20 +145,18 @@ const services = [
   {
     title: 'Car Showroom',
     slug: 'car-showroom',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/showroom_mgns43.png',
+    imageUrl: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/showroom_woylrb.png',
   },
-   {
+  {
     title: 'Sports & Leisure Centers',
     slug: 'sports-leisure-centers',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329745/Sparkleklin/2148766021_fatbem.jpg',
+    imageUrl: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178741/2148766021_e4vsa1.jpg',
   },
   {
     title: 'Shopping Mall',
     slug: 'shopping-mall',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/supermarket_clea_hnjwfq.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/supermarket_clea_kmmvhs.png',
   },
 ]
 </script>

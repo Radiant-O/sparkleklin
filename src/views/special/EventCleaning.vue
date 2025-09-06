@@ -5,7 +5,7 @@
     </div>
     <section class="c1">
       <ServiceHeroTwo
-        imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329727/Sparkleklin/36368_trq714.jpg"
+        imageUrl="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178689/36368_lbw6yy.jpg"
         badge="EVENTS/PARTY CLEANING"
         title="Events/Party Cleaning Service"
         :description="`We provide reliable and affordable professional events and party cleaning in Birmingham and surrounding areas. We have years of experience in pre-and post-cleaning for any kind of event or gathering – large or small. We provide a full range of services designed to accommodate any type of event cleaning needs.\n
@@ -19,7 +19,7 @@
       >
         <div class="w-[100%] flex justify-between items-center">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329787/Sparkleklin/young-contract-cleaners-cleaning-modern-office_pkphjw.jpg"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178791/young-contract-cleaners-cleaning-modern-office_rdltfo.jpg"
             alt="title"
             class="w-full md:w-[80%] md:h-[45rem] h-[30rem] object-cover rounded-3xl shadow-lg"
           />
@@ -87,7 +87,7 @@
               class="flex gap-5 items-start md:w-[80%]"
             >
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 :alt="`feature_${index + 1}`"
                 class="w-7 h-7 bg-white p-1 rounded-xl"
               />
@@ -99,32 +99,32 @@
 
           <div class="w-full mt-20">
             <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329742/Sparkleklin/2147651770_iac4rr.jpg"
+              src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178735/2147651770_sctjml.jpg"
               alt="imageAlt"
               class="rounded-4xl w-full object-cover h-[25rem] md:h-[35rem]"
             />
           </div>
           <!-- <ServiceOverview /> -->
-           <div class="mt-10">
-           <p class="font-syne text-2xl md:text-5xl font-semibold">
-            The service will include  <span class="block">but is not limited to:</span>
-          </p>
-          <div class="grid md:grid-cols-2 w-full gap-3 mt-10">
-            <div
-              v-for="(feature, index) in items"
-              :key="index"
-              class="flex gap-5 items-start md:w-[80%]"
-            >
-              <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
-                :alt="`feature_${index + 1}`"
-                class="w-7 h-7 bg-white p-1 rounded-xl"
-              />
-              <div>
-                <p class="font-urbanist font-semibold md:text-xl">{{ feature }}</p>
+          <div class="mt-10">
+            <p class="font-syne text-2xl md:text-5xl font-semibold">
+              The service will include <span class="block">but is not limited to:</span>
+            </p>
+            <div class="grid md:grid-cols-2 w-full gap-3 mt-10">
+              <div
+                v-for="(feature, index) in items"
+                :key="index"
+                class="flex gap-5 items-start md:w-[80%]"
+              >
+                <img
+                  src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
+                  :alt="`feature_${index + 1}`"
+                  class="w-7 h-7 bg-white p-1 rounded-xl"
+                />
+                <div>
+                  <p class="font-urbanist font-semibold md:text-xl">{{ feature }}</p>
+                </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </section>
@@ -211,19 +211,17 @@ const services = [
     title: 'Commercial',
     slug: 'commercial',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445013/Sparkleklin/commerciall_woasfw.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/commerciall_kow4as.png',
   },
   {
     title: 'Office',
     slug: 'offices',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/officee_bzjpqq.png',
+    imageUrl: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161864/officee_uqslu6.png',
   },
   {
     title: 'Domestic',
     slug: 'domestic',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/office_cle_o2maz1.png',
+    imageUrl: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/office_cle_jpedsv.png',
   },
 ]
 </script>

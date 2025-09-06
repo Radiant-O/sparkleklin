@@ -5,7 +5,7 @@
     </div>
     <section class="c1">
       <ServiceHeroTwo
-        imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329766/Sparkleklin/car%20showroom.jpg"
+        imageUrl="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/showroom_woylrb.png"
         badge="CAR SHOWROOM CENTRES CLEANING"
         title="Car Showroom Cleaning Service"
         :description="`We know that having clean and tidy reception areas and washrooms is important to you so we'll always ensure your front of house is as clean and well-presented as possible. It is very important that the showroom and the reception areas also look at their best. Sparkleklin offers a comprehensive cleaning service, aimed specifically at car showrooms and show homes to help achieve this standard.`"
@@ -35,7 +35,7 @@
               class="flex gap-5 items-start md:w-[80%]"
             >
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 :alt="`feature_${index + 1}`"
                 class="w-7 h-7 bg-white p-1 rounded-xl"
               />
@@ -47,7 +47,7 @@
 
           <div class="w-full mt-20">
             <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329765/Sparkleklin/car-mechanic-cleaning-garage-floor-auto-industry-shop-workshop_rvqrcp.jpg"
+              src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178754/car-mechanic-cleaning-garage-floor-auto-industry-shop-workshop_x5vbrs.jpg"
               alt="imageAlt"
               class="rounded-4xl w-full object-cover h-[35rem]"
             />
@@ -132,19 +132,19 @@ const services = [
     title: 'Pubs, Clubs & Restaurants',
     slug: 'pubs-clubs-restaurants',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329760/Sparkleklin/Cleaning_Restaurant_Table-1920w_ebul5x.jpg',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178754/Cleaning_Restaurant_Table-1920w_b2fpqz.jpg',
   },
   {
     title: 'Shopping Mall',
     slug: 'shopping-mall',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/supermarket_clea_hnjwfq.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/supermarket_clea_kmmvhs.png',
   },
   {
     title: 'Educational Center',
     slug: 'education-centres',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/educationall_vlppma.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161864/educationall_rcxhfk.png',
   },
 ]
 </script>

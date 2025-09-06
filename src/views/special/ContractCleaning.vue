@@ -5,7 +5,7 @@
     </div>
     <section class="c1">
       <ServiceHeroTwo
-        imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329787/Sparkleklin/young-contract-cleaners-cleaning-modern-office_pkphjw.jpg"
+        imageUrl="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178791/young-contract-cleaners-cleaning-modern-office_rdltfo.jpg"
         badge="CONTRACT CLEANING"
         title="Contract Cleaning Service"
         :description="`Cleaning and maintaining an office or place of business to the highest standards is extremely important because it ensures the comfort of your staff, customers and visitors in a pleasant environment.\n
@@ -44,7 +44,7 @@ This guarantees the smooth running of all your cleaning tasks.`"
               class="flex gap-5 items-start md:w-[80%]"
             >
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 :alt="`feature_${index + 1}`"
                 class="w-7 h-7 bg-white p-1 rounded-xl"
               />
@@ -56,7 +56,7 @@ This guarantees the smooth running of all your cleaning tasks.`"
 
           <div class="w-full mt-20">
             <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329790/Sparkleklin/professional-cleaning-service-person-cleaning-office_dx7rwf.jpg"
+              src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178769/professional-cleaning-service-person-cleaning-office_rohshe.jpg"
               alt="imageAlt"
               class="rounded-4xl w-full object-cover h-[35rem]"
             />
@@ -140,20 +140,19 @@ const services = [
   {
     title: 'Domestic',
     slug: 'domestic',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/office_cle_o2maz1.png',
+    imageUrl: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/office_cle_jpedsv.png',
   },
   {
     title: 'Shopping Mall',
     slug: 'shopping-mall',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329773/Sparkleklin/hero_2_c3g96t.jpg',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178789/woman-mopping-floor-store-cleaning-janitorial-retail-concepts_cvmu9f.jpg',
   },
   {
     title: 'Educational Center',
     slug: 'education-centres',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/educationall_vlppma.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161864/educationall_rcxhfk.png',
   },
 ]
 </script>

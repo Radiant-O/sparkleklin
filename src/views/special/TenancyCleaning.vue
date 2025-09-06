@@ -10,7 +10,7 @@
         >
           <div class="w-[100%] flex justify-between items-center">
             <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329746/Sparkleklin/2149374462_woh4uu.jpg"
+              src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178745/2149374462_ugoscz.jpg"
               alt="title"
               class="w-full md:w-[80%] md:h-[45rem] h-[30rem] object-cover rounded-3xl shadow-lg"
             />
@@ -34,10 +34,10 @@
                 inventory checklists. It is a unique service for estate agents and property
                 management companies. It is used by all top life style management, estate agents and
                 property management companies. This service is to ensure that properties are
-                thoroughly cleaned when tenants leave and in preparation for new
-                tenants.<br/>Effectively an intense cleaning service where all surfaces are specially
-                cleaned ready for the next occupant. We can do this when relocating to new premises
-                or as an end-of-tenancy clean.
+                thoroughly cleaned when tenants leave and in preparation for new tenants.<br />Effectively
+                an intense cleaning service where all surfaces are specially cleaned ready for the
+                next occupant. We can do this when relocating to new premises or as an
+                end-of-tenancy clean.
               </p>
             </div>
 
@@ -63,7 +63,10 @@
             The service will <span class="block">include but is not limited to:</span>
           </p>
           <div class="font-urbanist text-lg -mt-6 font-normal text-brand-ash">
-            All parts of your household cleaned to perfection which include all living spaces such as conservatory, living rooms, bedrooms, stairs, hallways & much more. inside and out of cupboards, sockets & switches , fridges, cookers, microwaves. Surfaces such as cooker tops, work surfaces, tables, window frames, doors, skirting boards and floors and more.
+            All parts of your household cleaned to perfection which include all living spaces such
+            as conservatory, living rooms, bedrooms, stairs, hallways & much more. inside and out of
+            cupboards, sockets & switches , fridges, cookers, microwaves. Surfaces such as cooker
+            tops, work surfaces, tables, window frames, doors, skirting boards and floors and more.
           </div>
 
           <div class="grid md:grid-cols-2 w-full gap-3 mt-10">
@@ -73,7 +76,7 @@
               class="flex gap-5 items-start md:w-[80%]"
             >
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 :alt="`feature_${index + 1}`"
                 class="w-5 h-5 md:w-7 md:h-7 bg-white p-1 rounded-xl"
               />
@@ -85,7 +88,7 @@
 
           <div class="w-full mt-20">
             <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329725/Sparkleklin/2577_ygmqnl.jpg"
+              src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178707/2577_l5khkm.jpg"
               alt="imageAlt"
               class="rounded-4xl w-full object-cover object-top h-[20rem] md:h-[35rem]"
             />
@@ -182,23 +185,22 @@ const features = [
 
 const services = [
   {
-      title: 'Car Showroom',
-      slug: 'car-showroom',
-      imageUrl:
-        'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/showroom_mgns43.png',
-    },
-    {
-      title: 'Pubs, Clubs & Restaurants',
-      slug: 'pubs-clubs-restaurants',
-      imageUrl:
-        'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329760/Sparkleklin/Cleaning_Restaurant_Table-1920w_ebul5x.jpg',
-    },
-    {
-      title: 'Hospitals',
-      slug: 'hospitals',
-      imageUrl:
-        'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329784/Sparkleklin/woman-cleaning-ophthalmologist-s-office_i3o3h2.jpg',
-      },
+    title: 'Car Showroom',
+    slug: 'car-showroom',
+    imageUrl: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/showroom_woylrb.png',
+  },
+  {
+    title: 'Pubs, Clubs & Restaurants',
+    slug: 'pubs-clubs-restaurants',
+    imageUrl:
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178754/Cleaning_Restaurant_Table-1920w_b2fpqz.jpg',
+  },
+  {
+    title: 'Hospitals',
+    slug: 'hospitals',
+    imageUrl:
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178800/woman-cleaning-ophthalmologist-s-office_gpmwwc.jpg',
+  },
 ]
 </script>
 

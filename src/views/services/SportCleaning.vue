@@ -5,7 +5,7 @@
     </div>
     <section class="c1">
       <ServiceHeroTwo
-        imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329745/Sparkleklin/2148766021_fatbem.jpg"
+        imageUrl="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178741/2148766021_e4vsa1.jpg"
         badge="SPORT AND LEISURE"
         title="Sport and Leisure Cleaning Service"
         :description="`We can adapt our cleaning schedules to fit any leisure and entertainment outlet. They are completely tailored to building specifications and the type of leisure facility you need us to clean. Our cleaners can help cinemas, hotels and restaurants keep their front of house clean and tidy on a regular basis and as a one off.\n
@@ -19,30 +19,16 @@ We understand how important it is to have a clean and tidy working out environme
             Our Office Cleaning <span class="block">Options Include Thorough:</span>
           </p> -->
           <div class="font-urbanist text-lg -mt-6 font-normal text-brand-ash">
-            Our cleaning service includes general thorough cleaning on a daily, weekly, fortnightly or monthly basis. We are fully insured so there is no need to worry about if something goes wrong which is very unlikely to happen because our staff are fully trained to do the job but will always follow your specifications and instructions.
-You can provide all the cleaning materials or we can provide if you so wish
+            Our cleaning service includes general thorough cleaning on a daily, weekly, fortnightly
+            or monthly basis. We are fully insured so there is no need to worry about if something
+            goes wrong which is very unlikely to happen because our staff are fully trained to do
+            the job but will always follow your specifications and instructions. You can provide all
+            the cleaning materials or we can provide if you so wish
           </div>
-
-          <!-- <div class="grid md:grid-cols-2 w-full gap-3 mt-10">
-            <div
-              v-for="(feature, index) in features"
-              :key="index"
-              class="flex gap-5 items-start md:w-[80%]"
-            >
-              <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
-                :alt="`feature_${index + 1}`"
-                class="w-7 h-7 bg-white p-1 rounded-xl"
-              />
-              <div>
-                <p class="font-urbanist font-semibold md:text-xl">{{ feature }}</p>
-              </div>
-            </div>
-          </div> -->
 
           <div class="w-full mt-20">
             <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329746/Sparkleklin/2148766028_veke0k.jpg"
+              src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178736/2148766028_vcm6js.jpg"
               alt="imageAlt"
               class="rounded-4xl w-full object-cover h-[35rem]"
             />
@@ -123,24 +109,23 @@ const impactStats = [
 // ]
 
 const services = [
-   {
+  {
     title: 'Hospitals',
     slug: 'hospitals',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329784/Sparkleklin/woman-cleaning-ophthalmologist-s-office_i3o3h2.jpg',
-    },
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178800/woman-cleaning-ophthalmologist-s-office_gpmwwc.jpg',
+  },
   {
     title: 'Shopping Mall',
     slug: 'shopping-mall',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/supermarket_clea_hnjwfq.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/supermarket_clea_kmmvhs.png',
   },
- {
-     title: 'Office',
-     slug: 'offices',
-     imageUrl:
-       'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/officee_bzjpqq.png',
-   },
+  {
+    title: 'Office',
+    slug: 'offices',
+    imageUrl: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161864/officee_uqslu6.png',
+  },
 ]
 </script>
 

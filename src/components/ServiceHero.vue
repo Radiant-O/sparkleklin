@@ -3,7 +3,7 @@
     <div
       class="bg-brand-ash/5 bg-opacity-90 rounded-3xl flex flex-col-reverse md:flex-row gap-8 md:gap-0 py-20 md:px-28 justify-center items-center mt-10 mx-5 md:mx-10"
     >
-      <div class="w-[100%] flex  justify-between items-center ">
+      <div class="w-[100%] flex justify-between items-center">
         <img
           :src="imageUrl"
           :alt="title"
@@ -24,8 +24,16 @@
           {{ description }}
         </div>
         <div class="mt-5">
-          <div v-for="(feature, index) in features" :key="index" class="flex items-start gap-2 md:gap-5">
-            <img :src="iconUrl" alt="feature_icon" class="w-5 h-5 md:w-7 md:h-7 bg-white p-1 rounded-xl" />
+          <div
+            v-for="(feature, index) in features"
+            :key="index"
+            class="flex items-start gap-2 md:gap-5"
+          >
+            <img
+              :src="iconUrl"
+              alt="feature_icon"
+              class="w-5 h-5 md:w-7 md:h-7 bg-white p-1 rounded-xl"
+            />
             <div>
               <p class="font-urbanist font-semibold text-normal md:text-xl">
                 {{ feature }}
@@ -76,8 +84,7 @@ const props = defineProps({
   },
   iconUrl: {
     type: String,
-    default:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png',
+    default: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png',
   },
   buttonText: {
     type: String,
@@ -88,5 +95,4 @@ const props = defineProps({
 const titleParts = computed(() => props.title.split(' '))
 const titleFirstPart = computed(() => titleParts.value[0])
 const titleSecondPart = computed(() => titleParts.value.slice(1).join(' '))
-
 </script>

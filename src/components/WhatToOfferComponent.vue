@@ -5,19 +5,21 @@
       <p class="font-syne text-2xl md:text-4xl md:w-[35%] mx-auto font-bold">
         {{ title }}
       </p>
-      <div class="font-urbanist text-sm md:text-lg -mt-5 font-normal text-brand-ash md:w-[35%] mx-auto">
+      <div
+        class="font-urbanist text-sm md:text-lg -mt-5 font-normal text-brand-ash md:w-[35%] mx-auto"
+      >
         {{ description }}
       </div>
     </div>
 
-    <div class="flex flex-col md:flex-row justify-center gap-10  pt-10 pb-20">
+    <div class="flex flex-col md:flex-row justify-center gap-10 pt-10 pb-20">
       <div class="bg-brand-ash/5 md:w-[30%] bg-opacity-90 p-10 rounded-3xl shadow-lg">
         <div>
           <p class="font-syne font-semibold text-2xl">Comprehensive Service</p>
           <div class="space-y-2">
             <div class="flex items-start gap-2">
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 alt="logo"
                 class="w-5 h-5"
               />
@@ -25,7 +27,7 @@
             </div>
             <div class="flex items-start gap-2">
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 alt="logo"
                 class="w-5 h-5"
               />
@@ -33,7 +35,7 @@
             </div>
             <div class="flex items-start gap-2">
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 alt="logo"
                 class="w-5 h-5"
               />
@@ -41,7 +43,7 @@
             </div>
             <div class="flex items-start gap-2">
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 alt="logo"
                 class="w-5 h-5"
               />
@@ -49,7 +51,7 @@
             </div>
             <div class="flex items-start gap-2">
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 alt="logo"
                 class="w-5 h-5"
               />
@@ -57,7 +59,7 @@
             </div>
             <div class="flex items-start gap-2">
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 alt="logo"
                 class="w-5 h-5"
               />
@@ -72,7 +74,7 @@
           <div class="space-y-2">
             <div class="flex items-start gap-2">
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 alt="logo"
                 class="w-5 h-5"
               />
@@ -83,7 +85,7 @@
             </div>
             <div class="flex items-start gap-2">
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 alt="logo"
                 class="w-5 h-5"
               />
@@ -100,7 +102,7 @@
           <div class="space-y-2">
             <div class="flex items-start gap-2">
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 alt="logo"
                 class="w-5 h-5"
               />
@@ -108,7 +110,7 @@
             </div>
             <div class="flex items-start gap-2">
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 alt="logo"
                 class="w-5 h-5"
               />
@@ -118,7 +120,7 @@
             </div>
             <div class="flex items-start gap-2">
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 alt="logo"
                 class="w-5 h-5"
               />

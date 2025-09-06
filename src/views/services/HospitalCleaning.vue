@@ -5,7 +5,7 @@
     </div>
     <section class="c1">
       <ServiceHeroTwo
-        imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329784/Sparkleklin/woman-cleaning-ophthalmologist-s-office_i3o3h2.jpg"
+        imageUrl="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178800/woman-cleaning-ophthalmologist-s-office_gpmwwc.jpg"
         badge="HOSPITAL CLEANING"
         title="Hospital Cleaning Service"
         :description="`Our Hospital cleaning services are indispensable for maintaining a clean, safe, healthy environment for patients, healthcare professionals, and visitors.\n All hospital areas, including patient rooms, operating rooms, laboratories, waiting rooms, and public spaces, will be carefully cleaned and sanitized as part of our hospital cleaning services. Typically, these services are provided by a trained and highly specialized cleaning staff that utilizes specialized equipment and products to ensure the hospital environment is free of harmful germs and bacteria.\n Our hospital cleaning services are essential to prevent the spread of infections and maintain the health and safety of patients and healthcare workers. `"
@@ -15,7 +15,8 @@
       <section class="service-overview bg-brand-ash/10 mt-10">
         <div class="mx-5 md:mx-25 pt-20 pb-20">
           <p class="font-syne text-2xl md:text-5xl font-semibold">
-            Our hospital cleaning services <span class="block">can include, but not limited to:</span>
+            Our hospital cleaning services
+            <span class="block">can include, but not limited to:</span>
           </p>
           <!-- <div class="font-urbanist text-lg -mt-6 font-normal text-brand-ash">
             No office are alike, we will give you a detailed quote based on the size of your office
@@ -33,7 +34,7 @@
               class="flex gap-5 items-start md:w-[80%]"
             >
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 :alt="`feature_${index + 1}`"
                 class="w-7 h-7 bg-white p-1 rounded-xl"
               />
@@ -45,7 +46,7 @@
 
           <div class="w-full mt-20">
             <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1746225638/Sparkleklin/Rectangle_1067330_esucsk.png"
+              src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757189775/Rectangle_1067330_etyyhf.png"
               alt="imageAlt"
               class="rounded-4xl w-full object-cover h-[35rem]"
             />
@@ -130,19 +131,19 @@ const services = [
     title: 'Pubs, Clubs & Restaurants',
     slug: 'pubs-clubs-restaurants',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329760/Sparkleklin/Cleaning_Restaurant_Table-1920w_ebul5x.jpg',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178754/Cleaning_Restaurant_Table-1920w_b2fpqz.jpg',
   },
   {
     title: 'Shopping Mall',
     slug: 'shopping-mall',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/supermarket_clea_hnjwfq.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/supermarket_clea_kmmvhs.png',
   },
   {
     title: 'Educational Center',
     slug: 'education-centres',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/educationall_vlppma.png',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161864/educationall_rcxhfk.png',
   },
 ]
 </script>

@@ -75,8 +75,7 @@ const props = defineProps({
   },
   iconUrl: {
     type: String,
-    default:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png',
+    default: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png',
   },
   buttonText: {
     type: String,
@@ -92,8 +91,8 @@ const formattedDescription = computed(() => {
   // Split by double newlines to preserve intentional paragraph breaks
   return props.description
     .split(/\n\s*\n/)
-    .map(paragraph => paragraph.trim())
-    .filter(paragraph => paragraph.length > 0)
-    .map(paragraph => paragraph.endsWith('.') ? paragraph : paragraph + '.')
+    .map((paragraph) => paragraph.trim())
+    .filter((paragraph) => paragraph.length > 0)
+    .map((paragraph) => (paragraph.endsWith('.') ? paragraph : paragraph + '.'))
 })
 </script>

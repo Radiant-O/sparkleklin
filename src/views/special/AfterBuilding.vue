@@ -5,7 +5,7 @@
     </div>
     <section class="c1">
       <ServiceHeroTwo
-        imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1746279030/Sparkleklin/Rectangle_1067330_2_kflzwj.png"
+        imageUrl="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757160926/Rectangle_1067330_2_ljbyyd.png"
         badge="AFTER BUILDING CLEANING"
         title="After Building Cleaning Service"
         :description="`Have the builders come and done with all the repairs and renovation work and gone? Good!
@@ -47,7 +47,7 @@ Our cleaning operatives are fully equipped with all safety knowledge, clothing t
               class="flex gap-5 items-start md:w-[80%]"
             >
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 :alt="`feature_${index + 1}`"
                 class="w-7 h-7 bg-white p-1 rounded-xl"
               />
@@ -59,7 +59,7 @@ Our cleaning operatives are fully equipped with all safety knowledge, clothing t
 
           <div class="w-full mt-20">
             <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329736/Sparkleklin/57667_wjgafr.jpg"
+              src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178681/57667_ffmqbu.jpg"
               alt="imageAlt"
               class="rounded-4xl w-full object-cover h-[20rem] md:h-[35rem]"
             />
@@ -145,19 +145,17 @@ const services = [
     title: 'Pubs, Clubs & Restaurants',
     slug: 'pubs-clubs-restaurants',
     imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329760/Sparkleklin/Cleaning_Restaurant_Table-1920w_ebul5x.jpg',
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178754/Cleaning_Restaurant_Table-1920w_b2fpqz.jpg',
   },
   {
-      title: 'Office',
-      slug: 'offices',
-      imageUrl:
-        'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/officee_bzjpqq.png',
-    },
- {
+    title: 'Office',
+    slug: 'offices',
+    imageUrl: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161864/officee_uqslu6.png',
+  },
+  {
     title: 'Domestic',
     slug: 'domestic',
-    imageUrl:
-      'https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/office_cle_o2maz1.png',
+    imageUrl: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/office_cle_jpedsv.png',
   },
 ]
 </script>

@@ -5,7 +5,7 @@
     </div>
     <section class="c1">
       <ServiceHeroTwo
-        imageUrl="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329789/Sparkleklin/woman-cleaning-spray-product-cleaner-washing-window-with-smile-home-happy-working-m_apavsp.jpg"
+        imageUrl="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178786/woman-cleaning-spray-product-cleaner-washing-window-with-smile-home-happy-working-m_kyonpf.jpg"
         badge="DEEP CLEANING"
         title="What is a deep Cleaning Service?"
         :description="`Deep cleaning is different from regular or spring cleaning because it reaches the deep grime and dirt in your home/office. … it reaches the inside and outside of all windows, Wiping down all doors, all blinds, full and deep dusting including all the corners of rooms for cobwebs. If you don’t like getting your hands dirty but like a clean home give Sparkleklin Cleaners.\n 
@@ -35,7 +35,7 @@
               class="flex gap-5 items-start md:w-[80%]"
             >
               <img
-                src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745523531/Sparkleklin/Vector_hizmrr.png"
+                src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161903/Vector_pq3ist.png"
                 :alt="`feature_${index + 1}`"
                 class="w-7 h-7 bg-white p-1 rounded-xl"
               />
@@ -47,7 +47,7 @@
 
           <div class="w-full mt-20">
             <img
-              src="https://res.cloudinary.com/din5vdwsr/image/upload/v1746278401/Sparkleklin/Rectangle_1067330_1_wmltxe.png"
+              src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757189775/Rectangle_1067330_etyyhf.png"
               alt="imageAlt"
               class="rounded-4xl w-full object-cover h-[20rem] md:h-[35rem]"
             />
@@ -128,24 +128,23 @@ const features = [
 ]
 
 const services = [
-   {
-      title: 'Pubs, Clubs & Restaurants',
-      slug: 'pubs-clubs-restaurants',
-      imageUrl:
-        'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329760/Sparkleklin/Cleaning_Restaurant_Table-1920w_ebul5x.jpg',
-    },
-    {
-      title: 'Hospitals',
-      slug: 'hospitals',
-      imageUrl:
-        'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329784/Sparkleklin/woman-cleaning-ophthalmologist-s-office_i3o3h2.jpg',
-      },
-    {
-      title: 'Sports & Leisure Centers',
-      slug: 'sports-leisure-centers',
-      imageUrl:
-        'https://res.cloudinary.com/din5vdwsr/image/upload/v1745329745/Sparkleklin/2148766021_fatbem.jpg',
-    },
+  {
+    title: 'Pubs, Clubs & Restaurants',
+    slug: 'pubs-clubs-restaurants',
+    imageUrl:
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178754/Cleaning_Restaurant_Table-1920w_b2fpqz.jpg',
+  },
+  {
+    title: 'Hospitals',
+    slug: 'hospitals',
+    imageUrl:
+      'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178800/woman-cleaning-ophthalmologist-s-office_gpmwwc.jpg',
+  },
+  {
+    title: 'Sports & Leisure Centers',
+    slug: 'sports-leisure-centers',
+    imageUrl: 'https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178741/2148766021_e4vsa1.jpg',
+  },
 ]
 </script>
 

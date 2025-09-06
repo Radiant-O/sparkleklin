@@ -131,7 +131,7 @@ onMounted(() => {
     Superman audiovisuals
   </div> -->
   <div class="main-container min-h-[120vh] md:min-h-[135vh]" :style="{ backgroundColor }">
-    <div class="center-content mt-[70%] md:mt-[28%] ">
+    <div class="center-content mt-[70%] md:mt-[28%]">
       <p
         class="font-urbanist text-center text-white w-fit mx-auto px-3 py-1.5 font-semibold bg-brand-main/30 rounded-2xl"
       >
@@ -141,8 +141,10 @@ onMounted(() => {
         Trusted Home Cleaning <br />
         Experts Since 2025
       </p>
-      <div class="description  md:w-[60%] text-small px-5 mx-auto -mt-6">{{ props.description }}</div>
-      <div class=" w-fit mx-auto mt-8">
+      <div class="description md:w-[60%] text-small px-5 mx-auto -mt-6">
+        {{ props.description }}
+      </div>
+      <div class="w-fit mx-auto mt-8">
         <ButtonComponent
           buttonText="Get a Free Quote"
           width="auto"
@@ -158,84 +160,82 @@ onMounted(() => {
       <div class="wheel -top-[10%] lg:-top-[25%]">
         <div class="wheel__card">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329734/Sparkleklin/445-NEW_fsjpvn.png"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178708/445-NEW_zzlkpn.png"
             alt=""
           />
         </div>
         <div class="wheel__card">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1746279030/Sparkleklin/Rectangle_1067330_2_kflzwj.png"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757160926/Rectangle_1067330_2_ljbyyd.png"
             alt=""
           />
         </div>
         <div class="wheel__card">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745445013/Sparkleklin/commerciall_woasfw.png"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/commerciall_kow4as.png"
             alt=""
           />
         </div>
         <div class="wheel__card">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745445011/Sparkleklin/supermarket_clea_hnjwfq.png"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161863/supermarket_clea_kmmvhs.png"
             alt=""
           />
         </div>
         <div class="wheel__card">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745445012/Sparkleklin/officee_bzjpqq.png"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757161864/officee_uqslu6.png"
             alt=""
           />
         </div>
         <div class="wheel__card">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329737/Sparkleklin/342325_ofla0s.jpg"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178733/342325_eykn3k.jpg"
             alt=""
           />
         </div>
         <div class="wheel__card">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329773/Sparkleklin/newwww_r43pyt.jpg"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178760/newwww_wpyaom.jpg"
             alt=""
           />
         </div>
         <div class="wheel__card">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329738/Sparkleklin/2148119211_q5yf9n.jpg"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178726/2148119211_z1mhx0.jpg"
             alt=""
           />
         </div>
         <div class="wheel__card">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329734/Sparkleklin/445-NEW_fsjpvn.png"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178708/445-NEW_zzlkpn.png"
             alt=""
           />
         </div>
         <div class="wheel__card">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329784/Sparkleklin/portrait-female-window-cleaner_pu1x5g.jpg"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178770/portrait-female-window-cleaner_uxr575.jpg"
             alt=""
           />
         </div>
         <div class="wheel__card">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329789/Sparkleklin/woman-cleaning-spray-product-cleaner-washing-window-with-smile-home-happy-working-m_apavsp.jpg"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178786/woman-cleaning-spray-product-cleaner-washing-window-with-smile-home-happy-working-m_kyonpf.jpg"
             alt=""
           />
         </div>
         <div class="wheel__card">
           <img
-            src="https://res.cloudinary.com/din5vdwsr/image/upload/v1745329787/Sparkleklin/young-contract-cleaners-cleaning-modern-office_pkphjw.jpg"
+            src="https://res.cloudinary.com/dpy5q17i9/image/upload/v1757178791/young-contract-cleaners-cleaning-modern-office_rdltfo.jpg"
             alt=""
           />
         </div>
       </div>
     </section>
   </div>
-
 </template>
 
 <style scoped>
-
 .main-container {
   /* min-height: 120vh; */
   width: 100%;
@@ -301,7 +301,6 @@ onMounted(() => {
   max-height: 2000px;
   z-index: 1;
 }
-
 
 .wheel__card {
   position: absolute;
